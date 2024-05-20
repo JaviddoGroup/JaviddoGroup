@@ -1,0 +1,29 @@
+body {
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.scrolling-text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,132 @@
+@media screen and (max-width: 2560px) {
+    .our-activities {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .do-list {
+        width: 30%;
+        border-right: 1px solid #b4b4b414;
+    }
+
+    .do-list-object {
+        width: 99%;
+        height: 60px;
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 60px;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 5px;
+        border-bottom: 1px solid #b4b4b414;
+    }
+
+    .do-list-object:hover {
+        background-size: 100% 60px;
+        transition: 0.5s;
+    }
+
+    .do-list-object-active {
+        background-size: 100% 60px;
+        transition: 0.5s;
+    }
+
+    .do-list-object p {
+        margin: 5px 0;
+        font-weight: 400;
+    }
+
+    .do-info {
+        width: 70%;
+        padding: 5px 5px 5px 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .do-info-object {
+
+        display: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .do-info-object-active {
+        display: flex;
+    }
+
+    .info-object {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+    }
+
+    .info-image {
+        width: 50%;
+        align-items: center;
+        padding: 5px;
+        display: flex;
+    }
+}
+
+.info-image img {
+    width: 100%;
+}
+
+.info-desc {
+    margin-left: 15px;
+    width: 45%;
+    margin-top: 3%;
+}
+
+.info-desc a {
+    color: #fc6e27;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 25px;
+
+}
+
+.info-desc a:hover img {
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.info-desc a img {
+    height: 15px;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

@@ -121,11 +121,11 @@ body {
     /* баннеры на главном меню выше */
     .second-section {
         margin-top: 20%;
-        padding-left: 250px;
+        padding-left: 170px;
     }
 
     .second-section h2 {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .third-section {
@@ -135,6 +135,34 @@ body {
     .third-section h2 {
         font-size: 30px;
     }
+
+    .fourth-section {
+        margin: 25px 0;
+        display: flex;
+        padding-left: 170px;
+        padding-right: 170px;
+        justify-content: space-between;
+    }
+
+    .fourth-section img {
+        width: 55px;
+    }
+
+    .fourth-section h2 {
+        font-size: 30px;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .time-line-name {
+        display: flex;
+    }
+
+    .time-line-img img {
+        cursor: pointer;
+    }
+
+
 
 }
 

@@ -1,0 +1,103 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 2560px) {
+
+    .time-line-slider {
+        text-align: center;
+        font-size: 18px;
+        background: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .time-line-slider {
+        border-radius: 15px;
+        overflow: hidden;
+        align-items: flex-start;
+    }
+
+    .slide-smal a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .slide-smal a h2 {
+        padding-left: 15px;
+        text-align: left;
+        font-size: 26px;
+        margin: 5px 0;
+    }
+
+    .slide-smal a img {
+        width: 100%;
+        align-items: end;
+    }
+
+    .tags-hesteg {
+        margin: 15px 0 5px 0;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .slide-pic-down {
+        margin-top: 25px;
+    }
+
+    .slide-pic-up {
+        margin-bottom: 25px;
+    }
+
+    .slide-big a {
+        display: flex;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .slide-big a img {
+        width: 50%;
+    }
+
+    .slide-big-info h2 {
+        width: 95%;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    .slide-big-info .tags-hesteg {
+        margin-top: 60%;
+
+    }
+}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

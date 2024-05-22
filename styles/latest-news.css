@@ -1,0 +1,105 @@
+@media screen and (max-width: 2560px) {
+
+    .our-latest-news-headline h2 {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .news-slider {
+        display: block;
+        width: 300px !important;
+    }
+
+    .news-slider a {
+        height: 500px;
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .news-slider a img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .news-name {
+        position: relative;
+        top: 15px;
+    }
+
+    .news-slider:hover a span {
+        text-decoration: underline;
+    }
+
+    /* CSS для центрирования первого слайда при загрузке */
+    .news-slider:nth-child(2n) {
+        margin-top: 30px;
+    }
+
+
+    #swiper2 {
+        height: 500px;
+    }
+
+    .news-slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .news-slider::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        /* Увеличиваем ширину и высоту на 200%, чтобы маска полностью покрывала элемент */
+        height: 200%;
+        background-image: url('../media/latest-news/news-ico/twist-mask.svg');
+        background-repeat: no-repeat;
+        background-size: 165px 150px;
+        transition: top 0.5s, left 0.5s;
+        /* Анимируем свойства top и left */
+    }
+
+    .news-slider:hover::before {
+        top: -5%;
+        left: -5.398%;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

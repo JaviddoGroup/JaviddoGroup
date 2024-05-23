@@ -4,6 +4,9 @@ var swiper2 = new Swiper('#swiper2', {
     slidesPerView: 'auto',
     spaceBetween: 45,
     loop: false,
-    autoplay: false,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     centeredSlides: false, // Отключаем центрирование слайдов
 });

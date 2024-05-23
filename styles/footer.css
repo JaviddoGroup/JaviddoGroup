@@ -50,7 +50,7 @@
     }
 
     .second-footer-section a {
-        display: block;
+        display: flex;
         height: 30px;
         align-items: center;
         text-decoration: none;
@@ -80,7 +80,29 @@
         text-decoration: none;
         color: black;
         font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
     }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
 
 @media screen and (max-width: 2000px) {}

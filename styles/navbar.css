@@ -178,6 +178,7 @@ body {
         padding: 0 1%;
         height: 80px;
         border-bottom: 2px solid #d6d6d6;
+        background: white;
     }
 
     .menu-name {
@@ -259,7 +260,7 @@ body {
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 60vh;
+        height: 70vh;
         padding-top: 40px;
     }
 
@@ -401,7 +402,7 @@ body {
 
     .under-navbar-first.line-active {
         height: 9px;
-        transform: translateY(65vh);
+        transform: translateY(74.5vh);
 
         /* Высота для первой линии */
     }
@@ -409,21 +410,21 @@ body {
     .under-navbar-second.line-active {
         height: 7px;
         /* Высота для второй линии */
-        transform: translateY(60.3vh);
+        transform: translateY(70vh);
         /* Смещение для второй линии */
     }
 
     .under-navbar-third.line-active {
         height: 5px;
         /* Высота для третьей линии */
-        transform: translateY(56.5vh);
+        transform: translateY(66.3vh);
         /* Смещение для третьей линии */
     }
 
     .under-navbar-fourth.line-active {
         height: 3px;
         /* Высота для четвертой линии */
-        transform: translateY(53.5vh);
+        transform: translateY(63.5vh);
         /* Смещение для четвертой линии */
     }
 
@@ -555,6 +556,23 @@ body {
 
     .last-solution {
         margin-top: 30px;
+    }
+
+    .close-navbar-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 35%;
+    }
+
+    .close-navbar-menu span {
+        font-size: 20px;
+    }
+
+    .close-navbar-menu img {
+        width: 20px;
+        margin-left: 15px;
     }
 
     /* Стили для навигационного меню Выше */

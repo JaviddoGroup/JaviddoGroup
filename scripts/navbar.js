@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var menus = document.querySelectorAll('.menu');
     var subMenus = document.querySelectorAll('.sub-menu');
     var solutions = document.querySelectorAll('.solutions');
+    var closeButtons = document.querySelectorAll('.close-navbar-menu'); // Получаем все элементы с классом close-navbar-menu
     var activeSubMenu = null; // Переменная для хранения активного подменю
 
     menuNames.forEach(function (menuName, index) {
@@ -39,21 +40,34 @@ document.addEventListener("DOMContentLoaded", function () {
     // Закрытие меню при клике вне области меню
     document.addEventListener('click', function (event) {
         if (!event.target.closest('.menu')) {
-            menuNames.forEach(function (mn) {
-                mn.classList.remove('active-menu-name');
-            });
-            menus.forEach(function (menu) {
-                menu.querySelector('.menu-deactive').classList.remove('menu-active');
-                menu.querySelectorAll('.under-navbar-first, .under-navbar-second, .under-navbar-third, .under-navbar-fourth')
-                    .forEach(function (line) {
-                        line.classList.remove('line-active');
-                    });
-            });
-            solutions.forEach(function (solution) {
-                solution.style.display = 'none';
-            });
+            closeAllMenus();
         }
     });
+
+    // Закрытие меню при клике на close-navbar-menu
+    closeButtons.forEach(function (closeButton) {
+        closeButton.addEventListener('click', function (event) {
+            closeAllMenus();
+            event.stopPropagation();
+        });
+    });
+
+    // Функция для закрытия всех меню
+    function closeAllMenus() {
+        menuNames.forEach(function (mn) {
+            mn.classList.remove('active-menu-name');
+        });
+        menus.forEach(function (menu) {
+            menu.querySelector('.menu-deactive').classList.remove('menu-active');
+            menu.querySelectorAll('.under-navbar-first, .under-navbar-second, .under-navbar-third, .under-navbar-fourth')
+                .forEach(function (line) {
+                    line.classList.remove('line-active');
+                });
+        });
+        solutions.forEach(function (solution) {
+            solution.style.display = 'none';
+        });
+    }
 
     // Функция для анимации подменю-линий с задержкой
     function animateLines(lines) {

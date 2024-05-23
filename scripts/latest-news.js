@@ -1,7 +1,7 @@
 // JavaScript для второго слайдера
 var swiper2 = new Swiper('#swiper2', {
     // Настройки для второго слайдера
-    slidesPerView: 4.5,
+    slidesPerView: 'auto',
     spaceBetween: 45,
     loop: false,
     autoplay: false,

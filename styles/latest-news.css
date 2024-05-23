@@ -8,7 +8,12 @@
 
     .news-slider {
         display: block;
-        width: 300px !important;
+        width: 300px;
+    }
+
+    .empty-news-slyder {
+        display: block;
+        width: 300px;
     }
 
     .news-slider a {
@@ -45,6 +50,7 @@
     .news-slider {
         position: relative;
         overflow: hidden;
+        cursor: pointer;
     }
 
     .news-slider::before {
@@ -58,13 +64,13 @@
         background-image: url('../media/latest-news/news-ico/twist-mask.svg');
         background-repeat: no-repeat;
         background-size: 165px 150px;
-        transition: top 0.5s, left 0.5s;
+        transition: top 0.3s, left 0.3s;
         /* Анимируем свойства top и left */
     }
 
     .news-slider:hover::before {
-        top: -5%;
-        left: -6.5%;
+        top: -4.9%;
+        left: -5.6%;
     }
 
 

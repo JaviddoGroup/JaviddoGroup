@@ -1,0 +1,112 @@
+@media screen and (max-width: 2560px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        display: block;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

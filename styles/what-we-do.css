@@ -4,6 +4,7 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
+        margin-top: 60px;
     }
 
     .do-list {
@@ -36,6 +37,7 @@
     }
 
     .do-list-object p {
+        font-size: 20px;
         margin: 5px 0;
         font-weight: 400;
     }

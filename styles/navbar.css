@@ -6057,6 +6057,7 @@
     }
 
     .name-lang-short {
+        margin-left: 0;
         font-size: 14px;
         color: #ad9991;
     }
@@ -6480,8 +6481,15 @@
 
 @media screen and (max-width: 600px) {
 
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
     /* Стили для навбара на телефоне снизу */
-    /* Стили для навбара на телефоне снизу */
+
     .nav-bar-mobile {
         width: 100%;
         display: flex;
@@ -6522,7 +6530,7 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0 15px;
+        padding: 0;
         left: 100%;
         top: 0;
         width: 100%;
@@ -6559,16 +6567,50 @@
     .mobile-main-menu-nav a,
     .mobile-sub-menu a,
     .mobile-last-sub-menu a {
-        width: 95%;
+        width: 100%;
         display: flex;
         font-size: 18px;
         text-decoration: none;
         color: black;
         align-items: center;
         justify-content: space-between;
-        height: 50px;
+        height: 60px;
         cursor: pointer;
+        margin: auto;
     }
+
+    .mobile-sub-menu h3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu .mobile-sub-menu h3 img {
+        margin-left: 15px;
+    }
+
+    .sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu h2 {
+        font-size: 16px;
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        margin-left: 15px;
+    }
+
+    .mobile-last-sub-menu h2 img {
+        height: 16px;
+    }
+
+    .last-sub-menu-name {
+        padding-left: 3.5%;
+    }
+
 
     .mobile-main-menu-nav a img,
     .mobile-sub-menu a img,
@@ -6581,17 +6623,47 @@
     }
 
     .back-and-close-button {
-        padding-right: 21px;
+        /* padding: 55px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 95%
+        width: 100%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+    .back-button-mobile {
+        margin-left: 20px;
+    }
+
+    .back-button-mobile h2 {
+        font-size: 16px;
+    }
+
+    .back-button-mobile h2 img {
+        height: 16px;
+    }
+
+    .close-button-mobile {
+        margin-right: 20px;
     }
 
     .back-and-close-button img {
-        height: 22px;
+        height: 16px;
     }
 
+    .main-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        padding-right: 3.5%;
+    }
+
+    .mobile-nav-line {
+        margin-top: 15px;
+        border-bottom: 1px solid #d6d6d6;
+    }
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
@@ -6705,11 +6777,14 @@
     .lang {
         margin: 15px 5px;
         width: 100%;
-        height: 60px;
+        height: 40px;
         border: 1px solid #312c2a;
         padding: 5px 0 0 15px;
         cursor: pointer;
+        display: flex;
     }
+
+
 
     .lang:hover {
         background-color: black;
@@ -6776,6 +6851,7 @@
     }
 
     .name-lang-short {
+        margin-left: 15px !important;
         font-size: 14px;
         color: #ad9991;
     }
@@ -7197,8 +7273,1572 @@
     }
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+    .nav-bar-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+        border-bottom: 1px solid #d6d6d6;
+    }
 
-@media screen and (max-width: 400px) {}
+    .nav-center-mob {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        margin-bottom: 15px;
+    }
+
+    .mobile-logo {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mobile-logo img {
+        width: 80%;
+    }
+
+    .mobile-menu-ico {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu-ico img {
+        width: 15%;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav,
+    .mobile-sub-menu,
+    .mobile-last-sub-menu {
+        position: fixed;
+        padding: 0;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        height: 100vh;
+        z-index: 2;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+    }
+
+    .mobile-main-menu-nav h2,
+    .mobile-sub-menu h2,
+    .mobile-last-sub-menu h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobile-main-menu-nav h2 img,
+    .mobile-sub-menu h2 img,
+    .mobile-last-sub-menu h2 img {
+        height: 22px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav a,
+    .mobile-sub-menu a,
+    .mobile-last-sub-menu a {
+        width: 100%;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .mobile-sub-menu h3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu .mobile-sub-menu h3 img {
+        margin-left: 15px;
+    }
+
+    .sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu h2 {
+        font-size: 16px;
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        margin-left: 15px;
+    }
+
+    .mobile-last-sub-menu h2 img {
+        height: 16px;
+    }
+
+    .last-sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+
+    .mobile-main-menu-nav a img,
+    .mobile-sub-menu a img,
+    .mobile-last-sub-menu a img {
+        height: 18px;
+    }
+
+    html.no-scroll {
+        overflow: hidden;
+    }
+
+    .back-and-close-button {
+        /* padding: 55px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+    .back-button-mobile {
+        margin-left: 20px;
+    }
+
+    .back-button-mobile h2 {
+        font-size: 16px;
+    }
+
+    .back-button-mobile h2 img {
+        height: 16px;
+    }
+
+    .close-button-mobile {
+        margin-right: 20px;
+    }
+
+    .back-and-close-button img {
+        height: 16px;
+    }
+
+    .main-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        padding-right: 3.5%;
+    }
+
+    .mobile-nav-line {
+        margin-top: 15px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    /* Стили для навбара на телефоне сверху */
+    /* Стили для навигационного меню Выше */
+    .layout-nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+
+
+    .selected-lang {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .lang-point {
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .now-long {
+        font-size: 16px;
+    }
+
+    .now-sort {
+        font-size: 16px;
+    }
+
+    .headline-close-button {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3%;
+        position: relative;
+        transition: all 0.5s ease;
+
+    }
+
+    .headline-close-button h2 {
+        color: white;
+        font-size: 18px;
+    }
+
+    .selected-lang-close-ic {
+        cursor: pointer;
+        width: 16px;
+        margin-left: 3%;
+    }
+
+    .selection-lang {
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .opened-lang-selected {
+        max-height: 95vh;
+        height: 100vh;
+        /* Высота, которая достаточно для полного раскрытия */
+    }
+
+    .lang-now {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .lang-icon {
+        margin: 0 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .lang-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    .chouse-lang {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .langs-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0%;
+        height: 95vh;
+        overflow-y: scroll;
+    }
+
+    .lang {
+        margin: 15px 5px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #312c2a;
+        padding: 5px 0 0 15px;
+        cursor: pointer;
+        display: flex;
+    }
+
+
+
+    .lang:hover {
+        background-color: black;
+        transition: 1s;
+    }
+
+    .lang:hover .name-lang-long {
+        color: white;
+    }
+
+    .lang:hover .name-lang-short {
+        color: #ad9991;
+    }
+
+    .lang:last-child {
+        margin-bottom: 25%;
+    }
+
+    /* объязательно изменяй для каждой страны отдельно */
+    .english-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .china-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .russian-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .arabian-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .azer-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
+    .lang p {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+
+    .name-lang-long {
+        font-size: 14px;
+        color: white;
+    }
+
+    .name-lang-short {
+        margin-left: 15px !important;
+        font-size: 14px;
+        color: #ad9991;
+    }
+
+    /* Стили для смены языка выше---------------------------------- */
+    /* Стили для навигационного меню ниже */
+    .navigation-bar {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1%;
+        height: 60px;
+        border-bottom: 2px solid #d6d6d6;
+        background: white;
+    }
+
+    .menu-name {
+        width: 120px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+        align-items: center;
+        display: grid;
+    }
+
+    .active-menu-name {
+        background-color: #f5f5f5ad;
+        border-bottom: 3px solid #f5f5f5ad;
+    }
+
+    .active-menu-name .down-arrow-ico {
+        position: relative;
+        top: -15px;
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    .menu-name:hover {
+        background-color: #f0efed;
+        transition: 0.5s;
+    }
+
+    .menu-name:hover .down-arrow-ico {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .menu-name p {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .down-arrow-ico {
+        opacity: 0;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        height: 25px;
+        position: relative;
+        top: -5px;
+        transition: 0.5s;
+    }
+
+    .menu-name img {
+        width: 15px;
+    }
+
+    .logotype {
+        height: 40px;
+    }
+
+    .menus {
+        display: flex;
+    }
+
+    /* Обновленный стиль для menu-deactive */
+    .menu-deactive {
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: height 0.5s ease, padding-top 0.5s ease;
+        backdrop-filter: blur(84px);
+
+    }
+
+    /* Стиль для активного меню */
+    .menu-active {
+        height: 63vh;
+        padding-top: 40px;
+    }
+
+    /* Добавлен для плавного перехода и отображения контента */
+    .menu-deactive .more-menus {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .menu-active .more-menus {
+        opacity: 1;
+    }
+
+    .more-menus {
+        width: 100%;
+        margin: 0 0%;
+    }
+
+    .left-pages div a {
+        font-size: 10px;
+        text-decoration: none;
+        color: black;
+        height: 50px;
+    }
+
+    .left-sub-headline-menu {
+        width: 100%;
+    }
+
+    .menu-headline {
+        padding-left: 15px;
+        font-size: 12px;
+        display: flex;
+        /* margin-bottom: 30px; */
+        padding-bottom: 30px;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .menu-headline img {
+        height: 10px;
+        margin-left: 15px;
+    }
+
+    .left-sub-menu {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sub-menu {
+        font-size: 18px;
+        width: 336px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .sub-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu-activated {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu img {
+        height: 10px;
+    }
+
+    .left-pages {
+        width: 37%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-sub-menu {
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-menus {
+        height: 55vh;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+
+
+    /* Основные стили для подменю-линией */
+    .under-navbar-first,
+    .under-navbar-second,
+    .under-navbar-third,
+    .under-navbar-fourth {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-color: #fc6e27;
+        opacity: 0;
+        height: 0;
+        transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Высоты для подменю-линией */
+    .under-navbar-first {
+        top: 100%;
+    }
+
+    .under-navbar-second {
+        top: calc(100% + 60px);
+        /* Позиционирование под .under-navbar-first */
+    }
+
+    .under-navbar-third {
+        top: calc(100% + 110px);
+        /* Позиционирование под .under-navbar-second */
+    }
+
+    .under-navbar-fourth {
+        top: calc(100% + 150px);
+        /* Позиционирование под .under-navbar-third */
+    }
+
+    /* Активные классы с высотой и прозрачностью */
+    .line-active {
+        opacity: 1;
+    }
+
+    .under-navbar-first.line-active {
+        height: 9px;
+        transform: translateY(70.5vh);
+
+        /* Высота для первой линии */
+    }
+
+    .under-navbar-second.line-active {
+        height: 7px;
+        /* Высота для второй линии */
+        transform: translateY(62.5vh);
+        /* Смещение для второй линии */
+    }
+
+    .under-navbar-third.line-active {
+        height: 5px;
+        /* Высота для третьей линии */
+        transform: translateY(56.3vh);
+        /* Смещение для третьей линии */
+    }
+
+    .under-navbar-fourth.line-active {
+        height: 3px;
+        /* Высота для четвертой линии */
+        transform: translateY(51.5vh);
+        /* Смещение для четвертой линии */
+    }
+
+
+    .sub-menu-deactivate {
+        position: absolute;
+        left: 37%;
+        height: 72.5%;
+        top: 40px;
+        display: none;
+        width: 33%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .sub-menu-have-activated {
+        display: block;
+    }
+
+    .right-sub-headline-menu {
+        width: 100%;
+    }
+
+    .right-sub-menu {
+        width: calc(100% - 16px);
+        /* Учтите ширину границы справа */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 0;
+        /* border-right: 1px solid #d6d6d6; */
+    }
+
+    .subs-menu {
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        /* Добавьте отступы слева и справа */
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+        width: calc(100% - 30px);
+        /* Учтите отступы слева и справа */
+    }
+
+
+    .subs-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+
+    /* Добавляем новую анимацию для появления solutions сверху вниз */
+    @keyframes slideIn {
+        from {
+            transform: translateY(-10%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    /* Применяем анимацию к solutions */
+    .solutions {
+        left: 72%;
+        position: absolute;
+        top: 125%;
+        animation: slideIn 1s forwards;
+        /* Применяем анимацию slideIn с продолжительностью 0.5 секунды */
+        display: none;
+        /* Начально скрываем solutions */
+    }
+
+
+    .solution {
+        width: 280px;
+        height: 150px;
+    }
+
+    .solution:hover span {
+        font-size: 10px;
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover p {
+        font-size: 12px;
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover img {
+        width: 155px;
+        height: 87px;
+        transition: 0.5s;
+    }
+
+    .solution a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .solution span {
+        font-size: 10px;
+        margin: 5px 0;
+        color: black;
+
+    }
+
+    .solution p {
+        font-size: 12px;
+        margin: 5px 0;
+        color: black;
+
+
+    }
+
+    .solution img {
+        width: 150px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    .last-solution {
+        margin-top: 10px;
+    }
+
+    .close-navbar-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3%;
+    }
+
+    .close-navbar-menu span {
+        font-size: 14px;
+    }
+
+    .close-navbar-menu img {
+        width: 14px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-bar-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .nav-center-mob {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        margin-bottom: 15px;
+    }
+
+    .mobile-logo {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mobile-logo img {
+        width: 80%;
+    }
+
+    .mobile-menu-ico {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu-ico img {
+        width: 15%;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav,
+    .mobile-sub-menu,
+    .mobile-last-sub-menu {
+        position: fixed;
+        padding: 0;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        height: 100vh;
+        z-index: 2;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+    }
+
+    .mobile-main-menu-nav h2,
+    .mobile-sub-menu h2,
+    .mobile-last-sub-menu h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobile-main-menu-nav h2 img,
+    .mobile-sub-menu h2 img,
+    .mobile-last-sub-menu h2 img {
+        height: 22px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav a,
+    .mobile-sub-menu a,
+    .mobile-last-sub-menu a {
+        width: 100%;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .mobile-sub-menu h3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu .mobile-sub-menu h3 img {
+        margin-left: 15px;
+    }
+
+    .sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu h2 {
+        font-size: 16px;
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        margin-left: 15px;
+    }
+
+    .mobile-last-sub-menu h2 img {
+        height: 16px;
+    }
+
+    .last-sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+
+    .mobile-main-menu-nav a img,
+    .mobile-sub-menu a img,
+    .mobile-last-sub-menu a img {
+        height: 18px;
+    }
+
+    html.no-scroll {
+        overflow: hidden;
+    }
+
+    .back-and-close-button {
+        /* padding: 55px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+    .back-button-mobile {
+        margin-left: 20px;
+    }
+
+    .back-button-mobile h2 {
+        font-size: 16px;
+    }
+
+    .back-button-mobile h2 img {
+        height: 16px;
+    }
+
+    .close-button-mobile {
+        margin-right: 20px;
+    }
+
+    .back-and-close-button img {
+        height: 16px;
+    }
+
+    .main-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        padding-right: 3.5%;
+    }
+
+    .mobile-nav-line {
+        margin-top: 15px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    /* Стили для навбара на телефоне сверху */
+    /* Стили для навигационного меню Выше */
+    .layout-nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+
+
+    .selected-lang {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .lang-point {
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .now-long {
+        font-size: 16px;
+    }
+
+    .now-sort {
+        font-size: 16px;
+    }
+
+    .headline-close-button {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3%;
+        position: relative;
+        transition: all 0.5s ease;
+
+    }
+
+    .headline-close-button h2 {
+        color: white;
+        font-size: 18px;
+    }
+
+    .selected-lang-close-ic {
+        cursor: pointer;
+        width: 16px;
+        margin-left: 3%;
+    }
+
+    .selection-lang {
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .opened-lang-selected {
+        max-height: 95vh;
+        height: 100vh;
+        /* Высота, которая достаточно для полного раскрытия */
+    }
+
+    .lang-now {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .lang-icon {
+        margin: 0 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .lang-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    .chouse-lang {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .langs-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0%;
+        height: 95vh;
+        overflow-y: scroll;
+    }
+
+    .lang {
+        margin: 15px 5px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #312c2a;
+        padding: 5px 0 0 15px;
+        cursor: pointer;
+        display: flex;
+    }
+
+
+
+    .lang:hover {
+        background-color: black;
+        transition: 1s;
+    }
+
+    .lang:hover .name-lang-long {
+        color: white;
+    }
+
+    .lang:hover .name-lang-short {
+        color: #ad9991;
+    }
+
+    .lang:last-child {
+        margin-bottom: 25%;
+    }
+
+    /* объязательно изменяй для каждой страны отдельно */
+    .english-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .china-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .russian-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .arabian-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .azer-lang:hover {
+        background-image: none;
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
+    .lang p {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+
+    .name-lang-long {
+        font-size: 14px;
+        color: white;
+    }
+
+    .name-lang-short {
+        margin-left: 15px !important;
+        font-size: 14px;
+        color: #ad9991;
+    }
+
+    /* Стили для смены языка выше---------------------------------- */
+    /* Стили для навигационного меню ниже */
+    .navigation-bar {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1%;
+        height: 60px;
+        border-bottom: 2px solid #d6d6d6;
+        background: white;
+    }
+
+    .menu-name {
+        width: 120px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+        align-items: center;
+        display: grid;
+    }
+
+    .active-menu-name {
+        background-color: #f5f5f5ad;
+        border-bottom: 3px solid #f5f5f5ad;
+    }
+
+    .active-menu-name .down-arrow-ico {
+        position: relative;
+        top: -15px;
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    .menu-name:hover {
+        background-color: #f0efed;
+        transition: 0.5s;
+    }
+
+    .menu-name:hover .down-arrow-ico {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .menu-name p {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .down-arrow-ico {
+        opacity: 0;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        height: 25px;
+        position: relative;
+        top: -5px;
+        transition: 0.5s;
+    }
+
+    .menu-name img {
+        width: 15px;
+    }
+
+    .logotype {
+        height: 40px;
+    }
+
+    .menus {
+        display: flex;
+    }
+
+    /* Обновленный стиль для menu-deactive */
+    .menu-deactive {
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: height 0.5s ease, padding-top 0.5s ease;
+        backdrop-filter: blur(84px);
+
+    }
+
+    /* Стиль для активного меню */
+    .menu-active {
+        height: 63vh;
+        padding-top: 40px;
+    }
+
+    /* Добавлен для плавного перехода и отображения контента */
+    .menu-deactive .more-menus {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .menu-active .more-menus {
+        opacity: 1;
+    }
+
+    .more-menus {
+        width: 100%;
+        margin: 0 0%;
+    }
+
+    .left-pages div a {
+        font-size: 10px;
+        text-decoration: none;
+        color: black;
+        height: 50px;
+    }
+
+    .left-sub-headline-menu {
+        width: 100%;
+    }
+
+    .menu-headline {
+        padding-left: 15px;
+        font-size: 12px;
+        display: flex;
+        /* margin-bottom: 30px; */
+        padding-bottom: 30px;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .menu-headline img {
+        height: 10px;
+        margin-left: 15px;
+    }
+
+    .left-sub-menu {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sub-menu {
+        font-size: 18px;
+        width: 336px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .sub-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu-activated {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu img {
+        height: 10px;
+    }
+
+    .left-pages {
+        width: 37%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-sub-menu {
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-menus {
+        height: 55vh;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+
+
+    /* Основные стили для подменю-линией */
+    .under-navbar-first,
+    .under-navbar-second,
+    .under-navbar-third,
+    .under-navbar-fourth {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-color: #fc6e27;
+        opacity: 0;
+        height: 0;
+        transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Высоты для подменю-линией */
+    .under-navbar-first {
+        top: 100%;
+    }
+
+    .under-navbar-second {
+        top: calc(100% + 60px);
+        /* Позиционирование под .under-navbar-first */
+    }
+
+    .under-navbar-third {
+        top: calc(100% + 110px);
+        /* Позиционирование под .under-navbar-second */
+    }
+
+    .under-navbar-fourth {
+        top: calc(100% + 150px);
+        /* Позиционирование под .under-navbar-third */
+    }
+
+    /* Активные классы с высотой и прозрачностью */
+    .line-active {
+        opacity: 1;
+    }
+
+    .under-navbar-first.line-active {
+        height: 9px;
+        transform: translateY(70.5vh);
+
+        /* Высота для первой линии */
+    }
+
+    .under-navbar-second.line-active {
+        height: 7px;
+        /* Высота для второй линии */
+        transform: translateY(62.5vh);
+        /* Смещение для второй линии */
+    }
+
+    .under-navbar-third.line-active {
+        height: 5px;
+        /* Высота для третьей линии */
+        transform: translateY(56.3vh);
+        /* Смещение для третьей линии */
+    }
+
+    .under-navbar-fourth.line-active {
+        height: 3px;
+        /* Высота для четвертой линии */
+        transform: translateY(51.5vh);
+        /* Смещение для четвертой линии */
+    }
+
+
+    .sub-menu-deactivate {
+        position: absolute;
+        left: 37%;
+        height: 72.5%;
+        top: 40px;
+        display: none;
+        width: 33%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .sub-menu-have-activated {
+        display: block;
+    }
+
+    .right-sub-headline-menu {
+        width: 100%;
+    }
+
+    .right-sub-menu {
+        width: calc(100% - 16px);
+        /* Учтите ширину границы справа */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 0;
+        /* border-right: 1px solid #d6d6d6; */
+    }
+
+    .subs-menu {
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        /* Добавьте отступы слева и справа */
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+        width: calc(100% - 30px);
+        /* Учтите отступы слева и справа */
+    }
+
+
+    .subs-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+
+    /* Добавляем новую анимацию для появления solutions сверху вниз */
+    @keyframes slideIn {
+        from {
+            transform: translateY(-10%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    /* Применяем анимацию к solutions */
+    .solutions {
+        left: 72%;
+        position: absolute;
+        top: 125%;
+        animation: slideIn 1s forwards;
+        /* Применяем анимацию slideIn с продолжительностью 0.5 секунды */
+        display: none;
+        /* Начально скрываем solutions */
+    }
+
+
+    .solution {
+        width: 280px;
+        height: 150px;
+    }
+
+    .solution:hover span {
+        font-size: 10px;
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover p {
+        font-size: 12px;
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover img {
+        width: 155px;
+        height: 87px;
+        transition: 0.5s;
+    }
+
+    .solution a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .solution span {
+        font-size: 10px;
+        margin: 5px 0;
+        color: black;
+
+    }
+
+    .solution p {
+        font-size: 12px;
+        margin: 5px 0;
+        color: black;
+
+
+    }
+
+    .solution img {
+        width: 150px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    .last-solution {
+        margin-top: 10px;
+    }
+
+    .close-navbar-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3%;
+    }
+
+    .close-navbar-menu span {
+        font-size: 14px;
+    }
+
+    .close-navbar-menu img {
+        width: 14px;
+        margin-left: 15px;
+    }
+}
 
 @media screen and (max-width: 360px) {}

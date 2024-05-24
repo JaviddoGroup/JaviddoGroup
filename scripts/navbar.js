@@ -104,14 +104,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var mobileMenuIcon = document.querySelector('.mobile-menu-ico-img');
     var mobileMainMenu = document.querySelector('.mobile-main-menu-nav');
     var mobileSubMenus = document.querySelectorAll('.mobile-sub-menu');
     var mobileLastSubMenus = document.querySelectorAll('.mobile-last-sub-menu');
     var backButtons = document.querySelectorAll('.back-and-close-button h2');
-    var closeMenuIcon = document.querySelector('.mobile-close-menu-icon');
+    var closeMenuIcons = document.querySelectorAll('.mobile-close-menu-icon');
+
+    var menuStack = []; // Стек меню
 
     mobileMenuIcon.addEventListener('click', function () {
         mobileMainMenu.classList.add('active');
@@ -122,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
         subMenu.previousElementSibling.addEventListener('click', function (event) {
             event.preventDefault();
             subMenu.classList.add('active');
+            menuStack.push(subMenu); // Добавить подменю в стек
         });
     });
 
@@ -129,25 +131,42 @@ document.addEventListener("DOMContentLoaded", function () {
         lastSubMenu.previousElementSibling.addEventListener('click', function (event) {
             event.preventDefault();
             lastSubMenu.classList.add('active');
+            menuStack.push(lastSubMenu); // Добавить подменю в стек
         });
     });
 
+    // Обработка клика на кнопку "Back" и "Close"
     backButtons.forEach(function (backButton) {
         backButton.addEventListener('click', function () {
-            var parentMenu = backButton.closest('.mobile-sub-menu');
-            parentMenu.classList.remove('active');
+            var parentMenu = backButton.closest('.mobile-sub-menu, .mobile-last-sub-menu');
+            if (parentMenu) {
+                parentMenu.classList.remove('active');
+                menuStack.pop(); // Удаляем текущее меню из стека
+                if (menuStack.length > 0) {
+                    var previousMenu = menuStack[menuStack.length - 1]; // Получить предыдущее меню из стека
+                    previousMenu.classList.add('active'); // Показать предыдущее меню
+                }
+            } else {
+                // Возврат на главное меню
+                mobileMainMenu.classList.remove('active');
+                document.documentElement.classList.remove('no-scroll');
+            }
         });
     });
 
-    closeMenuIcon.addEventListener('click', function () {
-        mobileMainMenu.classList.remove('active');
-        mobileSubMenus.forEach(function (subMenu) {
-            subMenu.classList.remove('active');
+    closeMenuIcons.forEach(function (closeMenuIcon) {
+        closeMenuIcon.addEventListener('click', function () {
+            mobileMainMenu.classList.remove('active');
+            mobileSubMenus.forEach(function (subMenu) {
+                subMenu.classList.remove('active');
+            });
+            mobileLastSubMenus.forEach(function (lastSubMenu) {
+                lastSubMenu.classList.remove('active');
+            });
+            menuStack = []; // Очистить стек меню
+            document.documentElement.classList.remove('no-scroll');
         });
-        mobileLastSubMenus.forEach(function (lastSubMenu) {
-            lastSubMenu.classList.remove('active');
-        });
-        document.documentElement.classList.remove('no-scroll');
     });
 });
+
 

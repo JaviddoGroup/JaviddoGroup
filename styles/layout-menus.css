@@ -1,154 +1,339 @@
 body {
     margin: 0;
+    width: 35% !important;
+    overflow-x: hidden;
 }
 
-.selected-lang {
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    display: flex;
-    color: white;
-    justify-content: end;
-    align-items: center;
+@media screen and (max-width: 2560px) {
+    .selected-lang {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .lang-point {
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .headline-close-button {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .headline-close-button h2 {
+        color: white;
+    }
+
+    .selected-lang-close-ic {
+        cursor: pointer;
+        width: 20px;
+    }
+
+    .selection-lang {
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .opened-lang-selected {
+        max-height: 500px;
+        /* Высота, которая достаточно для полного раскрытия */
+    }
+
+    .lang-now {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .lang-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    .chouse-lang {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .langs-section {
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .lang {
+        margin: 15px -15px;
+        width: 170px;
+        height: 60px;
+        border: 1px solid #312c2a;
+        padding: 15px 0 0 15px;
+        cursor: pointer;
+    }
+
+    .lang:hover {
+        background-color: #fff;
+        transition: 1s;
+    }
+
+    .lang:hover p {
+        color: transparent;
+    }
+
+    /* объязательно изменяй для каждой страны отдельно */
+    .english-lang:hover {
+        background-image: url("../media/layout-menus/uk.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .china-lang:hover {
+        background-image: url("../media/layout-menus/cn.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .russian-lang:hover {
+        background-image: url("../media/layout-menus/rs.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .arabian-lang:hover {
+        background-image: url("../media/layout-menus/ar.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .azer-lang:hover {
+        background-image: url("../media/layout-menus/az.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
+    .lang p {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+
+    .name-lang-long {
+        color: white;
+    }
+
+    .name-lang-short {
+        color: #ad9991;
+    }
+
 }
 
-.lang-point {
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    border-radius: 100%;
-    margin: 0 10px;
+@media screen and (max-width: 2000px) {
+    .selected-lang {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .lang-point {
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+    }
+
+    .headline-close-button {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .headline-close-button h2 {
+        color: white;
+    }
+
+    .selected-lang-close-ic {
+        cursor: pointer;
+        width: 20px;
+    }
+
+    .selection-lang {
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .opened-lang-selected {
+        max-height: 500px;
+        /* Высота, которая достаточно для полного раскрытия */
+    }
+
+    .lang-now {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .lang-icon {
+        width: 15px;
+        margin: 0 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .lang-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    .chouse-lang {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .langs-section {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .lang {
+        margin: 15px 20px;
+        width: 170px;
+        height: 60px;
+        border: 1px solid #312c2a;
+        padding: 15px 0 0 15px;
+        cursor: pointer;
+    }
+
+    .lang:hover {
+        background-color: #fff;
+        transition: 1s;
+    }
+
+    .lang:hover p {
+        color: transparent;
+    }
+
+    /* объязательно изменяй для каждой страны отдельно */
+    .english-lang:hover {
+        background-image: url("../media/layout-menus/uk.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .china-lang:hover {
+        background-image: url("../media/layout-menus/cn.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .russian-lang:hover {
+        background-image: url("../media/layout-menus/rs.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .arabian-lang:hover {
+        background-image: url("../media/layout-menus/ar.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .azer-lang:hover {
+        background-image: url("../media/layout-menus/az.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
+    .lang p {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+
+    .name-lang-long {
+        color: white;
+    }
+
+    .name-lang-short {
+        color: #ad9991;
+    }
+
 }
 
-.lang-icon {
-    width: 15px;
-    margin: 0 10px;
-}
+@media screen and (max-width: 1800px) {}
 
-.headline-close-button {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    transition: all 0.5s ease;
-}
+@media screen and (max-width: 1600px) {}
 
-.headline-close-button h2 {
-    color: white;
-}
+@media screen and (max-width: 1500px) {}
 
-.selected-lang-close-ic {
-    cursor: pointer;
-    width: 20px;
-}
+@media screen and (max-width: 1400px) {}
 
-.selection-lang {
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease;
-}
+@media screen and (max-width: 1380px) {}
 
-.opened-lang-selected {
-    max-height: 500px;
-    /* Высота, которая достаточно для полного раскрытия */
-}
+@media screen and (max-width: 1300px) {}
 
-.lang-now {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
+@media screen and (max-width: 1200px) {}
 
-.lang-icon {
-    width: 15px;
-    margin: 0 10px;
-    transition: transform 0.5s ease;
-}
+@media screen and (max-width: 1000px) {}
 
-.lang-icon.rotated {
-    transform: rotate(180deg);
-}
+@media screen and (max-width: 800px) {}
 
-.chouse-lang {
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
+@media screen and (max-width: 600px) {}
 
-.langs-section {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0;
-}
+@media screen and (max-width: 500px) {}
 
-.lang {
-    margin: 15px 20px;
-    width: 170px;
-    height: 60px;
-    border: 1px solid #312c2a;
-    padding: 15px 0 0 15px;
-    cursor: pointer;
-}
+@media screen and (max-width: 400px) {}
 
-.lang:hover {
-    background-color: #fff;
-    transition: 1s;
-}
-
-.lang:hover p {
-    color: transparent;
-}
-
-/* объязательно изменяй для каждой страны отдельно */
-.english-lang:hover {
-    background-image: url("../media/layout-menus/uk.png");
-    background-repeat: round;
-    background-size: 187px 93px;
-    transition: 1s;
-}
-
-.china-lang:hover {
-    background-image: url("../media/layout-menus/cn.png");
-    background-repeat: round;
-    background-size: 187px 93px;
-    transition: 1s;
-}
-
-.russian-lang:hover {
-    background-image: url("../media/layout-menus/rs.png");
-    background-repeat: round;
-    background-size: 187px 93px;
-    transition: 1s;
-}
-
-.arabian-lang:hover {
-    background-image: url("../media/layout-menus/ar.png");
-    background-repeat: round;
-    background-size: 187px 93px;
-    transition: 1s;
-}
-
-.azer-lang:hover {
-    background-image: url("../media/layout-menus/az.png");
-    background-repeat: round;
-    background-size: 187px 93px;
-    transition: 1s;
-}
-
-
-.lang p {
-    font-weight: bold;
-    margin: 5px 0 0 0;
-}
-
-.name-lang-long {
-    color: white;
-}
-
-.name-lang-short {
-    color: #ad9991;
-}
+@media screen and (max-width: 360px) {}

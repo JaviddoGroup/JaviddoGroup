@@ -100,3 +100,54 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var mobileMenuIcon = document.querySelector('.mobile-menu-ico-img');
+    var mobileMainMenu = document.querySelector('.mobile-main-menu-nav');
+    var mobileSubMenus = document.querySelectorAll('.mobile-sub-menu');
+    var mobileLastSubMenus = document.querySelectorAll('.mobile-last-sub-menu');
+    var backButtons = document.querySelectorAll('.back-and-close-button h2');
+    var closeMenuIcon = document.querySelector('.mobile-close-menu-icon');
+
+    mobileMenuIcon.addEventListener('click', function () {
+        mobileMainMenu.classList.add('active');
+        document.documentElement.classList.add('no-scroll');
+    });
+
+    mobileSubMenus.forEach(function (subMenu) {
+        subMenu.previousElementSibling.addEventListener('click', function (event) {
+            event.preventDefault();
+            subMenu.classList.add('active');
+        });
+    });
+
+    mobileLastSubMenus.forEach(function (lastSubMenu) {
+        lastSubMenu.previousElementSibling.addEventListener('click', function (event) {
+            event.preventDefault();
+            lastSubMenu.classList.add('active');
+        });
+    });
+
+    backButtons.forEach(function (backButton) {
+        backButton.addEventListener('click', function () {
+            var parentMenu = backButton.closest('.mobile-sub-menu');
+            parentMenu.classList.remove('active');
+        });
+    });
+
+    closeMenuIcon.addEventListener('click', function () {
+        mobileMainMenu.classList.remove('active');
+        mobileSubMenus.forEach(function (subMenu) {
+            subMenu.classList.remove('active');
+        });
+        mobileLastSubMenus.forEach(function (lastSubMenu) {
+            lastSubMenu.classList.remove('active');
+        });
+        document.documentElement.classList.remove('no-scroll');
+    });
+});
+

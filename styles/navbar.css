@@ -2,6 +2,16 @@
     .nav-bar-mobile {
         display: none;
     }
+
+    .time-line {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .learn-about-our-latest-news {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 

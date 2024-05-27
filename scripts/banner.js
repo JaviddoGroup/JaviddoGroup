@@ -18,3 +18,41 @@ document.addEventListener("DOMContentLoaded", function () {
     // По умолчанию делаем второй элемент активным
     banners[1].classList.add('active-banner');
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('#swiper3', {
+        speed: 1000,
+        parallax: true,
+        autoplay: {
+            delay: 5000,
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                var slides = document.querySelectorAll('.swiper-slide');
+                slides.forEach(slide => {
+                    var background = slide.getAttribute('data-background');
+                    slide.style.backgroundImage = `url(${background})`;
+                });
+            }
+        }
+    });
+
+    // Initialize the background images
+    var slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach(slide => {
+        var background = slide.getAttribute('data-background');
+        slide.style.backgroundImage = `url(${background})`;
+    });
+});
+

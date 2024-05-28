@@ -1992,8 +1992,278 @@
     }
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+    .banners {
+        display: none;
+    }
 
-@media screen and (max-width: 400px) {}
+    .banner-slider-mobile {
+        display: block;
+    }
 
-@media screen and (max-width: 360px) {}
+    #swiper3 {
+        width: 100%;
+        height: 60%;
+        overflow-x: hidden;
+    }
+
+    .swiper-container.mobile-banner-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .swiper-wrapper.mobile-banner-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide.mobile-banner-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .swiper-slide.mobile-banner-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-banner-content {
+        color: white;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        background-image: url(../media/main-banner/banner-background-img.jpg);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 220px;
+    }
+
+    .mobile-banner-content h2 {
+        font-size: 2.5em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-content p {
+        font-size: 0.7em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    .swiper-pagination.mobile-banner-pagination {
+        bottom: 1.5%;
+        text-align: center;
+    }
+
+    .swiper-button-next.mobile-banner-button-next,
+    .swiper-button-prev.mobile-banner-button-prev {
+        color: white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #FC6E27;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banners {
+        display: none;
+    }
+
+    .banner-slider-mobile {
+        display: block;
+    }
+
+    #swiper3 {
+        width: 100%;
+        height: 60%;
+        overflow-x: hidden;
+    }
+
+    .swiper-container.mobile-banner-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .swiper-wrapper.mobile-banner-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide.mobile-banner-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .swiper-slide.mobile-banner-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-banner-content {
+        color: white;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        background-image: url(../media/main-banner/banner-background-img.jpg);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 220px;
+    }
+
+    .mobile-banner-content h2 {
+        font-size: 2.5em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-content p {
+        font-size: 0.7em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    .swiper-pagination.mobile-banner-pagination {
+        bottom: 1.5%;
+        text-align: center;
+    }
+
+    .swiper-button-next.mobile-banner-button-next,
+    .swiper-button-prev.mobile-banner-button-prev {
+        color: white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #FC6E27;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banners {
+        display: none;
+    }
+
+    .banner-slider-mobile {
+        display: block;
+    }
+
+    #swiper3 {
+        width: 100%;
+        height: 60%;
+        overflow-x: hidden;
+    }
+
+    .swiper-container.mobile-banner-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .swiper-wrapper.mobile-banner-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide.mobile-banner-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .swiper-slide.mobile-banner-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-banner-content {
+        color: white;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        background-image: url(../media/main-banner/banner-background-img.jpg);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 220px;
+    }
+
+    .mobile-banner-content h2 {
+        font-size: 2.5em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-content p {
+        font-size: 0.7em;
+        margin: 0.5em 0;
+    }
+
+    .mobile-banner-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    .swiper-pagination.mobile-banner-pagination {
+        bottom: 0.5%;
+        text-align: center;
+    }
+
+    .swiper-button-next.mobile-banner-button-next,
+    .swiper-button-prev.mobile-banner-button-prev {
+        color: white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #FC6E27;
+    }
+}

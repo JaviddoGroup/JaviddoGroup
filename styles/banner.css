@@ -1995,6 +1995,11 @@
     .swiper-pagination-bullet-active {
         background-color: #FC6E27;
     }
+
+    .third-section {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {

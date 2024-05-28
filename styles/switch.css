@@ -141,7 +141,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 600px;
+        height: 578px;
 
         justify-content: center;
     }
@@ -166,13 +166,13 @@
         font-size: 25px;
         position: relative;
         bottom: 0;
-        top: 400px;
+        top: 460px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 150px;
+        top: 250px;
         transition: 1s;
 
     }
@@ -273,7 +273,139 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 505px;
+        height: 540px;
+
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 25px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 22px;
+        position: relative;
+        bottom: 0;
+        top: 400px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 200px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 225px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 525px;
 
         justify-content: center;
     }
@@ -404,7 +536,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 450px;
+        height: 475px;
 
         justify-content: center;
     }
@@ -535,7 +667,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 404px;
+        height: 450px;
 
         justify-content: center;
     }
@@ -797,7 +929,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 381px;
+        height: 404px;
         justify-content: center;
     }
 
@@ -927,7 +1059,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 358px;
+        height: 381px;
         justify-content: center;
     }
 
@@ -1057,7 +1189,7 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 322px;
+        height: 360px;
         justify-content: center;
     }
 

@@ -23,3 +23,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var headlines = document.querySelectorAll('.mobile-headline');
+
+    headlines.forEach(function (headline) {
+        headline.addEventListener('click', function () {
+            var info = this.nextElementSibling;
+
+            if (info.classList.contains('open')) {
+                info.classList.remove('open');
+                this.classList.remove('mobile-headline-active');
+            } else {
+                var allInfos = document.querySelectorAll('.mobile-invisible-info');
+                var allHeadlines = document.querySelectorAll('.mobile-headline');
+
+                allInfos.forEach(function (item) {
+                    item.classList.remove('open');
+                });
+
+                allHeadlines.forEach(function (item) {
+                    item.classList.remove('mobile-headline-active');
+                });
+
+                info.classList.add('open');
+                this.classList.add('mobile-headline-active');
+            }
+        });
+    });
+});

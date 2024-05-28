@@ -1,10 +1,142 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    width: 100%;
-    overflow-x: hidden;
+@media screen and (max-width: 6060px) {
+    .switch-banner-mobile {
+        display: none;
+    }
 }
 
+
+
 @media screen and (max-width: 2560px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 722px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 25px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 30px;
+        position: relative;
+        bottom: 0;
+        top: 550px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 250px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 24px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 650px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 300px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+        height: 60px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 0;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 25px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
     .switch-banner {
         display: flex;
         width: 100%;
@@ -34,13 +166,13 @@ body {
         font-size: 25px;
         position: relative;
         bottom: 0;
-        top: 450px;
+        top: 400px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 250px;
+        top: 150px;
         transition: 1s;
 
     }
@@ -59,7 +191,7 @@ body {
     }
 
     .box:hover .invisible {
-        top: 300px;
+        top: 250px;
         transition: 1s;
     }
 
@@ -131,158 +263,1268 @@ body {
         justify-content: center;
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 1800px) {
 
-@media screen and (max-width: 1800px) {}
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 505px;
 
-@media screen and (max-width: 1600px) {}
+        justify-content: center;
+    }
 
-@media screen and (max-width: 1500px) {}
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
 
-@media screen and (max-width: 1400px) {}
+    .box {
+        cursor: pointer;
+        padding: 25px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
 
-@media screen and (max-width: 1380px) {}
+    .visible h3 {
+        font-size: 22px;
+        position: relative;
+        bottom: 0;
+        top: 400px;
+        transition: 1s;
+        color: white;
+    }
 
-@media screen and (max-width: 1300px) {}
+    .box:hover .visible h3 {
+        top: 200px;
+        transition: 1s;
 
-@media screen and (max-width: 1200px) {}
+    }
 
-@media screen and (max-width: 1000px) {}
+    .invisible p {
+        color: white;
 
-@media screen and (max-width: 800px) {}
+        font-size: 16px;
+    }
 
-@media screen and (max-width: 600px) {}
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 225px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 450px;
+
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 25px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 20px;
+        position: relative;
+        bottom: 0;
+        top: 350px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 200px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 200px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        height: 40px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 15px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 404px;
+
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 15px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 20px;
+        position: relative;
+        bottom: 0;
+        top: 320px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 150px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 150px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 35px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 392px;
+
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 20px;
+        position: relative;
+        bottom: 0;
+        top: 320px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 150px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 150px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 35px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 381px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 18px;
+        position: relative;
+        bottom: 0;
+        top: 320px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 150px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 150px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 35px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 358px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 18px;
+        position: relative;
+        bottom: 0;
+        top: 280px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 100px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 16px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 119px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 35px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        width: 14px;
+        position: relative;
+        right: 20px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 322px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 40%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 18px;
+        position: relative;
+        bottom: 0;
+        top: 250px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 100px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 14px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 119px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 30px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        height: 14px;
+        position: relative;
+        right: 25px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 280px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 80%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+        top: 220px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 80px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 14px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 80px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 30px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        height: 10px;
+        position: relative;
+        right: 20px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .switch-banner {
+        display: flex;
+        width: 100%;
+        margin-top: 110px;
+        height: 223px;
+        justify-content: center;
+    }
+
+    .empty {
+        width: 10%;
+        border: 1px solid white;
+    }
+
+    .box {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid white;
+        width: 80%;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .visible h3 {
+        font-size: 12px;
+        position: relative;
+        bottom: 0;
+        top: 170px;
+        transition: 1s;
+        color: white;
+    }
+
+    .box:hover .visible h3 {
+        top: 50px;
+        transition: 1s;
+
+    }
+
+    .invisible p {
+        color: white;
+
+        font-size: 10px;
+    }
+
+    .invisible {
+        position: relative;
+        top: 500px;
+        transition: 1s;
+
+    }
+
+    .box:hover .invisible {
+        top: 65px;
+        transition: 1s;
+    }
+
+    .background-image img {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .background-image.default img {
+        opacity: 1;
+    }
+
+    .box-inactive {
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .box-active img {
+        transition: 0.5s;
+        opacity: 1;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        height: 30px;
+        border: 1px solid white;
+        align-items: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .button:hover p {
+        color: black;
+        transition: 0.5s;
+    }
+
+    .button:hover img {
+        filter: invert(1);
+        position: relative;
+        right: 5px;
+        transition: 0.5s;
+
+    }
+
+    .button img {
+        height: 8px;
+        position: relative;
+        right: 10px;
+        transition: 0.5s;
+
+    }
+
+    .button p {
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .switch-banner {
+        display: none;
+    }
+
+    .switch-banner-mobile {
+        display: block;
+    }
+
+    .switch-banner-mobile-what-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .switch-banner-mobile-what {
+        position: relative;
+        margin: 15px auto;
+        width: 80%;
+        height: 120px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+        animation: randomScale infinite ease-in-out;
+    }
+
+    .switch-banner-mobile-what:nth-child(1) {
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    .switch-banner-mobile-what:nth-child(2) {
+        animation-duration: 4s;
+        animation-delay: 1s;
+    }
+
+    .switch-banner-mobile-what:nth-child(3) {
+        animation-duration: 2.5s;
+        animation-delay: 0.5s;
+    }
+
+    .switch-banner-mobile-what:nth-child(4) {
+        animation-duration: 3.5s;
+        animation-delay: 1.5s;
+    }
+
+    .switch-banner-mobile-what img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .switch-banner-mobile-what-text {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        color: white;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 0 15px 0 0;
+    }
+
+    @keyframes randomScale {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+
+}
 
 @media screen and (max-width: 500px) {}
 
 @media screen and (max-width: 400px) {}
 
 @media screen and (max-width: 360px) {}
-
-.switch-banner {
-    display: flex;
-    width: 100%;
-    margin-top: 110px;
-    height: 600px;
-
-    justify-content: center;
-}
-
-.box {
-    cursor: pointer;
-    padding: 25px;
-    border: 1px solid white;
-    width: 20%;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
-}
-
-.visible h3 {
-    font-size: 25px;
-    position: relative;
-    bottom: 0;
-    top: 450px;
-    transition: 1s;
-    color: white;
-}
-
-.box:hover .visible h3 {
-    top: 250px;
-    transition: 1s;
-
-}
-
-.invisible p {
-    color: white;
-
-    font-size: 18px;
-}
-
-.invisible {
-    position: relative;
-    top: 500px;
-    transition: 1s;
-
-}
-
-.box:hover .invisible {
-    top: 300px;
-    transition: 1s;
-}
-
-.background-image img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.background-image.default img {
-    opacity: 1;
-}
-
-.box-inactive {
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
-.box-active img {
-    transition: 0.5s;
-    opacity: 1;
-
-}
-
-.button {
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
-    height: 40px;
-    border: 1px solid white;
-    align-items: center;
-    padding: 0 5px;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: white;
-    transition: 0.5s;
-}
-
-.button:hover p {
-    color: black;
-    transition: 0.5s;
-}
-
-.button:hover img {
-    filter: invert(1);
-    position: relative;
-    right: 0;
-    transition: 0.5s;
-
-}
-
-.button img {
-    width: 25px;
-    position: relative;
-    right: 25px;
-    transition: 0.5s;
-
-}
-
-.button p {
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}

@@ -11,3 +11,5 @@ boxes.forEach((box, index) => {
         boxActiveImages[index].classList.add('box-active');
     });
 });
+
+

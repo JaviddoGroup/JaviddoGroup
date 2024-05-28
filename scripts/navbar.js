@@ -190,6 +190,12 @@ document.addEventListener("DOMContentLoaded", () => {
             vibrateDevice(50); // Вибрация на 50 миллисекунд
         });
     });
+    const closeButtonMobile = document.querySelectorAll('.mobile-close-menu-icon');
+    closeButtonMobile.forEach(button => {
+        button.addEventListener('click', () => {
+            vibrateDevice(50); // Вибрация на 50 миллисекунд
+        });
+    });
 });
 
 

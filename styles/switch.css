@@ -1463,7 +1463,7 @@
         height: 120px;
         margin-bottom: 20px;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 8px;
         transition: transform 0.3s ease-in-out;
         animation: randomScale infinite ease-in-out;
     }

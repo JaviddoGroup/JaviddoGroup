@@ -169,6 +169,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Функция вибрации устройства
+    function vibrateDevice(duration) {
+        if ('vibrate' in navigator) {
+            navigator.vibrate(duration);
+        }
+    }
+
+    // Обработчик клика для mobile-menu-ico-img
+    const menuIcon = document.querySelector('.mobile-menu-ico-img');
+    menuIcon.addEventListener('click', () => {
+        vibrateDevice(50); // Вибрация на 50 миллисекунд
+    });
+
+    // Обработчик клика для всех элементов back-button-mobile
+    const backButtons = document.querySelectorAll('.back-button-mobile');
+    backButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            vibrateDevice(50); // Вибрация на 50 миллисекунд
+        });
+    });
+});
 
 
 

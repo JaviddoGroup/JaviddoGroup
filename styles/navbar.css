@@ -18,6 +18,12 @@
         overflow-x: hidden;
 
     }
+
+    .layout-nav {
+        z-index: 15 !important;
+    }
+
+
 }
 
 
@@ -6552,7 +6558,7 @@
         width: 100%;
         background-color: white;
         height: 100vh;
-        z-index: 2;
+        z-index: 20;
         transition: left 0.3s ease;
         overflow-y: auto;
         overflow-x: hidden;

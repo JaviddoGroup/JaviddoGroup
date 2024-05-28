@@ -23,6 +23,13 @@
         z-index: 15 !important;
     }
 
+    .mobile-main-menu-nav,
+    .mobile-sub-menu,
+    .mobile-last-sub-menu {
+
+        z-index: 20 !important;
+    }
+
 
 }
 

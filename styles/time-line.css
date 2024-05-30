@@ -4,6 +4,16 @@ body {
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 6060px) {
+    .time-line-empty-slide {
+        background-color: #fff !important;
+    }
+
+    .time-line-mobile {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 2560px) {
 
     .time-line-slider {
@@ -94,7 +104,44 @@ body {
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .time-line {
+        display: none;
+    }
+
+    .time-line-mobile {
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .time-line-slider-mobile {
+        width: 45%;
+        background-color: #f8f8f8;
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .time-line-slider-mobile a {
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .time-line-mobile-text {
+        padding: 10px;
+    }
+
+    .time-line-slider-mobile a .time-line-mobile-text h2,
+    span {
+        color: #000;
+        font-size: 18px;
+    }
+
+    .slide-pic-down-mobile {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 500px) {}
 

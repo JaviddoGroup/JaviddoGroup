@@ -80,3 +80,22 @@ function startSwiper() {
     swiper.autoplay.start(); // Возобновление автопрокрутки
     timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
 }
+
+
+
+
+var swiper = new Swiper('#time-line-mobile', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: false,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    speed: 20000,
+    effect: 'slide',
+    grabCursor: true,
+    centeredSlides: false,
+    slidesOffsetBefore: 0,
+});
+

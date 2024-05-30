@@ -155,6 +155,7 @@
 
     .fourth-section {
         margin: 25px 0;
+        align-items: center;
         display: flex;
         padding-left: 170px;
         padding-right: 170px;
@@ -1874,6 +1875,7 @@
     }
 
     .fourth-section {
+        align-items: center;
         margin: 25px 0;
         display: flex;
         padding-left: 170px;
@@ -1999,6 +2001,16 @@
     .third-section {
         text-align: center;
         padding: 0;
+    }
+
+    .fourth-section {
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .fourth-section img {
+        margin-left: 15px;
     }
 }
 

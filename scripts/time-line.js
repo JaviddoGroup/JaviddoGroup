@@ -87,15 +87,16 @@ function startSwiper() {
 var swiper = new Swiper('#time-line-mobile', {
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: false,
+    loop: true,
     autoplay: {
-        delay: 0,
+        delay: 1000,
         disableOnInteraction: false,
     },
-    speed: 2000,
+    speed: 1000, // Устанавливаем скорость перехода в 1 секунду
     effect: 'slide',
     grabCursor: true,
     centeredSlides: false,
     slidesOffsetBefore: 0,
 });
+
 

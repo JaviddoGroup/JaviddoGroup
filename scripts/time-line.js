@@ -89,7 +89,7 @@ var swiper = new Swiper('#time-line-mobile', {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-        delay: 1000,
+        delay: 0,
         disableOnInteraction: false,
     },
     speed: 1000, // Устанавливаем скорость перехода в 1 секунду
@@ -97,6 +97,7 @@ var swiper = new Swiper('#time-line-mobile', {
     grabCursor: true,
     centeredSlides: false,
     slidesOffsetBefore: 0,
+    followFinger: true // Добавляем параметр для плавного свайпа при перемещении пальца
 });
 
 

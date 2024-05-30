@@ -92,7 +92,7 @@ var swiper = new Swiper('#time-line-mobile', {
         delay: 0,
         disableOnInteraction: false,
     },
-    speed: 20000,
+    speed: 2000,
     effect: 'slide',
     grabCursor: true,
     centeredSlides: false,

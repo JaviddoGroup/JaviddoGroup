@@ -8,7 +8,7 @@
         /* top: 50%; */
         /* left: 0; */
         width: 100%;
-        transform: translateY(-10%);
+        transform: translateY(-16%);
         overflow: hidden;
         display: flex;
         align-items: end;
@@ -16,10 +16,10 @@
 
     .scrolling-text {
         white-space: nowrap;
-        animation: scrollText 15s linear infinite;
+        animation: scrollText 12s linear infinite;
         font-size: 28px;
-        font-weight: 500;
-        color: black;
+        font-weight: 400;
+        color: #000;
     }
 
     @keyframes scrollText {

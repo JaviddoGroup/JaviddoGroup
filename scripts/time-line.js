@@ -84,7 +84,7 @@ function startSwiper() {
 
 
 
-var swiper = new Swiper('#time-line-mobile', {
+var swiper_mobile = new Swiper('#time-line-mobile', {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,

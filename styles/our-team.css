@@ -1,8 +1,114 @@
+@media screen and (max-width: 6060px) {}
+
+
+
 @media screen and (max-width: 2560px) {
     .our-team-and-careers {
         background-image: url(../media/our-team/team.png);
         background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 820px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
         background-repeat: round;
+        font-size: 36px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 12%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 620px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 30px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
         width: 100%;
         height: 620px;
         text-align: center;
@@ -49,30 +155,618 @@
     }
 }
 
-@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 1600px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 520px;
+        text-align: center;
+        margin-top: 45px;
+    }
 
-@media screen and (max-width: 1800px) {}
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 26px;
+    }
 
-@media screen and (max-width: 1600px) {}
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
 
-@media screen and (max-width: 1500px) {}
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
 
-@media screen and (max-width: 1400px) {}
+    }
 
-@media screen and (max-width: 1380px) {}
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
 
-@media screen and (max-width: 1300px) {}
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1500px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 520px;
+        text-align: center;
+        margin-top: 45px;
+    }
 
-@media screen and (max-width: 1000px) {}
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 26px;
+    }
 
-@media screen and (max-width: 800px) {}
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
 
-@media screen and (max-width: 600px) {}
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
 
-@media screen and (max-width: 500px) {}
+    }
 
-@media screen and (max-width: 400px) {}
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
 
-@media screen and (max-width: 360px) {}
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 520px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 26px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 435px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 26px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 60px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 420px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 22px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 370px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 22px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 15%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 18px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 20%;
+        height: 40px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 235px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 100%;
+        margin: auto;
+        background-image: url(../media/our-team/text-backdround.png);
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 14px;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 25%;
+        height: 30px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 235px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 90%;
+        margin: auto;
+        background-image: none;
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 20px;
+        padding-top: 5%;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 40%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 235px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 90%;
+        margin: auto;
+        background-image: none;
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 18px;
+        padding-top: 10%;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 40%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 235px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 90%;
+        margin: auto;
+        background-image: none;
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 16px;
+        padding-top: 10%;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 40%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .our-team-and-careers {
+        background-image: url(../media/our-team/team-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 235px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .our-team-and-careers h2 {
+        width: 90%;
+        margin: auto;
+        background-image: none;
+        background-size: 1920px 200px;
+        background-repeat: round;
+        font-size: 16px;
+        padding-top: 10%;
+    }
+
+    .our-team-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .our-team-buttons a {
+        text-decoration: none;
+        width: 40%;
+        height: 50px;
+        background-color: #fc6e27;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+
+    }
+
+    .our-team-buttons a:hover {
+        background-color: white;
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .our-team-buttons-last {
+        margin-left: 15px;
+    }
+}

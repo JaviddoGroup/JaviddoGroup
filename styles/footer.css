@@ -1,3 +1,14 @@
+@media screen and (max-width: 6060px) {
+    .footer {
+        display: block;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 2560px) {
     .footer {
         margin-top: 25px;
@@ -18,6 +29,7 @@
     }
 
     .first-footer-section a {
+        width: fit-content;
         text-decoration: none;
         color: black;
         display: flex;
@@ -50,6 +62,7 @@
     }
 
     .second-footer-section a {
+        width: fit-content;
         display: flex;
         height: 30px;
         align-items: center;
@@ -105,30 +118,1557 @@
 
 }
 
-@media screen and (max-width: 2000px) {}
+@media screen and (max-width: 2000px) {
+    .footer {
+        margin-top: 25px;
+    }
 
-@media screen and (max-width: 1800px) {}
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
 
-@media screen and (max-width: 1600px) {}
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
 
-@media screen and (max-width: 1500px) {}
+    .footer-section {
+        width: 22%;
+    }
 
-@media screen and (max-width: 1400px) {}
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
 
-@media screen and (max-width: 1380px) {}
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
 
-@media screen and (max-width: 1300px) {}
+    .empty-section {
+        width: 4%;
+    }
 
-@media screen and (max-width: 1200px) {}
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
 
-@media screen and (max-width: 1000px) {}
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
 
-@media screen and (max-width: 800px) {}
+    .second-footer-section {
+        display: block;
+    }
 
-@media screen and (max-width: 600px) {}
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
 
-@media screen and (max-width: 500px) {}
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
 
-@media screen and (max-width: 400px) {}
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
 
-@media screen and (max-width: 360px) {}
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+        font-size: 20px;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+        font-size: 18px;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-center {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-mobile-company-info {
+        width: 100%;
+        border-bottom: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .footer-mobile-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-logo img {
+        width: 90%;
+    }
+
+    .footer-mobile-company-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-company-description-centred {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .footer-mobile-company-description-centred a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a:hover {
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a img {
+        height: 13px;
+        margin-right: 15px;
+    }
+
+    .footer-mobile-headline {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #e2e3e4;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-headline div img {
+        height: 10px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-invicible {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .footer-mobile-visible {
+        max-height: 500px;
+        transition: 1s;
+        /* Достаточно большое значение для открытия всего контента */
+    }
+
+    .footer-mobile-headline-active {
+        border-bottom: none;
+        transition: 0.5s;
+        /* Или другой стиль, чтобы выделить активный элемент */
+    }
+
+    .footer-mobile-headline-active div img {
+        rotate: 180deg;
+        transition: 0.5s;
+    }
+
+
+    .footer-mobile-invicible a {
+        text-decoration: none;
+        color: #000;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: flex-start;
+        text-align: left;
+        border-bottom: 1px solid #e2e3e46b;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-center {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-mobile-company-info {
+        width: 100%;
+        border-bottom: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .footer-mobile-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-logo img {
+        width: 100%;
+    }
+
+    .footer-mobile-company-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-company-description-centred {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-mobile-company-description-centred a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a:hover {
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a img {
+        height: 13px;
+        margin-right: 15px;
+    }
+
+    .footer-mobile-headline {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #e2e3e4;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-headline div img {
+        height: 10px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-invicible {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .footer-mobile-visible {
+        max-height: 500px;
+        transition: 1s;
+        /* Достаточно большое значение для открытия всего контента */
+    }
+
+    .footer-mobile-headline-active {
+        border-bottom: none;
+        transition: 0.5s;
+        /* Или другой стиль, чтобы выделить активный элемент */
+    }
+
+    .footer-mobile-headline-active div img {
+        rotate: 180deg;
+        transition: 0.5s;
+    }
+
+
+    .footer-mobile-invicible a {
+        text-decoration: none;
+        color: #000;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: flex-start;
+        text-align: left;
+        border-bottom: 1px solid #e2e3e46b;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-center {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-mobile-company-info {
+        width: 100%;
+        border-bottom: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .footer-mobile-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-logo img {
+        width: 100%;
+    }
+
+    .footer-mobile-company-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-company-description-centred {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-mobile-company-description-centred a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a:hover {
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a img {
+        height: 13px;
+        margin-right: 15px;
+    }
+
+    .footer-mobile-headline {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #e2e3e4;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-headline div img {
+        height: 10px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-invicible {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .footer-mobile-visible {
+        max-height: 500px;
+        transition: 1s;
+        /* Достаточно большое значение для открытия всего контента */
+    }
+
+    .footer-mobile-headline-active {
+        border-bottom: none;
+        transition: 0.5s;
+        /* Или другой стиль, чтобы выделить активный элемент */
+    }
+
+    .footer-mobile-headline-active div img {
+        rotate: 180deg;
+        transition: 0.5s;
+    }
+
+
+    .footer-mobile-invicible a {
+        text-decoration: none;
+        color: #000;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: flex-start;
+        text-align: left;
+        border-bottom: 1px solid #e2e3e46b;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-center {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-mobile-company-info {
+        width: 100%;
+        border-bottom: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .footer-mobile-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-logo img {
+        width: 100%;
+    }
+
+    .footer-mobile-company-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-company-description-centred {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-mobile-company-description-centred a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a:hover {
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a img {
+        height: 13px;
+        margin-right: 15px;
+    }
+
+    .footer-mobile-headline {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #e2e3e4;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-headline div img {
+        height: 10px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-invicible {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .footer-mobile-visible {
+        max-height: 500px;
+        transition: 1s;
+        /* Достаточно большое значение для открытия всего контента */
+    }
+
+    .footer-mobile-headline-active {
+        border-bottom: none;
+        transition: 0.5s;
+        /* Или другой стиль, чтобы выделить активный элемент */
+    }
+
+    .footer-mobile-headline-active div img {
+        rotate: 180deg;
+        transition: 0.5s;
+    }
+
+
+    .footer-mobile-invicible a {
+        text-decoration: none;
+        color: #000;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: flex-start;
+        text-align: left;
+        border-bottom: 1px solid #e2e3e46b;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-center {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-mobile-company-info {
+        width: 100%;
+        border-bottom: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .footer-mobile-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-logo img {
+        width: 100%;
+    }
+
+    .footer-mobile-company-description {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-mobile-company-description-centred {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-mobile-company-description-centred a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a:hover {
+        color: #fc6e27;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-company-description-centred a img {
+        height: 13px;
+        margin-right: 15px;
+    }
+
+    .footer-mobile-headline {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #e2e3e4;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-headline div img {
+        height: 10px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+
+    .footer-mobile-invicible {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .footer-mobile-visible {
+        max-height: 500px;
+        transition: 1s;
+        /* Достаточно большое значение для открытия всего контента */
+    }
+
+    .footer-mobile-headline-active {
+        border-bottom: none;
+        transition: 0.5s;
+        /* Или другой стиль, чтобы выделить активный элемент */
+    }
+
+    .footer-mobile-headline-active div img {
+        rotate: 180deg;
+        transition: 0.5s;
+    }
+
+
+    .footer-mobile-invicible a {
+        text-decoration: none;
+        color: #000;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        width: 90%;
+        justify-content: flex-start;
+        text-align: left;
+        border-bottom: 1px solid #e2e3e46b;
+    }
+}

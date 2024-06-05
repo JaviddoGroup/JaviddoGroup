@@ -1,9 +1,6 @@
 @media screen and (max-width: 6060px) {
     html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
+
         overflow: hidden;
         /* Отключаем прокрутку */
     }
@@ -17,7 +14,6 @@
 
 
 @media screen and (max-width: 2560px) {
-
 
     #video-overlay {
         position: fixed;
@@ -34,13 +30,13 @@
         /* Отключаем прокрутку внутри видео-оверлея */
     }
 
-    #video-overlay video {
+    #video-overlay img {
         width: 100vw;
-        /* Задаем ширину видео равной ширине окна */
+        /* Задаем ширину GIF равной ширине окна */
         height: 100vh;
-        /* Задаем высоту видео равной высоте окна */
+        /* Задаем высоту GIF равной высоте окна */
         object-fit: cover;
-        /* Видео будет покрывать всю область, сохраняя пропорции */
+        /* GIF будет покрывать всю область, сохраняя пропорции */
     }
 
     #main-content {
@@ -49,6 +45,73 @@
         /* Включаем прокрутку для основного контента */
     }
 
+    /* .animation-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .logo-animation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animation-logo-left {
+        margin-right: 15px;
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slideInLeft 1s forwards;
+        animation-delay: 1s;
+    }
+
+    .unnder-logo-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .upper-logo-text img,
+    .unnder-logo-text img {
+        opacity: 0;
+        transform: translateX(100%);
+        animation: slideInRight 1s forwards;
+    }
+
+    .middle-logo-line {
+        width: 0;
+        height: 10px;
+        background-color: #fc6e27;
+        border-radius: 15px;
+        animation: growWidth 2s forwards;
+        animation-delay: 2s;
+    }
+
+    @keyframes slideInLeft {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes growWidth {
+        to {
+            width: 100%;
+        }
+    } */
 }
 
 @media screen and (max-width: 2000px) {}
@@ -89,13 +152,13 @@
         /* Отключаем прокрутку внутри видео-оверлея */
     }
 
-    #video-overlay video {
+    #video-overlay img {
         width: 100%;
-        /* Задаем ширину видео равной ширине окна */
-        height: 100vh;
-        /* Задаем высоту видео равной высоте окна */
+        /* Задаем ширину GIF равной ширине окна */
+        height: 100%;
+        /* Задаем высоту GIF равной высоте окна */
         object-fit: contain;
-        /* Видео будет покрывать всю область, сохраняя пропорции */
+        /* GIF будет покрывать всю область, сохраняя пропорции */
     }
 
     #main-content {

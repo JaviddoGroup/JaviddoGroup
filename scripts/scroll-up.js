@@ -1,5 +1,5 @@
 // Get the button and progress circle
-let scrollUpBtn = document.getElementById("scroll-ele");
+let scrollUpBtn = document.getElementById("scroll-to-top-ps");
 let progressCircle = document.getElementById("progress-circle");
 
 // Show the button when the user scrolls down 20px from the top of the document

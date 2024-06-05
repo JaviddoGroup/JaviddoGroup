@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/social-media.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/scroll-up.css">
+    <link rel="stylesheet" href="./styles/video-overlay.css">
 </head>
 
 <body>
@@ -1664,15 +1665,18 @@
         </div>
 
     </div>
-
-
     <div class="scroll-up-section" id="scroll-to-top-ps">
         <a id="scroll-up" class="scroll-up" href="#">
             <img src="./media/scroll-up/scroll-up-icons/scroll-up.svg" alt="">
             <div class="progress-circle" id="progress-circle"></div>
         </a>
     </div>
-
+    <div id="video-overlay">
+        <video id="preload-video" width="100%" height="100%" autoplay muted>
+            <source src="./media/video-pre-load.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -1690,6 +1694,7 @@
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/footer.js"></script>
     <script src="./scripts/scroll-up.js"></script>
+    <script src="./scripts/video-overlay.js"></script>
 </body>
 
 </html>

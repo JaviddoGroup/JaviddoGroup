@@ -46,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         videoOverlay.style.display = 'none';
         document.documentElement.classList.add('html-active-scroll'); // Включаем прокрутку
         document.getElementById('main-content').style.display = 'block'; // Показываем основной контент
-    }, 5500); // Время на завершение всех анимаций
+    }, 4480); // Время на завершение всех анимаций
 });
 

@@ -1,3 +1,4 @@
+// Инициализация Swiper для десктопной версии
 var swiper = new Swiper('#swiper1', {
     slidesPerView: 3,
     spaceBetween: 20,
@@ -44,46 +45,7 @@ function updateSlideSizes(swiperInstance) {
     });
 }
 
-var timeLineImg = document.querySelector('.time-line-img');
-var isPlaying = true; // Переменная для отслеживания состояния воспроизведения
-
-timeLineImg.addEventListener('click', function () {
-    if (isPlaying) {
-        stopSwiper();
-    } else {
-        startSwiper();
-    }
-    isPlaying = !isPlaying; // Изменение состояния воспроизведения
-});
-
-swiper.el.addEventListener('mouseenter', function () {
-    if (isPlaying) {
-        stopSwiper();
-        isPlaying = false; // Установка состояния на "остановлено"
-    }
-});
-
-swiper.el.addEventListener('mouseleave', function () {
-    if (!isPlaying) {
-        startSwiper();
-        isPlaying = true; // Установка состояния на "играет"
-    }
-});
-
-function stopSwiper() {
-    swiper.autoplay.stop(); // Остановка автопрокрутки
-    swiper.setTranslate(swiper.getTranslate()); // Остановка текущей анимации
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
-}
-
-function startSwiper() {
-    swiper.autoplay.start(); // Возобновление автопрокрутки
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
-}
-
-
-
-
+// Инициализация Swiper для мобильной версии
 var swiper_mobile = new Swiper('#time-line-mobile', {
     slidesPerView: 2,
     spaceBetween: 20,
@@ -100,4 +62,42 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
     followFinger: true // Добавляем параметр для плавного свайпа при перемещении пальца
 });
 
+var timeLineImg = document.querySelector('.time-line-img');
+var isPlaying = true; // Переменная для отслеживания состояния воспроизведения
 
+timeLineImg.addEventListener('click', function () {
+    if (isPlaying) {
+        stopSwipers();
+    } else {
+        startSwipers();
+    }
+    isPlaying = !isPlaying; // Изменение состояния воспроизведения
+});
+
+swiper.el.addEventListener('mouseenter', function () {
+    if (isPlaying) {
+        stopSwipers();
+        isPlaying = false; // Установка состояния на "остановлено"
+    }
+});
+
+swiper.el.addEventListener('mouseleave', function () {
+    if (!isPlaying) {
+        startSwipers();
+        isPlaying = true; // Установка состояния на "играет"
+    }
+});
+
+function stopSwipers() {
+    swiper.autoplay.stop(); // Остановка автопрокрутки десктопного слайдера
+    swiper.setTranslate(swiper.getTranslate()); // Остановка текущей анимации десктопного слайдера
+    swiper_mobile.autoplay.stop(); // Остановка автопрокрутки мобильного слайдера
+    swiper_mobile.setTranslate(swiper_mobile.getTranslate()); // Остановка текущей анимации мобильного слайдера
+    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
+}
+
+function startSwipers() {
+    swiper.autoplay.start(); // Возобновление автопрокрутки десктопного слайдера
+    swiper_mobile.autoplay.start(); // Возобновление автопрокрутки мобильного слайдера
+    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
+}

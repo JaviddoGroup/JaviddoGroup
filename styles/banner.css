@@ -12,6 +12,10 @@
         width: 100%;
         overflow-x: hidden;
     }
+
+    .main-banner-background-image img {
+        width: 100%;
+    }
 }
 
 

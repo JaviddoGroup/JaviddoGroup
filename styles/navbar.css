@@ -30,6 +30,9 @@
         z-index: 20 !important;
     }
 
+    .main-banner-background-image {
+        display: block;
+    }
 
 }
 
@@ -629,7 +632,7 @@
 
 
 
-
+    /* Логотип анимация */
     .navigation-bar {
         position: relative;
     }
@@ -651,7 +654,7 @@
         }
 
         50% {
-            left: calc(70% - 150px);
+            left: calc(65% - 150px);
         }
 
         100% {
@@ -1253,7 +1256,8 @@
 
 
 
-    /* .navigation-bar {
+    /* Логотип анимация */
+    .navigation-bar {
         position: relative;
     }
 
@@ -1265,7 +1269,6 @@
     }
 
     .menus {
-        position: relative;
         margin-left: auto;
     }
 
@@ -1281,7 +1284,7 @@
         100% {
             left: 15px;
         }
-    } */
+    }
 
 
 }
@@ -1880,8 +1883,12 @@
 
 
 
+    /* Логотип анимация */
+    .navigation-bar {
+        position: relative;
+    }
 
-    /* .company-logo {
+    .company-logo {
         position: absolute;
         top: 50%;
         left: 15px;
@@ -1889,7 +1896,6 @@
     }
 
     .menus {
-        position: relative;
         margin-left: auto;
     }
 
@@ -1905,7 +1911,7 @@
         100% {
             left: 15px;
         }
-    } */
+    }
 
 }
 
@@ -2493,6 +2499,36 @@
     .close-navbar-menu img {
         width: 16px;
         margin-left: 15px;
+    }
+
+    /* Логотип анимация */
+    .navigation-bar {
+        position: relative;
+    }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(68% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
     }
 
 }
@@ -3083,7 +3119,35 @@
         margin-left: 15px;
     }
 
+    /* Логотип анимация */
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(67% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -3672,7 +3736,35 @@
         margin-left: 15px;
     }
 
+    /* Логотип анимация */
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(65% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 
 }
 
@@ -4262,7 +4354,35 @@
         margin-left: 15px;
     }
 
+    /* Логотип анимация */
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(61% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 
 }
 
@@ -4852,7 +4972,34 @@
         margin-left: 15px;
     }
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(60% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 1380px) {
@@ -5445,7 +5592,34 @@
         margin-left: 15px;
     }
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(63% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -6038,7 +6212,34 @@
         margin-left: 15px;
     }
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(60% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -6632,7 +6833,34 @@
         margin-left: 15px;
     }
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(56% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -7227,7 +7455,34 @@
     }
 
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(50% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -7825,7 +8080,34 @@
         margin-left: 15px;
     }
 
+    .navigation-bar {
+        position: relative;
+    }
 
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(37% - 150px);
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -7836,6 +8118,11 @@
         -webkit-touch-callout: none;
         /* iOS Safari */
     }
+
+    .main-banner-background-image {
+        display: none;
+    }
+
 
     /* Стили для навбара на телефоне снизу */
 

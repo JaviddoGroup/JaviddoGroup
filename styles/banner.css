@@ -24,6 +24,9 @@
     }
 
     .banners {
+        background-image: url('../media/main-banner/banner-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 1900px 600px;
         position: relative;
         top: 250px;
         display: flex;

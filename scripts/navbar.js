@@ -202,3 +202,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var companyLogo = document.querySelector('.company-logo');
+    setTimeout(function () {
+        companyLogo.style.animation = 'moveRight 2s ease-in-out'; // Анимация длится 2 секунды
+        setTimeout(function () {
+            companyLogo.style.animation = ''; // Сброс анимации после её завершения
+        }, 3000); // Сброс через 2 секунды
+    }, 4450); // Задержка перед началом анимации
+});
+
+
+
+
+

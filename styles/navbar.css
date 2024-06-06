@@ -626,6 +626,670 @@
         width: 20px;
         margin-left: 15px;
     }
+
+
+
+    .navigation-bar {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(65% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 2160px) {
+    .layout-nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    /* Стили для смены языка ниже---------------------------------- */
+
+
+    .selected-lang {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        display: flex;
+        color: white;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .lang-point {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+
+    .lang-icon {
+        width: 25px;
+        margin: 0 10px;
+    }
+
+    .headline-close-button {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+
+    .headline-close-button h2 {
+        color: white;
+        font-size: 30px;
+    }
+
+    .selected-lang-close-ic {
+        cursor: pointer;
+        width: 30px;
+        margin-left: 3%;
+    }
+
+    .selection-lang {
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+
+    .opened-lang-selected {
+        max-height: 500px;
+        /* Высота, которая достаточно для полного раскрытия */
+    }
+
+    .lang-now {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .now-long {
+        font-size: 25px;
+    }
+
+    .now-sort {
+        font-size: 25px;
+    }
+
+    .lang-icon {
+        margin: 0 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .lang-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    .chouse-lang {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .langs-section {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .lang {
+        margin: 15px -15px;
+        width: 220px;
+        height: 100px;
+        border: 1px solid #312c2a;
+        padding: 15px 0 0 15px;
+        cursor: pointer;
+    }
+
+    .lang:hover {
+        background-color: #fff;
+        transition: 1s;
+    }
+
+    .lang:hover p {
+        color: transparent;
+    }
+
+    /* объязательно изменяй для каждой страны отдельно */
+    .english-lang:hover {
+        background-image: url("../media/laguages/uk.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .china-lang:hover {
+        background-image: url("../media/laguages/cn.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .russian-lang:hover {
+        background-image: url("../media/laguages/rs.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .arabian-lang:hover {
+        background-image: url("../media/laguages/ar.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+    .azer-lang:hover {
+        background-image: url("../media/laguages/az.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
+    .lang p {
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+
+    .name-lang-long {
+        color: white;
+        font-size: 20px;
+    }
+
+    .name-lang-short {
+        color: #ad9991;
+        font-size: 20px;
+
+    }
+
+    /* Стили для смены языка выше---------------------------------- */
+    /* Стили для навигационного меню ниже */
+    .navigation-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1%;
+        height: 100px;
+        border-bottom: 2px solid #d6d6d6;
+        background: white;
+    }
+
+    .menu-name {
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+        transition: 0.5s;
+        align-items: center;
+        display: grid;
+        margin: 0;
+    }
+
+    .active-menu-name {
+        background-color: #f5f5f5ad;
+        border-bottom: 3px solid #f5f5f5ad;
+    }
+
+    .active-menu-name .down-arrow-ico {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+
+    .menu-name:hover {
+        background-color: #f0efed;
+        transition: 0.5s;
+    }
+
+    .menu-name:hover .down-arrow-ico {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .menu-name p {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 55px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .down-arrow-ico {
+        opacity: 0;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        height: 25px;
+        transition: 0.5s;
+    }
+
+    .menu-name img {
+        width: 20px;
+    }
+
+    .logotype {
+        height: 70px;
+    }
+
+    .menus {
+        display: flex;
+    }
+
+    /* Обновленный стиль для menu-deactive */
+    .menu-deactive {
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: height 0.5s ease, padding-top 0.5s ease;
+        backdrop-filter: blur(84px);
+
+    }
+
+    /* Стиль для активного меню */
+    .menu-active {
+        height: 70vh;
+        padding-top: 40px;
+    }
+
+    /* Добавлен для плавного перехода и отображения контента */
+    .menu-deactive .more-menus {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .menu-active .more-menus {
+        opacity: 1;
+    }
+
+    .more-menus {
+        width: 100%;
+        margin: 0 15%;
+    }
+
+    .left-pages div a {
+        font-size: 22px;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 60px;
+    }
+
+    .left-sub-headline-menu {
+        width: 100%;
+    }
+
+    .menu-headline {
+        padding-left: 15px;
+        font-size: 30px;
+        display: flex;
+        /* margin-bottom: 30px; */
+        padding-bottom: 30px;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .menu-headline img {
+        height: 20px;
+        margin-left: 15px;
+    }
+
+    .left-sub-menu {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .sub-menu {
+        font-size: 22px;
+        width: 336px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .sub-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu-activated {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+    .sub-menu img {
+        height: 20px;
+    }
+
+    .left-pages {
+        width: 33%;
+        height: 100%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-sub-menu {
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .left-menus {
+        height: 50vh;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+
+
+    /* Основные стили для подменю-линией */
+    .under-navbar-first,
+    .under-navbar-second,
+    .under-navbar-third,
+    .under-navbar-fourth {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-color: #fc6e27;
+        opacity: 0;
+        height: 0;
+        transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Высоты для подменю-линией */
+    .under-navbar-first {
+        top: 100%;
+    }
+
+    .under-navbar-second {
+        top: calc(100% + 60px);
+        /* Позиционирование под .under-navbar-first */
+    }
+
+    .under-navbar-third {
+        top: calc(100% + 110px);
+        /* Позиционирование под .under-navbar-second */
+    }
+
+    .under-navbar-fourth {
+        top: calc(100% + 150px);
+        /* Позиционирование под .under-navbar-third */
+    }
+
+    /* Активные классы с высотой и прозрачностью */
+    .line-active {
+        opacity: 1;
+    }
+
+    .under-navbar-first.line-active {
+        height: 9px;
+        transform: translateY(73.5vh);
+
+        /* Высота для первой линии */
+    }
+
+    .under-navbar-second.line-active {
+        height: 7px;
+        /* Высота для второй линии */
+        transform: translateY(70.5vh);
+        /* Смещение для второй линии */
+    }
+
+    .under-navbar-third.line-active {
+        height: 5px;
+        /* Высота для третьей линии */
+        transform: translateY(68.3vh);
+        /* Смещение для третьей линии */
+    }
+
+    .under-navbar-fourth.line-active {
+        height: 3px;
+        /* Высота для четвертой линии */
+        transform: translateY(66.5vh);
+        /* Смещение для четвертой линии */
+    }
+
+
+    .sub-menu-deactivate {
+        position: absolute;
+        height: 69%;
+        left: 40%;
+        top: 40px;
+        display: none;
+        width: 25%;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .sub-menu-have-activated {
+        display: block;
+    }
+
+    .right-sub-headline-menu {
+        width: 100%;
+    }
+
+    .right-sub-menu {
+        width: calc(100% - 16px);
+        /* Учтите ширину границы справа */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        /* border-right: 1px solid #d6d6d6; */
+    }
+
+    .subs-menu {
+        font-size: 18px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        /* Добавьте отступы слева и справа */
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 0px 40px;
+        transition: 0.5s;
+        height: 100%;
+        width: calc(100% - 30px);
+        /* Учтите отступы слева и справа */
+    }
+
+
+    .subs-menu:hover {
+        background-image: url('../media/navbar/menus-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 560px;
+        transition: 0.3s;
+    }
+
+
+    /* Добавляем новую анимацию для появления solutions сверху вниз */
+    @keyframes slideIn {
+        from {
+            transform: translateY(-10%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    /* Применяем анимацию к solutions */
+    .solutions {
+        left: 70%;
+        position: absolute;
+        top: 125%;
+        animation: slideIn 1s forwards;
+        /* Применяем анимацию slideIn с продолжительностью 0.5 секунды */
+        display: none;
+        /* Начально скрываем solutions */
+    }
+
+
+    .solution {
+        width: 500px;
+        height: 270px;
+    }
+
+    .solution:hover span {
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover p {
+        transition: 0.5s;
+        color: #fc6e27;
+    }
+
+    .solution:hover img {
+        width: 370px;
+        height: 205px;
+        transition: 0.5s;
+    }
+
+    .solution a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .solution span {
+        font-size: 20px;
+        margin: 5px 0;
+        color: black;
+
+    }
+
+    .solution p {
+        font-size: 25px;
+        margin: 10px 0;
+        color: black;
+
+
+    }
+
+    .solution img {
+        width: 350px;
+        height: 195px;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+
+    .last-solution {
+        margin-top: 60px;
+    }
+
+    .close-navbar-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+    }
+
+    .close-navbar-menu span {
+        font-size: 20px;
+    }
+
+    .close-navbar-menu img {
+        width: 20px;
+        margin-left: 15px;
+    }
+
+
+
+    .navigation-bar {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(57% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 2000px) {
@@ -1219,6 +1883,37 @@
         width: 16px;
         margin-left: 15px;
     }
+
+
+
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(70% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1800px) {
@@ -1806,6 +2501,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(68% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1700px) {
@@ -2393,6 +3116,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(67% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1600px) {
@@ -2980,6 +3731,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(65% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -3567,6 +4346,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(61% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -4154,6 +4961,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(60% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1380px) {
@@ -4745,6 +5580,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(63% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -5336,6 +6199,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(60% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -5928,6 +6819,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(56% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -6520,6 +7439,34 @@
         width: 16px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(50% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -7116,6 +8063,34 @@
         width: 14px;
         margin-left: 15px;
     }
+
+    .company-logo {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .menus {
+        position: relative;
+        margin-left: auto;
+    }
+
+    @keyframes moveRight {
+        0% {
+            left: 15px;
+        }
+
+        50% {
+            left: calc(37% - 150px);
+            /* Регулируйте значение для достижения нужной позиции */
+        }
+
+        100% {
+            left: 15px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -7133,7 +8108,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 8%;
         border-bottom: 1px solid #d6d6d6;
     }
 

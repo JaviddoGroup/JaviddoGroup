@@ -629,9 +629,9 @@
 
 
 
+
     .navigation-bar {
         position: relative;
-        overflow: hidden;
     }
 
     .company-logo {
@@ -642,7 +642,6 @@
     }
 
     .menus {
-        position: relative;
         margin-left: auto;
     }
 
@@ -652,16 +651,13 @@
         }
 
         50% {
-            left: calc(65% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
+            left: calc(70% - 150px);
         }
 
         100% {
             left: 15px;
         }
     }
-
-
 }
 
 @media screen and (max-width: 2160px) {
@@ -1257,9 +1253,8 @@
 
 
 
-    .navigation-bar {
+    /* .navigation-bar {
         position: relative;
-        overflow: hidden;
     }
 
     .company-logo {
@@ -1281,13 +1276,12 @@
 
         50% {
             left: calc(57% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
         }
 
         100% {
             left: 15px;
         }
-    }
+    } */
 
 
 }
@@ -1887,7 +1881,7 @@
 
 
 
-    .company-logo {
+    /* .company-logo {
         position: absolute;
         top: 50%;
         left: 15px;
@@ -1906,13 +1900,12 @@
 
         50% {
             left: calc(70% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
         }
 
         100% {
             left: 15px;
         }
-    }
+    } */
 
 }
 
@@ -2500,33 +2493,6 @@
     .close-navbar-menu img {
         width: 16px;
         margin-left: 15px;
-    }
-
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(68% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
     }
 
 }
@@ -3117,32 +3083,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(67% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -3732,32 +3672,7 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
 
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(65% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -4347,32 +4262,7 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
 
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(61% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -4962,32 +4852,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(60% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -5581,32 +5445,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(63% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -6200,32 +6038,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(60% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -6820,32 +6632,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(56% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -7440,32 +7226,7 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
 
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(50% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 
@@ -8064,32 +7825,6 @@
         margin-left: 15px;
     }
 
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        position: relative;
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(37% - 150px);
-            /* Регулируйте значение для достижения нужной позиции */
-        }
-
-        100% {
-            left: 15px;
-        }
-    }
 
 }
 

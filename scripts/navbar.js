@@ -211,8 +211,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000); // Сброс через 2 секунды
     }, 4450); // Задержка перед началом анимации
 });
-
-
-
-
-

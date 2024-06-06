@@ -6,7 +6,14 @@
     .banner-slider-mobile {
         display: none;
     }
+
+    .main-banner-background-image {
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
+
 
 @media screen and (max-width: 2560px) {
 
@@ -24,7 +31,7 @@
     }
 
     .banners {
-        background-image: url('../media/main-banner/banner-bg.jpg');
+        /* background-image: url('../media/main-banner/banner-bg.jpg'); */
         background-repeat: no-repeat;
         background-size: 1900px 600px;
         position: relative;
@@ -139,7 +146,7 @@
 
     /* баннеры на главном меню выше */
     .second-section {
-        margin-top: 20%;
+        margin-top: 13%;
         padding-left: 170px;
     }
 
@@ -314,7 +321,7 @@
 
     /* баннеры на главном меню выше */
     .second-section {
-        margin-top: 20%;
+        margin-top: 13%;
         padding-left: 170px;
     }
 

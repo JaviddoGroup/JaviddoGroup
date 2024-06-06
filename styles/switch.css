@@ -11,7 +11,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 55.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -36,15 +37,14 @@
 
     .visible h3 {
         font-size: 30px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 45vh;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 350px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -56,14 +56,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 670px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 400px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -144,7 +144,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 65.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -169,15 +170,14 @@
 
     .visible h3 {
         font-size: 25px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 50vh;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 230px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -189,14 +189,15 @@
     }
 
     .invisible {
-        position: relative;
-        top: 670px;
+        position: absolute;
+        bottom: -100%;
+
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 250px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -278,7 +279,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 41vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -303,15 +305,14 @@
 
     .visible h3 {
         font-size: 25px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 32vh;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 230px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -323,14 +324,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 670px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 250px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -411,7 +412,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 41.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -436,15 +438,14 @@
 
     .visible h3 {
         font-size: 25px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 32vh;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 230px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -456,14 +457,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 670px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 250px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -545,7 +546,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 525px;
+        height: auto;
+        aspect-ratio: 16 / 5;
 
         justify-content: center;
     }
@@ -568,15 +570,14 @@
 
     .visible h3 {
         font-size: 22px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 400px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 200px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -588,14 +589,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 225px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -676,7 +677,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 55vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
 
         justify-content: center;
     }
@@ -699,15 +701,14 @@
 
     .visible h3 {
         font-size: 20px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 400px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 250px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -719,14 +720,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 250px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -807,7 +808,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 450px;
+        height: auto;
+        aspect-ratio: 16 / 5;
 
         justify-content: center;
     }
@@ -830,15 +832,14 @@
 
     .visible h3 {
         font-size: 20px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 350px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 200px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -850,14 +851,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 200px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -938,7 +939,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 41.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -960,15 +962,14 @@
 
     .visible h3 {
         font-size: 20px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 350px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 200px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -980,14 +981,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 200px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -1068,7 +1069,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 55vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -1090,15 +1092,14 @@
 
     .visible h3 {
         font-size: 18px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 350px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 200px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -1110,14 +1111,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 200px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -1198,7 +1199,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 38.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -1220,15 +1222,14 @@
 
     .visible h3 {
         font-size: 18px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 320px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 170px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -1240,14 +1241,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 170px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -1328,7 +1329,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 46.5vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -1350,15 +1352,14 @@
 
     .visible h3 {
         font-size: 18px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 290px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 100px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -1370,14 +1371,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 119px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -1458,7 +1459,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 41vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -1480,9 +1482,8 @@
 
     .visible h3 {
         font-size: 16px;
-        position: relative;
+        position: absolute;
         bottom: 0;
-        top: 250px;
         transition: 1s;
         color: white;
     }
@@ -1500,14 +1501,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 110px;
+        bottom: 15px;
         transition: 1s;
     }
 
@@ -1588,7 +1589,8 @@
         display: flex;
         width: 100%;
         margin-top: 110px;
-        height: 41vh;
+        height: auto;
+        aspect-ratio: 16 / 5;
         justify-content: center;
     }
 
@@ -1612,13 +1614,12 @@
         font-size: 12px;
         position: relative;
         bottom: 0;
-        top: 200px;
         transition: 1s;
         color: white;
     }
 
     .box:hover .visible h3 {
-        top: 80px;
+        bottom: 45%;
         transition: 1s;
 
     }
@@ -1630,14 +1631,14 @@
     }
 
     .invisible {
-        position: relative;
-        top: 500px;
+        position: absolute;
+        bottom: -100%;
         transition: 1s;
 
     }
 
     .box:hover .invisible {
-        top: 90px;
+        bottom: 15px;
         transition: 1s;
     }
 

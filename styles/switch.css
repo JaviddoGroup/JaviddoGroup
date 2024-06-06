@@ -1489,7 +1489,7 @@
     }
 
     .box:hover .visible h3 {
-        top: 100px;
+        bottom: 45%;
         transition: 1s;
 
     }

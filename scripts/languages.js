@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadTranslation(language) {
         // Для файла index.html путь остается ./languages/
         // Для файла OurTeams.html путь должен быть ../../languages/
-        var pathToLanguages = window.location.pathname.includes('/Page/OT/') ? '../../languages/' : './languages/';
-        var pathToLanguages = window.location.pathname.includes('/Page/CU/') ? '../../languages/' : './languages/';
+        var pathToLanguages = window.location.pathname.includes('/Page/OT/') ? './../languages/' : './languages/';
+        var pathToLanguages = window.location.pathname.includes('/Page/CU/') ? './../languages/' : './languages/';
 
         fetch(`${pathToLanguages}${language}.json`)
             .then(response => response.json())

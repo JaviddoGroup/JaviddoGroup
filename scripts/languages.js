@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Функция для загрузки перевода из JSON и применения его на странице
-    function loadTranslation(language) {
+    function loadTranslation(language, callback) {
         fetch(`https://javiddogroup.github.io/JaviddoGroup/languages/${language}.json`)
             .then(response => response.json())
             .then(data => {
@@ -23,10 +23,36 @@ document.addEventListener("DOMContentLoaded", function () {
                         element.textContent = data[key];
                     }
                 });
+
+                if (callback) callback(data);
             })
             .catch(error => {
                 console.error('Error loading language file:', error);
             });
+    }
+
+    // Функция для обновления отображения текущего языка
+    function updateCurrentLanguageDisplay(language, translations) {
+        var savedLang = JSON.parse(localStorage.getItem('selectedLang'));
+        if (savedLang) {
+            var longTextKey = savedLang.longText.toLowerCase();
+            var shortTextKey = savedLang.shortText.toLowerCase();
+
+            var longText = translations[longTextKey] || savedLang.longText;
+            var shortText = translations[shortTextKey] || savedLang.shortText;
+
+            document.querySelector('.now-long').textContent = longText;
+            document.querySelector('.now-sort').textContent = shortText;
+
+            // Обновление языковых опций в выпадающем списке
+            langOptions.forEach(function (langOption) {
+                var langLong = langOption.querySelector('.name-lang-long');
+                var langKey = langLong.getAttribute('data-lang');
+                if (translations[langKey]) {
+                    langLong.textContent = translations[langKey];
+                }
+            });
+        }
     }
 
     // Загрузка сохраненного состояния при загрузке страницы
@@ -34,11 +60,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (savedLang) {
         var langData = JSON.parse(savedLang);
         updateLangNow(langData.longText, langData.shortText);
-        loadTranslation(langData.shortText.toLowerCase());
+        loadTranslation(langData.shortText.toLowerCase(), function (translations) {
+            updateCurrentLanguageDisplay(langData.shortText.toLowerCase(), translations);
+        });
     } else {
         // Загрузка дефолтного языка (английского)
         updateLangNow('English', 'US');
-        loadTranslation('en');
+        loadTranslation('en', function (translations) {
+            updateCurrentLanguageDisplay('en', translations);
+        });
     }
 
     langNow.addEventListener('click', function () {
@@ -55,10 +85,16 @@ document.addEventListener("DOMContentLoaded", function () {
     langOptions.forEach(function (langOption) {
         langOption.addEventListener('click', function () {
             var longText = langOption.querySelector('.name-lang-long').textContent;
-            var shortText = langOption.querySelector('.name-lang-short').textContent;
+            var shortText = langOption.querySelector('.name-lang-short').textContent.toUpperCase();
 
-            updateLangNow(longText, shortText);
-            loadTranslation(shortText.toLowerCase());
+            loadTranslation(shortText.toLowerCase(), function (translations) {
+                var longTextKey = langOption.querySelector('.name-lang-long').getAttribute('data-lang');
+                var translatedLongText = translations[longTextKey] || longText;
+
+                updateLangNow(translatedLongText, shortText);
+                updateCurrentLanguageDisplay(shortText.toLowerCase(), translations);
+            });
+
             selectionLang.classList.remove('opened-lang-selected');
             langIcon.classList.remove('rotated');
         });

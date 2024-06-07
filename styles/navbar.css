@@ -34,12 +34,48 @@
         display: block;
     }
 
+    .right-sub-menu {
+        padding: 0 !important;
+    }
+
+    .menu-name {
+        padding: 0 15px;
+    }
 }
 
 
 
 
 @media screen and (max-width: 2560px) {
+    .contact-us-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        transition: 0.5s;
+        padding: 0 5px;
+    }
+
+    .contact-us-link a {
+
+        padding-bottom: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        width: fit-content;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-us-link:hover {
+        background-color: #f0efed;
+        transition: 0.5s;
+
+    }
+
     .layout-nav {
         position: absolute;
         top: 0;
@@ -238,7 +274,7 @@
     }
 
     .menu-name {
-        width: 180px;
+        width: fit-content;
         height: 100px;
         cursor: pointer;
         transition: 0.5s;
@@ -862,7 +898,7 @@
     }
 
     .menu-name {
-        width: 180px;
+        width: fit-content;
         height: 100px;
         cursor: pointer;
         transition: 0.5s;
@@ -1493,7 +1529,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -2113,7 +2149,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -2731,7 +2767,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -3347,7 +3383,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -3965,7 +4001,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -4583,7 +4619,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 80px;
         cursor: pointer;
         transition: 0.5s;
@@ -5199,7 +5235,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -5819,7 +5855,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -6440,7 +6476,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -7061,7 +7097,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -7685,7 +7721,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -8515,7 +8551,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -9300,7 +9336,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -10085,7 +10121,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;
@@ -10870,7 +10906,7 @@
     }
 
     .menu-name {
-        width: 120px;
+        width: fit-content;
         height: 60px;
         cursor: pointer;
         transition: 0.5s;

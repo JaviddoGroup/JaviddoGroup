@@ -14,12 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция для загрузки перевода из JSON и применения его на странице
     function loadTranslation(language) {
-        // Для файла index.html путь остается ./languages/
-        // Для файла OurTeams.html путь должен быть ../../languages/
-        var pathToLanguages = window.location.pathname.includes('/Page/OT/') ? '../languages/' : './languages/';
-        var pathToLanguages = window.location.pathname.includes('/Page/CU/') ? '../languages/' : './languages/';
-
-        fetch(`${pathToLanguages}${language}.json`)
+        fetch(`https://javiddogroup.github.io/JaviddoGroup/languages/${language}.json`)
             .then(response => response.json())
             .then(data => {
                 document.querySelectorAll('[data-lang]').forEach(element => {

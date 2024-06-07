@@ -1,4 +1,10 @@
 {
-    "test-deadline": "ELCHEK DE DAY",
-    "menu-name-end": "Other az"
+    "choose-lang": "Dilinizi seçin:",
+    "chinese": "Çincə",
+    "azerbaijani": "Azərbaycanca",
+    "arabic": "Ərəbcə",
+    "english": "İngiliscə",
+    "russian": "Rusca",
+    "turkey": "Türkcə",
+    "about-us": "",
 }

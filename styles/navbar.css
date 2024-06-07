@@ -200,6 +200,14 @@
         transition: 1s;
     }
 
+    .turkey-lang:hover {
+        background-image: url("../media/laguages/tr.png");
+        background-repeat: round;
+        background-size: 187px 93px;
+        transition: 1s;
+    }
+
+
 
     .lang p {
         font-weight: bold;

@@ -1,4 +1,10 @@
 {
-    "test-deadline": "中文",
-    "menu-name-end": "Other cn"
+    "choose-lang": "选择你的语言:",
+    "chinese": "汉语",
+    "azerbaijani": "阿塞拜疆语",
+    "arabic": "阿拉伯",
+    "english": "英语",
+    "russian": "俄语",
+    "turkey": "土耳其语",
+    "about-us": "",
 }

@@ -1,4 +1,10 @@
 {
-    "test-deadline": "rus dilis",
-    "menu-name-end": "Other rs"
+    "choose-lang": "Выберите ваш язык:",
+    "chinese": "Китайский",
+    "azerbaijani": "Азербайджанский",
+    "arabic": "Арабский",
+    "english": "Английский",
+    "russian": "Русский",
+    "turkey": "Турецкий",
+    "about-us": "",
 }

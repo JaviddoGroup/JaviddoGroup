@@ -1,4 +1,10 @@
 {
-    "test-deadline": "Chose another language",
-    "menu-name-end": "Other en"
+    "choose-lang": "Choose your language:",
+    "chinese": "Chinese",
+    "azerbaijani": "Azerbaijani",
+    "arabic": "Arabic",
+    "english": "English",
+    "russian": "Russian",
+    "turkey": "Turkish",
+    "about-us": "",
 }

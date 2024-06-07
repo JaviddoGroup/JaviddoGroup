@@ -8191,8 +8191,12 @@
         justify-content: flex-start;
     }
 
+    .mobile-logo a {
+        width: 75%;
+    }
+
     .mobile-logo img {
-        width: 70%;
+        width: 100%;
     }
 
     .mobile-menu-ico {
@@ -8977,8 +8981,12 @@
         justify-content: flex-start;
     }
 
+    .mobile-logo a {
+        width: 75%;
+    }
+
     .mobile-logo img {
-        width: 80%;
+        width: 100%;
     }
 
     .mobile-menu-ico {
@@ -9762,8 +9770,12 @@
         justify-content: flex-start;
     }
 
+    .mobile-logo a {
+        width: 75%;
+    }
+
     .mobile-logo img {
-        width: 80%;
+        width: 100%;
     }
 
     .mobile-menu-ico {
@@ -10547,8 +10559,12 @@
         justify-content: flex-start;
     }
 
+    .mobile-logo a {
+        width: 75%;
+    }
+
     .mobile-logo img {
-        width: 80%;
+        width: 100%;
     }
 
     .mobile-menu-ico {

@@ -1,26 +1,37 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var gif = document.getElementById('preload-gif');
-    var videoOverlay = document.getElementById('video-overlay');
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the preloader element
+    var preloader = document.querySelector('.preload-animation');
+    // Get the line element
+    var lineElement = document.querySelector('.center-preload-line');
+    // Get the images
+    var topImages = document.querySelectorAll('.top-preload-text img');
+    var bottomImages = document.querySelectorAll('.bottom-preload-text img');
+    var leftLogo = document.querySelector('.left-preload-logo img');
 
-    function setGifSource() {
-        if (window.innerWidth <= 600) {
-            gif.src = './media/video-pre-load-mobile.gif';
-        } else {
-            gif.src = './media/video-pre-load.gif';
-        }
-    }
+    // Animate the left logo
+    leftLogo.style.animation = 'slideIn 1.5s forwards';
+    leftLogo.style.animationDelay = '0.5s';
 
-    // Установить исходный путь к GIF при загрузке страницы
-    setGifSource();
-
-    // Обновлять путь к GIF при изменении размера окна
-    window.addEventListener('resize', setGifSource);
-
-    // Убираем overlay и показываем основной контент через 6 секунд (время анимации)
+    // Animate the line
     setTimeout(function () {
-        videoOverlay.style.display = 'none';
-        document.documentElement.classList.add('html-active-scroll'); // Включаем прокрутку
-        document.getElementById('main-content').style.display = 'flex'; // Показываем основной контент
-    }, 4400); // Время на завершение всех анимаций
-});
+        lineElement.style.width = '92%';
+    }, 1000);
 
+    // Animate the top images
+    topImages.forEach(function (img, index) {
+        img.style.animation = 'slideIn 1.5s forwards';
+        img.style.animationDelay = (index * 0.5) + 's';
+    });
+
+    // Animate the bottom images
+    bottomImages.forEach(function (img, index) {
+        img.style.animation = 'slideIn 1.5s forwards';
+        img.style.animationDelay = (index * 0.5) + 's';
+    });
+
+    // Remove the preloader and enable scrolling after the animation
+    setTimeout(function () {
+        preloader.style.display = 'none';
+        document.documentElement.classList.add('html-active-scroll');
+    }, 5000); // Adjust this timeout based on your animation duration
+});

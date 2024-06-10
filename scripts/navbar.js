@@ -209,5 +209,5 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
             companyLogo.style.animation = ''; // Сброс анимации после её завершения
         }, 3000); // Сброс через 2 секунды
-    }, 4450); // Задержка перед началом анимации
+    }, 5300); // Задержка перед началом анимации
 });

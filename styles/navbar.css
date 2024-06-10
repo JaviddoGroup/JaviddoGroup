@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .menu-name p {
+        text-align: center;
+    }
+
     .time-line {
         width: 100%;
         overflow-x: hidden;
@@ -2567,7 +2571,7 @@
         }
 
         50% {
-            left: calc(53vw - 150px);
+            left: calc(50% - 150px);
         }
 
         100% {
@@ -3185,7 +3189,7 @@
         }
 
         50% {
-            left: calc(67% - 150px);
+            left: calc(50% - 150px);
         }
 
         100% {
@@ -3802,7 +3806,7 @@
         }
 
         50% {
-            left: calc(65% - 150px);
+            left: calc(48% - 150px);
         }
 
         100% {
@@ -4420,7 +4424,7 @@
         }
 
         50% {
-            left: calc(61% - 150px);
+            left: calc(42% - 150px);
         }
 
         100% {
@@ -5037,7 +5041,7 @@
         }
 
         50% {
-            left: calc(60% - 150px);
+            left: calc(40% - 150px);
         }
 
         100% {
@@ -5651,13 +5655,17 @@
         margin-left: auto;
     }
 
+    .contact-us-link a {
+        padding-bottom: 15px;
+    }
+
     @keyframes moveRight {
         0% {
             left: 15px;
         }
 
         50% {
-            left: calc(63% - 150px);
+            left: calc(46% - 150px);
         }
 
         100% {
@@ -6271,13 +6279,17 @@
         margin-left: auto;
     }
 
+    .contact-us-link a {
+        font-size: 14px;
+    }
+
     @keyframes moveRight {
         0% {
             left: 15px;
         }
 
         50% {
-            left: calc(60% - 150px);
+            left: calc(43% - 150px);
         }
 
         100% {
@@ -6898,7 +6910,7 @@
         }
 
         50% {
-            left: calc(56% - 150px);
+            left: calc(37% - 150px);
         }
 
         100% {
@@ -7520,7 +7532,7 @@
         }
 
         50% {
-            left: calc(50% - 150px);
+            left: calc(30% - 150px);
         }
 
         100% {
@@ -7530,7 +7542,200 @@
 }
 
 @media screen and (max-width: 800px) {
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
 
+    .main-banner-background-image {
+        display: none;
+    }
+
+
+    /* Стили для навбара на телефоне снизу */
+
+    .nav-bar-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .nav-center-mob {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        margin: 10px 0;
+    }
+
+    .mobile-logo {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .mobile-logo a {
+        width: 75%;
+    }
+
+    .mobile-logo img {
+        width: 100%;
+    }
+
+    .mobile-menu-ico {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu-ico img {
+        width: 15%;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav,
+    .mobile-sub-menu,
+    .mobile-last-sub-menu {
+        position: fixed;
+        padding: 0;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        height: 100vh;
+        z-index: 20;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+    }
+
+    .mobile-main-menu-nav h2,
+    .mobile-sub-menu h2,
+    .mobile-last-sub-menu h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobile-main-menu-nav h2 img,
+    .mobile-sub-menu h2 img,
+    .mobile-last-sub-menu h2 img {
+        height: 22px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-main-menu-nav a,
+    .mobile-sub-menu a,
+    .mobile-last-sub-menu a {
+        width: 100%;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .mobile-sub-menu h3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu .mobile-sub-menu h3 img {
+        margin-left: 15px;
+    }
+
+    .sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-last-sub-menu h2 {
+        font-size: 16px;
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        margin-left: 15px;
+    }
+
+    .mobile-last-sub-menu h2 img {
+        height: 16px;
+    }
+
+    .last-sub-menu-name {
+        padding-left: 3.5%;
+    }
+
+
+    .mobile-main-menu-nav a img,
+    .mobile-sub-menu a img,
+    .mobile-last-sub-menu a img {
+        height: 18px;
+    }
+
+    html.no-scroll {
+        overflow: hidden;
+    }
+
+    .back-and-close-button {
+        /* padding: 55px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+
+    .back-button-mobile {
+        margin-left: 20px;
+    }
+
+    .back-button-mobile h2 {
+        font-size: 16px;
+    }
+
+    .back-button-mobile h2 img {
+        height: 16px;
+    }
+
+    .close-button-mobile {
+        margin-right: 20px;
+    }
+
+    .back-and-close-button img {
+        height: 16px;
+    }
+
+    .main-menu-name {
+        padding-left: 3.5%;
+    }
+
+    .mobile-main-menu-nav a img {
+        padding-right: 3.5%;
+    }
+
+    .mobile-nav-line {
+        margin-top: 15px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: absolute;
@@ -7573,12 +7778,13 @@
     }
 
     .headline-close-button {
-        width: 85%;
+        width: 97%;
         display: flex;
         justify-content: space-between;
-        padding: 0 3%;
+        padding: 0 0%;
         position: relative;
         transition: all 0.5s ease;
+
 
     }
 
@@ -7602,7 +7808,8 @@
     }
 
     .opened-lang-selected {
-        max-height: 500px;
+        max-height: 95vh;
+        height: 100vh;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -7635,57 +7842,70 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 0%;
+        height: 95vh;
+        overflow-y: scroll;
     }
 
     .lang {
         margin: 15px 5px;
-        width: 110px;
-        height: 55px;
+        width: 100%;
+        height: 40px;
         border: 1px solid #312c2a;
-        padding: 15px 0 0 15px;
+        padding: 5px 0 0 15px;
         cursor: pointer;
+        display: flex;
     }
 
+
+
     .lang:hover {
-        background-color: #fff;
+        background-color: black;
         transition: 1s;
     }
 
-    .lang:hover p {
-        color: transparent;
+    .lang:hover .name-lang-long {
+        color: white;
+    }
+
+    .lang:hover .name-lang-short {
+        color: #ad9991;
+    }
+
+    .lang:last-child {
+        margin-bottom: 25%;
     }
 
     /* объязательно изменяй для каждой страны отдельно */
     .english-lang:hover {
-        background-image: url("../media/laguages/uk.png");
+        background-image: none;
         background-repeat: round;
         background-size: 187px 93px;
         transition: 1s;
     }
 
     .china-lang:hover {
-        background-image: url("../media/laguages/cn.png");
+        background-image: none;
         background-repeat: round;
         background-size: 187px 93px;
         transition: 1s;
     }
 
     .russian-lang:hover {
-        background-image: url("../media/laguages/rs.png");
+        background-image: none;
         background-repeat: round;
         background-size: 187px 93px;
         transition: 1s;
     }
 
     .arabian-lang:hover {
-        background-image: url("../media/laguages/ar.png");
+        background-image: none;
         background-repeat: round;
         background-size: 187px 93px;
         transition: 1s;
     }
 
     .azer-lang:hover {
-        background-image: url("../media/laguages/az.png");
+        background-image: none;
         background-repeat: round;
         background-size: 187px 93px;
         transition: 1s;
@@ -7703,7 +7923,7 @@
     }
 
     .name-lang-short {
-        margin-left: 0;
+        margin-left: 15px !important;
         font-size: 14px;
         color: #ad9991;
     }
@@ -7711,7 +7931,7 @@
     /* Стили для смены языка выше---------------------------------- */
     /* Стили для навигационного меню ниже */
     .navigation-bar {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         padding: 0 1%;
@@ -8122,35 +8342,6 @@
     .close-navbar-menu img {
         width: 14px;
         margin-left: 15px;
-    }
-
-    .navigation-bar {
-        position: relative;
-    }
-
-    .company-logo {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-    }
-
-    .menus {
-        margin-left: auto;
-    }
-
-    @keyframes moveRight {
-        0% {
-            left: 15px;
-        }
-
-        50% {
-            left: calc(37% - 150px);
-        }
-
-        100% {
-            left: 15px;
-        }
     }
 }
 

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Animate the line
     setTimeout(function () {
-        lineElement.style.width = '92%';
+        lineElement.style.width = '100%';
     }, 1000);
 
     // Animate the top images

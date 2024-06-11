@@ -20,7 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll('[data-lang]').forEach(element => {
                     var key = element.getAttribute('data-lang');
                     if (data[key]) {
-                        element.textContent = data[key];
+                        // Проверяем, есть ли у элемента текстовый узел, и обновляем его
+                        element.childNodes.forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE) {
+                                node.textContent = data[key];
+                            }
+                        });
+                        // Обновляем атрибут src для изображений, если они есть
+                        var img = element.querySelector('img');
+                        if (img) {
+                            var imgKey = img.getAttribute('data-img-lang');
+                            if (data[imgKey]) {
+                                img.setAttribute('src', data[imgKey]);
+                            }
+                        }
                     }
                 });
 
@@ -30,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error('Error loading language file:', error);
             });
     }
+
 
     // Функция для обновления отображения текущего языка
     function updateCurrentLanguageDisplay(language, translations) {

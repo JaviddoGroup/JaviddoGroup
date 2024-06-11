@@ -12,7 +12,7 @@
     "midterm-policy": "Mid-term Policy",
     "longterm-policy": "Long-term Policy",
     "mission-and-vision": "Our Mission And Vision",
-    "milestones": "Milestone",
+    "milestones": "Chronology",
     "message-from-founder": "Message From The Founder",
     "our-team": "Our Team",
     "our-branches": "Our Branches",
@@ -28,7 +28,6 @@
     "blogs": "Blogs",
     "news": "News",
     "contact-us": "Contact Us",
-    "close-button-mobiles": "",
     "navbar-back-button": "Back",
     "close-button-mobile": "Close"
 }

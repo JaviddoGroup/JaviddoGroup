@@ -12,7 +12,7 @@
     "midterm-policy": "Orta Vadeli Politika",
     "longterm-policy": "Uzun Vadeli Politika",
     "mission-and-vision": "Misyon Ve Vizyonumuz",
-    "milestones": "Hedeflerimiz",
+    "milestones": "Kronoloji",
     "message-from-founder": "Kurucudan mesaj",
     "our-team": "Komandamız",
     "our-branches": "Şubelerimiz",
@@ -28,7 +28,6 @@
     "blogs": "Bloglar",
     "news": "Haberler",
     "contact-us": "İletişim",
-    "close-button-mobiles": "",
     "navbar-back-button": "Geri",
     "close-button-mobile": "Kapat"
 }

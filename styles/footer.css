@@ -9,6 +9,115 @@
 }
 
 
+@media screen and (min-width: 2560px) {
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer-first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-center {
+        display: flex;
+        width: 85%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+
+    .first-footer-section a {
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: baseline;
+        height: 60px;
+        border-top: 1px solid #d6d6d6;
+    }
+
+    .first-footer-section a img {
+        margin-top: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-section {
+        width: 4%;
+    }
+
+    .footer-javiddo-logo {
+        width: 75%;
+        /* margin-bottom: 15px; */
+    }
+
+    .second-footer-section h2 {
+        margin: 0 0 17% 0;
+    }
+
+    .second-footer-section {
+        display: block;
+    }
+
+    .second-footer-section a {
+        width: fit-content;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .footer-second {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        border-top: 2px solid grey;
+    }
+
+    .second-footer-center {
+        display: flex;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-footer-center h3 {
+        margin: 0;
+    }
+
+    .second-footer-center a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .second-footer-center a:hover {
+        color: #FC6E27;
+        transition: 0.5s;
+    }
+
+    .second-footer-section a img {
+        width: 20px;
+        margin-left: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateX(-10px);
+    }
+
+    .second-footer-section a:hover img {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
 @media screen and (max-width: 2560px) {
     .footer {
         margin-top: 25px;

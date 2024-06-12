@@ -1,7 +1,94 @@
 @media screen and (max-width: 6060px) {}
 
 
+@media screen and (min-width: 2560px) {
+    .scroll-up-section {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 100;
+        display: none;
+        transition: 1s;
+    }
 
+    .show {
+        display: block;
+        transition: 1s;
+    }
+
+    /* <reset-style> ============================ */
+    a {
+        text-decoration: none;
+    }
+
+    /* <main-style> ============================ */
+    .scroll-up {
+        right: 3rem;
+        bottom: -50%;
+        z-index: 10;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: rgba(29, 29, 31, 0.7);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: bottom .4s, transform .4s;
+        position: relative;
+    }
+
+    .scroll-up svg {
+        position: relative;
+        z-index: 2;
+    }
+
+    .scroll-up:hover {
+        transform: translateY(-.25rem);
+    }
+
+    /* Show scroll-up */
+    ._show-scroll {
+        bottom: 3rem;
+    }
+
+    @media (max-width: 1199.98px) {
+        .scroll-up {
+            right: 1rem;
+        }
+    }
+
+    /* Progress Circle */
+    .progress-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        /* border: 4px solid rgba(255, 255, 255, 0.3); */
+        clip: rect(0, 70px, 70px, 35px);
+    }
+
+    .progress-circle::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        box-sizing: border-box;
+        border: 7px solid #fc6e27;
+        clip: rect(0, 35px, 70px, 0);
+        transform: rotate(var(--progress, 0deg));
+        transition: transform 0.2s;
+    }
+
+
+
+}
 
 @media screen and (max-width: 2560px) {
     .scroll-up-section {

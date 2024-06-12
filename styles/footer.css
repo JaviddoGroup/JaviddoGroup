@@ -6,6 +6,10 @@
     .footer-mobile {
         display: none;
     }
+
+    .second-footer-section a {
+        margin: 15px 0;
+    }
 }
 
 

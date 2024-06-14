@@ -10,6 +10,11 @@
     .second-footer-section a {
         margin: 15px 0;
     }
+
+    .footer-mobile-invicible a span {
+        display: flex;
+        align-items: end;
+    }
 }
 
 

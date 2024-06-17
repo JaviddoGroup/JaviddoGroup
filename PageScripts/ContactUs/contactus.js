@@ -42,3 +42,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Функция для автоматической смены активного элемента внутри видимых контейнеров
+function initAutomaticSocialItemActivation() {
+    const visibleItems = document.querySelectorAll('.contact-item.visible');
+
+    visibleItems.forEach(visibleItem => {
+        const socialItems = visibleItem.querySelectorAll('.social-item');
+        let currentIndex = 0;
+
+        function toggleActiveSocialItem() {
+            socialItems.forEach((item, index) => {
+                item.classList.remove('social-item-active-mobile'); // Убираем активное состояние у всех элементов
+            });
+
+            currentIndex = (currentIndex + 1) % socialItems.length; // Вычисляем индекс следующего элемента для активации
+            socialItems[currentIndex].classList.add('social-item-active-mobile'); // Добавляем активное состояние к следующему элементу
+        }
+
+        setInterval(toggleActiveSocialItem, 1500); // Вызываем функцию смены активного элемента каждые 2 секунды
+    });
+}
+
+// Запускаем инициализацию при загрузке страницы
+document.addEventListener('DOMContentLoaded', initAutomaticSocialItemActivation);

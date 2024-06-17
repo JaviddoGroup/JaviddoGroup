@@ -1,5 +1,11 @@
 {
     "choose-lang": "Choose your language:",
+    "chinese-county": "China",
+    "english-country": "United Kingdom",
+    "turkey-country": "Türkiye",
+    "russian-country": "Russia",
+    "azerbaijani-country": "Azerbaijan",
+    "arabic-country": "Arab Countries",
     "chinese": "Chinese",
     "azerbaijani": "Azerbaijani",
     "arabic": "Arabic",

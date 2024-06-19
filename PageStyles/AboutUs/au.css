@@ -1,0 +1,5462 @@
+@media screen and (max-width: 6060px) {}
+
+@media screen and (min-width: 2560px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 20px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 2560px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 20px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 2160px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 2000px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1800px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 1700px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1600px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 45px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 16px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1500px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 14px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1400px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 14px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1380px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 14px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 75%;
+        margin-left: 15%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 12px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 22px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 14px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 12px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 22px;
+        text-align: left;
+        width: 85%;
+    }
+
+    .description {
+        font-size: 14px;
+        color: #626262;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 12px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: left;
+        width: 85%;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 12px;
+        color: #626262;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 30%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px 0;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        margin-left: 3%;
+        flex: 2;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        display: flex;
+        height: auto;
+        aspect-ratio: 40 / 15.45;
+    }
+
+    .content-block .image {
+        width: 50%;
+    }
+
+    .content-block .content-block-text {
+        width: 50%;
+    }
+
+    .content-block-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .content-block-text-center {
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    .content-block .image img {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 12px;
+        color: #626262;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 16px;
+        text-align: left;
+        width: 85%;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 10px;
+        color: #626262;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px 0;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 50%;
+        margin: auto;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        flex: 2;
+        width: 70%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: 20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    .counter p strong {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+    .counter-icon img {
+        width: 40px;
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-block {
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .content-block .image {
+        width: 100%;
+        order: 1;
+        /* Ensure image is always on top */
+    }
+
+    .content-block .content-block-text {
+        width: 100%;
+        order: 2;
+        /* Ensure text is always below the image */
+    }
+
+    .content-block-text-center {
+        width: 100%;
+        margin: 25px 0;
+        text-align: justify;
+        /* Align text to left for better readability */
+    }
+
+    .category {
+        font-size: 14px;
+        /* Increase font size for better readability on mobile */
+    }
+
+    .title {
+        font-size: 18px;
+        /* Increase font size for better readability on mobile */
+        width: 100%;
+    }
+
+    .description {
+        font-size: 12px;
+        /* Increase font size for better readability on mobile */
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px 0;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 60%;
+        margin: auto;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        flex: 2;
+        width: 95%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    .counter p strong {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+    .counter-icon img {
+        width: 35px;
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+        padding-top: 35px;
+
+    }
+
+    .content-block {
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .content-block .image {
+        width: 100%;
+        order: 1;
+        /* Ensure image is always on top */
+    }
+
+    .content-block .content-block-text {
+        width: 100%;
+        order: 2;
+        /* Ensure text is always below the image */
+    }
+
+    .content-block-text-center {
+        width: 100%;
+        margin: 25px 0;
+        text-align: justify;
+        /* Align text to left for better readability */
+    }
+
+    .category {
+        font-size: 14px;
+        /* Increase font size for better readability on mobile */
+    }
+
+    .title {
+        font-size: 18px;
+        /* Increase font size for better readability on mobile */
+        width: 100%;
+    }
+
+    .description {
+        font-size: 12px;
+        /* Increase font size for better readability on mobile */
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px 0;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 60%;
+        margin: auto;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        flex: 2;
+        width: 95%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    .counter p strong {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+    .counter-icon img {
+        width: 35px;
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+        padding-top: 35px;
+
+    }
+
+    .content-block {
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .content-block .image {
+        width: 100%;
+        order: 1;
+        /* Ensure image is always on top */
+    }
+
+    .content-block .content-block-text {
+        width: 100%;
+        order: 2;
+        /* Ensure text is always below the image */
+    }
+
+    .content-block-text-center {
+        width: 100%;
+        margin: 25px 0;
+        text-align: justify;
+        /* Align text to left for better readability */
+    }
+
+    .category {
+        font-size: 14px;
+        /* Increase font size for better readability on mobile */
+    }
+
+    .title {
+        font-size: 18px;
+        /* Increase font size for better readability on mobile */
+        width: 100%;
+    }
+
+    .description {
+        font-size: 12px;
+        /* Increase font size for better readability on mobile */
+    }
+
+
+
+}
+
+@media screen and (max-width: 360px) {
+    .about-us-section {
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+        position: relative;
+    }
+
+    .about-us-company-logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-us-company-logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-us-company-video {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* Чтобы скрывать элементы управления */
+    }
+
+    .about-us-company-video video {
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        /* Изначально скрыты */
+        transition: opacity 0.3s ease;
+    }
+
+    #play-pause {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+        border: none;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        outline: none;
+        pointer-events: all;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #play-pause.play {
+        background: url('../../media/icons/play.svg') no-repeat center;
+        background-size: contain;
+
+    }
+
+    #play-pause.pause {
+        background: url('../../media/icons/pause.svg') no-repeat center;
+        background-size: contain;
+    }
+
+    #progress {
+        width: 80%;
+        pointer-events: all;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-us-company-video:hover .controls {
+        opacity: 1;
+        /* Показывать элементы управления при наведении */
+    }
+
+    video::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-start-playback-button,
+    video::-webkit-media-controls-fullscreen-button,
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-from-founder-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 50 / 12;
+        margin-top: 45px;
+        position: relative;
+        padding: 20px 0;
+        background-color: #f6921e14;
+        display: flex;
+    }
+
+    .message-from-founder {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+    }
+
+    .founder-photo {
+        flex: 1;
+        width: 60%;
+        margin: auto;
+    }
+
+    .founder-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .founder-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .founder-message {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        flex: 2;
+        width: 95%;
+        height: auto;
+        aspect-ratio: 141 / 103;
+    }
+
+    .founder-message h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+
+        animation-delay: 0.5s;
+    }
+
+    .founder-message p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 600px;
+
+        animation-delay: 0.7s;
+    }
+
+    .counters-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        background-color: #f9f9f9;
+    }
+
+    .counters-section-center {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+
+
+    }
+
+    .about-us-company-logo img {
+        margin-bottom: 45px;
+    }
+
+    /* Стили для отдельного счетчика */
+    .counter {
+        text-align: center;
+        margin: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .counter:hover {
+        transform: translateY(-5px);
+        /* Эффект подъема при наведении */
+    }
+
+    .counter h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .counter p {
+        font-size: 36px;
+        margin: 0;
+        color: #FC6E27;
+
+    }
+
+    .count {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    .counter p strong {
+        font-weight: bold;
+        color: #FC6E27;
+        font-size: 24px;
+    }
+
+    /* Стили для иконок */
+    .counter-icon {
+        font-size: 36px;
+        margin-top: 10px;
+        color: #666;
+        /* Цвет иконки */
+    }
+
+    .counter-icon img {
+        width: 35px;
+    }
+
+
+    .content-section {
+        width: 80%;
+        margin: auto;
+        padding-top: 35px;
+
+    }
+
+    .content-block {
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .content-block .image {
+        width: 100%;
+        order: 1;
+        /* Ensure image is always on top */
+    }
+
+    .content-block .content-block-text {
+        width: 100%;
+        order: 2;
+        /* Ensure text is always below the image */
+    }
+
+    .content-block-text-center {
+        width: 100%;
+        margin: 25px 0;
+        text-align: justify;
+        /* Align text to left for better readability */
+    }
+
+    .category {
+        font-size: 14px;
+        /* Increase font size for better readability on mobile */
+    }
+
+    .title {
+        font-size: 18px;
+        /* Increase font size for better readability on mobile */
+        width: 100%;
+    }
+
+    .description {
+        font-size: 12px;
+        /* Increase font size for better readability on mobile */
+    }
+
+
+
+}

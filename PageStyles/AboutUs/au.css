@@ -4322,7 +4322,9 @@
     }
 
 
-
+    video::-webkit-media-controls-fullscreen-button {
+        display: block;
+    }
 
 
 

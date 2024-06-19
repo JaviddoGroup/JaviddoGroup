@@ -4317,7 +4317,6 @@
     }
 
     video::-webkit-media-controls-start-playback-button,
-    video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
         display: none;
     }
@@ -4628,7 +4627,6 @@
     }
 
     video::-webkit-media-controls-start-playback-button,
-    video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
         display: none;
     }
@@ -4942,7 +4940,6 @@
     }
 
     video::-webkit-media-controls-start-playback-button,
-    video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
         display: none;
     }
@@ -5255,7 +5252,6 @@
     }
 
     video::-webkit-media-controls-start-playback-button,
-    video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
         display: none;
     }

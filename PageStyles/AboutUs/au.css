@@ -4230,6 +4230,8 @@
         position: relative;
     }
 
+
+
     .about-us-company-logo {
         width: 50%;
         margin: auto;
@@ -4310,7 +4312,10 @@
         /* Показывать элементы управления при наведении */
     }
 
-    video::-webkit-media-controls-play-button,
+    #play-pause {
+        display: none;
+    }
+
     video::-webkit-media-controls-start-playback-button,
     video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
@@ -4618,7 +4623,10 @@
         /* Показывать элементы управления при наведении */
     }
 
-    video::-webkit-media-controls-play-button,
+    #play-pause {
+        display: none;
+    }
+
     video::-webkit-media-controls-start-playback-button,
     video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
@@ -4929,7 +4937,10 @@
         /* Показывать элементы управления при наведении */
     }
 
-    video::-webkit-media-controls-play-button,
+    #play-pause {
+        display: none;
+    }
+
     video::-webkit-media-controls-start-playback-button,
     video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {
@@ -5239,7 +5250,10 @@
         /* Показывать элементы управления при наведении */
     }
 
-    video::-webkit-media-controls-play-button,
+    #play-pause {
+        display: none;
+    }
+
     video::-webkit-media-controls-start-playback-button,
     video::-webkit-media-controls-fullscreen-button,
     video::-webkit-media-controls-picture-in-picture-button {

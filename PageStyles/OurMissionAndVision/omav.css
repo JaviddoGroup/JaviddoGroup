@@ -1,0 +1,157 @@
+@media screen and (max-width: 6060px) {}
+
+@media screen and (min-width: 2560px) {}
+
+
+@media screen and (max-width: 2560px) {
+    .hero-section {
+        background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: fadeInDown 1s ease-out;
+    }
+
+    .hero-content p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    /* Content Section */
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #fff;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .card-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .card-content p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2.5em;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+        }
+
+        .card {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

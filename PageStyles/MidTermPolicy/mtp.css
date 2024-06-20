@@ -1,0 +1,1649 @@
+@media screen and (max-width: 6060px) {}
+
+@media screen and (min-width: 2560px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 2560px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 2160px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0.5em 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0 0px 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #intro-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    #policies-section {
+        padding: 2em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .intro-content,
+    .policies-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    .policy-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .policy-item img {
+        max-width: 200px;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .policy-item p {
+        margin: 0 0px 0 15px;
+        font-size: 0.7em;
+        color: #666;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @keyframes fadeIn-Item {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn-Item {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #intro-section,
+    #policies-section {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    /* Стили для содержимого */
+    .intro-content,
+    .policies-content {
+        max-width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    .intro-content p {
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    /* Стили для каждой политики */
+    .policy-item {
+        display: block;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .policy-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 0.5em;
+    }
+
+    .policy-item p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    /* Стили для футера */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    /* Медиа-запросы для мобильных устройств */
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .policy-item h3 {
+            font-size: 1.2em;
+        }
+
+        .policy-item p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #intro-section,
+    #policies-section {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    /* Стили для содержимого */
+    .intro-content,
+    .policies-content {
+        max-width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    /* Стили для каждой политики */
+    .policy-item {
+        display: block;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .policy-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 0.5em;
+    }
+
+    .policy-item p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    /* Стили для футера */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    /* Медиа-запросы для мобильных устройств */
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .policy-item h3 {
+            font-size: 1.2em;
+        }
+
+        .policy-item p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #intro-section,
+    #policies-section {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    /* Стили для содержимого */
+    .intro-content,
+    .policies-content {
+        max-width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    /* Стили для каждой политики */
+    .policy-item {
+        display: block;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .policy-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 0.5em;
+    }
+
+    .policy-item p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    /* Стили для футера */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    /* Медиа-запросы для мобильных устройств */
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .policy-item h3 {
+            font-size: 1.2em;
+        }
+
+        .policy-item p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #intro-section,
+    #policies-section {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    /* Стили для содержимого */
+    .intro-content,
+    .policies-content {
+        max-width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 1.5em;
+        animation: fadeIn-Item 2s ease-in-out;
+    }
+
+    /* Стили для каждой политики */
+    .policy-item {
+        display: block;
+        margin-bottom: 2em;
+        animation: slideIn-Item 1s ease-in-out;
+    }
+
+    .policy-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        border-radius: 10px;
+    }
+
+    .policy-item h3 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 0.5em;
+    }
+
+    .policy-item p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    /* Стили для футера */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    /* Медиа-запросы для мобильных устройств */
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .policy-item h3 {
+            font-size: 1.2em;
+        }
+
+        .policy-item p {
+            font-size: 0.9em;
+        }
+    }
+}

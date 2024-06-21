@@ -1133,25 +1133,1791 @@
 
 }
 
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 1500px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
 
-@media screen and (max-width: 1400px) {}
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
 
-@media screen and (max-width: 1380px) {}
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
 
-@media screen and (max-width: 1300px) {}
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
 
-@media screen and (max-width: 1200px) {}
+        100% {
+            background-position: 100% 0;
+        }
+    }
 
-@media screen and (max-width: 1100px) {}
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
 
-@media screen and (max-width: 800px) {}
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
 
-@media screen and (max-width: 600px) {}
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
 
-@media screen and (max-width: 500px) {}
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1400px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1380px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1300px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 1em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1200px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1100px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 1000px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 600px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: block;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 500px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: block;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
 
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 400px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
 
-@media screen and (max-width: 360px) {}
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: block;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}
+
+@media screen and (max-width: 360px) {
+    #intro-hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        /* Необходимо для позиционирования анимации на заднем фоне */
+        overflow: hidden;
+        /* Скрыть все, что выходит за пределы блока */
+    }
+
+    .intro-container h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+        animation: introFadeInDown 1s ease-out;
+    }
+
+    .intro-container p {
+        font-size: 1.5em;
+        margin: 0;
+        animation: introFadeInUp 1s ease-out;
+    }
+
+    /* Анимация эффекта ветра на заднем фоне */
+    @keyframes windAnimation {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    /* Псевдоэлемент для добавления анимированного фона */
+    #intro-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        /* Начинаем анимацию с левой стороны экрана */
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+        animation: windAnimation 30s linear infinite;
+        z-index: -1;
+        /* Помещаем псевдоэлемент под всеми элементами */
+    }
+
+    /* Details Section */
+    #details-section {
+        display: block;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .detail-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+        animation: detailFadeIn 1s ease-out;
+        position: relative;
+    }
+
+    .detail-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 10px;
+        background-color: #f0f0f0;
+        animation: waveAnimation 4s ease-in-out infinite;
+    }
+
+    .detail-content {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .detail-content h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+    .detail-content p {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 10px;
+    }
+
+    /* Animations */
+    @keyframes introFadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes introFadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes detailFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        50% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and(max-width: 30px) {}
+
+}

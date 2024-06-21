@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.card');
+    const detailCards = document.querySelectorAll('.detail-card');
 
-    cards.forEach(card => {
+    detailCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-10px)';
             card.style.transition = 'transform 0.3s ease';

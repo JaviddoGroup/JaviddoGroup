@@ -1,0 +1,161 @@
+@media screen and (min-width: 2560px) {}
+
+@media screen and (max-width: 2560px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        s;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.9em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 11.3%
+    }
+
+    .connecting-image-left {
+        padding-right: 9.04px;
+    }
+}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+
+@media screen and (max-width: 1600px) {}
+
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

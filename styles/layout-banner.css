@@ -39,7 +39,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -52,7 +52,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -126,7 +126,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -139,7 +139,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -213,7 +213,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -226,7 +226,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -300,7 +300,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -313,7 +313,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -388,7 +388,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -401,7 +401,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -475,7 +475,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -488,7 +488,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -562,7 +562,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -575,7 +575,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -650,7 +650,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -663,7 +663,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -738,7 +738,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -751,7 +751,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -825,7 +825,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -838,7 +838,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -913,7 +913,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -926,7 +926,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1000,7 +1000,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1013,7 +1013,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1087,7 +1087,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1100,7 +1100,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1176,7 +1176,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1189,7 +1189,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1264,7 +1264,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1277,7 +1277,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1352,7 +1352,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1365,7 +1365,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1439,7 +1439,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1452,7 +1452,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 
@@ -1526,7 +1526,7 @@
 
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLayoutBanner {
         0% {
             top: 0;
 
@@ -1539,7 +1539,7 @@
     }
 
     .objects .white {
-        animation: slideIn 1s ease forwards;
+        animation: slideInLayoutBanner 1s ease forwards;
         animation-fill-mode: forwards;
     }
 

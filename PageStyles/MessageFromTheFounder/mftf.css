@@ -1,0 +1,1642 @@
+@media screen and (max-width: 25060px) {}
+
+
+@media screen and (min-width: 2560px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 2560px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 2160px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 2000px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 93%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .founder-message-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 93%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .founder-message-section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 90%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .founder-message-section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 85%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .founder-message-section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+        font-size: 1.2em;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 83%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+
+    .founder-message-section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 2rem;
+        animation: slideInLeft 2s ease-in-out;
+    }
+
+    .founder-message-content {
+        max-width: 600px;
+    }
+
+    .founder-message-content h2 {
+        color: #000;
+        animation: slideInRight 2s ease-in-out;
+        font-size: 1.0em;
+    }
+
+    .founder-message-video {
+        text-align: center;
+        margin: 0rem;
+    }
+
+    .founder-message-video h2 {
+        color: #000;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .founder-message-video video {
+        width: 83%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}

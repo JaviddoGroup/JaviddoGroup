@@ -1,4 +1,137 @@
-@media screen and (min-width: 2560px) {}
+@media screen and (max-width: 25060px) {
+    .timeline-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 1.2em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.5em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 11.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 9.04px;
+    }
+}
 
 @media screen and (max-width: 2560px) {
 
@@ -52,7 +185,6 @@
         padding: 20px;
         width: 80%;
         border: 1px solid #fc6e271f;
-        s;
         border-radius: 15px;
     }
 
@@ -61,12 +193,12 @@
     }
 
     .custom-title {
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin-bottom: 10px;
     }
 
     .custom-date {
-        font-size: 0.9em;
+        font-size: 1.2em;
         color: #999;
         margin-bottom: 5px;
     }
@@ -77,6 +209,7 @@
 
     .custom-text {
         /* стили для текста */
+        font-size: 1.5em;
     }
 
     .custom-image {
@@ -120,7 +253,7 @@
     }
 
     .connecting-image-right {
-        padding-left: 11.3%
+        padding-left: 11.3%;
     }
 
     .connecting-image-left {
@@ -128,34 +261,1893 @@
     }
 }
 
-@media screen and (max-width: 2160px) {}
+@media screen and (max-width: 2160px) {
 
-@media screen and (max-width: 2000px) {}
+    .timeline {
+        scroll-behavior: smooth;
 
-@media screen and (max-width: 1800px) {}
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
 
 
-@media screen and (max-width: 1600px) {}
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 1.2em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.5em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 11.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 9.04px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
 
 
-@media screen and (max-width: 1500px) {}
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
 
-@media screen and (max-width: 1400px) {}
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
 
-@media screen and (max-width: 1380px) {}
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
 
-@media screen and (max-width: 1300px) {}
+    .custom-child {
+        width: 100%;
+    }
 
-@media screen and (max-width: 1200px) {}
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
 
-@media screen and (max-width: 1100px) {}
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
 
-@media screen and (max-width: 800px) {}
+    .custom-content {
+        margin-top: 10px;
+    }
 
-@media screen and (max-width: 600px) {}
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
 
-@media screen and (max-width: 500px) {}
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
 
-@media screen and (max-width: 400px) {}
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
 
-@media screen and (max-width: 360px) {}
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 11.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 8.04px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 5.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 5.04px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 8.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 5.04px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 4.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 5.04px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 4.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 5.04px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 4.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 4.04px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 4.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 4.04px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 4.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 4.04px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 3.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 2.04px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 1.2em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 3.3%;
+    }
+
+    .connecting-image-left {
+        padding-right: 2.04px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .timeline {
+        scroll-behavior: smooth;
+
+        /* Задайте высоту для контейнера, чтобы был скролл */
+    }
+
+    .timeline-center-line {
+        width: 1%;
+        background-color: #FC6E27;
+        height: 95vh;
+        margin: auto;
+        border-radius: 15px;
+        z-index: 1;
+        position: sticky;
+        top: 2.5%;
+    }
+
+    .timeline-card {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        /* position: sticky; */
+        top: 0;
+
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .timeline-card-left {
+        background-color: white;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-card-right {
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.5em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 0.8em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .timeline-card {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        /* Плавное появление */
+    }
+
+    .timeline-card.visible {
+        opacity: 1;
+    }
+
+    .timeline-card-left,
+    .timeline-card-right {
+        transition: transform 0.5s ease;
+        /* Плавная анимация движения */
+    }
+
+    .timeline-card-left {
+        transform: translateX(10%);
+    }
+
+    .timeline-card-right {
+        transform: translateX(-2%);
+    }
+
+    .timeline-card.visible .timeline-card-left {
+        transform: translateX(0);
+    }
+
+    .timeline-card.visible .timeline-card-right {
+        transform: translateX(0);
+    }
+
+    .connecting-image-right {
+        padding-left: 3.3%;
+        width: 55%;
+    }
+
+    .connecting-image-left {
+        padding-right: 0;
+        width: 55%;
+        position: relative;
+        right: -28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        display: none;
+    }
+
+    .timeline-center-line-mobile {
+        width: 2%;
+        background-color: #FC6E27;
+        height: 95vh;
+        border-radius: 15px;
+        position: sticky;
+        top: 15px;
+    }
+
+    .timeline-mobile {
+        display: block;
+    }
+
+    .timeline-card-mobile {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        opacity: 0;
+        /* Начальное состояние - невидимый */
+        transform: translateX(-100%);
+        /* Начальное состояние - смещен влево */
+        transition: all 0.5s ease-in-out;
+        /* Анимация появления */
+    }
+
+    .timeline-card-mobile.timeline-card-mobile-visible-card {
+        opacity: 1;
+        /* Конечное состояние - видимый */
+        transform: translateX(0%);
+        /* Конечное состояние - на месте */
+    }
+
+    .connecting-image-mobile {
+        width: 10%;
+    }
+
+    .connecting-image-right-mobile {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.5em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 0.8em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .timeline {
+        display: none;
+    }
+
+    .timeline-center-line-mobile {
+        width: 2%;
+        background-color: #FC6E27;
+        height: 95vh;
+        border-radius: 15px;
+        position: sticky;
+        top: 15px;
+    }
+
+    .timeline-mobile {
+        display: block;
+    }
+
+    .timeline-card-mobile {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        opacity: 0;
+        /* Начальное состояние - невидимый */
+        transform: translateX(-100%);
+        /* Начальное состояние - смещен влево */
+        transition: all 0.5s ease-in-out;
+        /* Анимация появления */
+    }
+
+    .timeline-card-mobile.timeline-card-mobile-visible-card {
+        opacity: 1;
+        /* Конечное состояние - видимый */
+        transform: translateX(0%);
+        /* Конечное состояние - на месте */
+    }
+
+    .connecting-image-mobile {
+        width: 10%;
+    }
+
+    .connecting-image-right-mobile {
+        width: 83%;
+        margin-left: 17%;
+        border: none;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.5em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 0.8em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .timeline {
+        display: none;
+    }
+
+    .timeline-center-line-mobile {
+        width: 2%;
+        background-color: #FC6E27;
+        height: 95vh;
+        border-radius: 15px;
+        position: sticky;
+        top: 15px;
+    }
+
+    .timeline-mobile {
+        display: block;
+    }
+
+    .timeline-card-mobile {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        opacity: 0;
+        /* Начальное состояние - невидимый */
+        transform: translateX(-100%);
+        /* Начальное состояние - смещен влево */
+        transition: all 0.5s ease-in-out;
+        /* Анимация появления */
+    }
+
+    .timeline-card-mobile.timeline-card-mobile-visible-card {
+        opacity: 1;
+        /* Конечное состояние - видимый */
+        transform: translateX(0%);
+        /* Конечное состояние - на месте */
+    }
+
+    .connecting-image-mobile {
+        width: 10%;
+    }
+
+    .connecting-image-right-mobile {
+        width: 83%;
+        margin-left: 17%;
+        border: none;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.5em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 0.8em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .timeline {
+        display: none;
+    }
+
+    .timeline-center-line-mobile {
+        width: 2%;
+        background-color: #FC6E27;
+        height: 95vh;
+        border-radius: 15px;
+        position: sticky;
+        top: 15px;
+    }
+
+    .timeline-mobile {
+        display: block;
+    }
+
+    .timeline-card-mobile {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        opacity: 0;
+        /* Начальное состояние - невидимый */
+        transform: translateX(-100%);
+        /* Начальное состояние - смещен влево */
+        transition: all 0.5s ease-in-out;
+        /* Анимация появления */
+    }
+
+    .timeline-card-mobile.timeline-card-mobile-visible-card {
+        opacity: 1;
+        /* Конечное состояние - видимый */
+        transform: translateX(0%);
+        /* Конечное состояние - на месте */
+    }
+
+    .connecting-image-mobile {
+        width: 10%;
+    }
+
+    .connecting-image-right-mobile {
+        width: 83%;
+        margin-left: 17%;
+        border: none;
+    }
+
+    .custom-container {
+        padding: 20px;
+        width: 80%;
+        border: 1px solid #fc6e271f;
+        border-radius: 15px;
+    }
+
+    .custom-child {
+        width: 100%;
+    }
+
+    .custom-title {
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+
+    .custom-date {
+        font-size: 0.5em;
+        color: #999;
+        margin-bottom: 5px;
+    }
+
+    .custom-content {
+        margin-top: 10px;
+    }
+
+    .custom-text {
+        /* стили для текста */
+        font-size: 0.8em;
+    }
+
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+}

@@ -279,7 +279,51 @@
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .our-teams-filtartion-panel {
+        display: block;
+        width: 100%;
+    }
+
+    .search-container {
+        width: 80%;
+        margin: auto;
+    }
+
+    #search-input {
+        width: 90%;
+    }
+
+    .our-teams-container {
+        display: block;
+        width: 65%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .our-teams-drop-dawn-list {
+        width: 77%;
+        margin: auto;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropbtn {
+        width: 100%;
+    }
+
+    .our-teams-member-link {
+        width: 100%;
+    }
+
+    .our-teams-member {
+        max-width: unset;
+        width: 90%;
+        margin: auto;
+    }
+}
 
 @media screen and (max-width: 500px) {}
 

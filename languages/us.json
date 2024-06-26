@@ -58,5 +58,20 @@
     "cookie-policy": "Cookie Policy",
     "privacy-notice": "Privacy Policy",
     "sitemap": "Sitemap",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "all": "All",
+    "ceo": "CEO",
+    "regional-director": "Regional Director",
+    "marketing-manager": "Marketing Manager",
+    "graphic-designer": "Graphic Designer",
+    "motion-designer": "Motion Designer",
+    "logistics-specialist": "Logistics Specialist",
+    "procurement-specialist": "Procurement Specialist",
+    "it-specialist": "IT Specialist",
+    "digital-marketing-manager": "Digital Marketing Manager",
+    "e-commerce-specialist": "E-commerce Specialist",
+    "deputy-for-international-relations": "Deputy for International Relations",
+    "foreign-sales-specialist": "Foreign Sales Specialist",
+    "accountant": "Accountant",
+    "social-media-marketing-manager": "SMM Manager"
 }

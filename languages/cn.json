@@ -58,5 +58,20 @@
     "cookie-policy": "",
     "privacy-notice": "",
     "sitemap": "",
-    "faq": ""
+    "faq": "",
+    "all": "全部",
+    "ceo": "首席执行官",
+    "regional-director": "区域总监",
+    "marketing-manager": "市场经理",
+    "graphic-designer": "平面设计师",
+    "motion-designer": "动画设计师",
+    "logistics-specialist": "物流专家",
+    "procurement-specialist": "采购专员",
+    "it-specialist": "IT 专家",
+    "digital-marketing-manager": "数字营销经理",
+    "e-commerce-specialist": "电子商务专家",
+    "deputy-for-international-relations": "国际关系副手",
+    "foreign-sales-specialist": "外贸专员",
+    "accountant": "会计",
+    "social-media-marketing-manager": "社交媒体营销经理"
 }

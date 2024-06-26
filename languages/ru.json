@@ -68,12 +68,12 @@
     "logistics-specialist": "Логист",
     "procurement-specialist": "Специалист по закупкам",
     "it-specialist": "IT-специалист",
-    "digital-marketing-manager": "Менеджер по цифровому маркетингу",
-    "e-commerce-specialist": "Специалист по электронной коммерции",
-    "deputy-for-international-relations": "Заместитель по международным отношениям",
-    "foreign-sales-specialist": "Специалист по внешним продажам",
+    "digital-marketing-manager": "Digital маркетолог",
+    "e-commerce-specialist": "E-commerce специалист",
+    "deputy-for-international-relations": "Заместитель по внешним связям",
+    "foreign-sales-specialist": "Специалист по экспорту",
     "accountant": "Бухгалтер",
-    "social-media-marketing-manager": "Менеджер по маркетингу в социальных сетях",
+    "social-media-marketing-manager": "SMM менеджер",
     "select-a-position": "Выберите должность ",
     "our-teams-search-placeholder": "Поиск..."
 }

@@ -37,13 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
 
+                // Обновляем placeholder для поля поиска
+                var searchInput = document.querySelector('#search-input');
+                if (searchInput) {
+                    searchInput.placeholder = data['our-teams-search-placeholder'];
+                }
+
                 if (callback) callback(data);
             })
             .catch(error => {
                 console.error('Error loading language file:', error);
             });
     }
-
 
     // Функция для обновления отображения текущего языка
     function updateCurrentLanguageDisplay(language, translations) {

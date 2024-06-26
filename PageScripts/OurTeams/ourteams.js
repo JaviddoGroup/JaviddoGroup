@@ -124,3 +124,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
+
+
+
+
+
+
+
+
+function updateDropdownTranslations(translations) {
+    document.querySelectorAll('.dropdown-content [data-lang]').forEach(element => {
+        var key = element.getAttribute('data-lang');
+        if (translations[key]) {
+            element.textContent = translations[key];
+        }
+    });
+}
+function loadTranslation(language, callback) {
+    fetch(`https://javiddogroup.github.io/JaviddoGroup/languages/${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+            // Обновление текстов на странице
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                var key = element.getAttribute('data-lang');
+                if (data[key]) {
+                    element.textContent = data[key];
+                }
+            });
+
+            // Обновление текстов в выпадающем списке
+            updateDropdownTranslations(data);
+
+            if (callback) callback(data);
+        })
+        .catch(error => {
+            console.error('Error loading language file:', error);
+        });
+}

@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
     const containers = document.querySelectorAll('.our-teams-container');
 
-    searchInput.addEventListener('input', function () {
+    function updateContainerStyles() {
         const searchTerm = searchInput.value.trim().toLowerCase();
+        const isNarrowScreen = window.matchMedia("(max-width: 600px)").matches;
 
         containers.forEach(container => {
             let hasVisibleMembers = false;
-
             const memberLinks = container.querySelectorAll('.our-teams-member-link');
 
             memberLinks.forEach(link => {
@@ -22,15 +22,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
-            if (hasVisibleMembers) {
-                container.style.justifyContent = 'space-between'; // Возвращаем начальное значение justify-content
-                container.style.width = '70%'; // Возвращаем начальную ширину
+            if (isNarrowScreen) {
+                if (hasVisibleMembers) {
+                    container.style.justifyContent = 'center'; // Меняем на центрирование
+                    container.style.width = '70%'; // Возвращаем начальную ширину
+                } else {
+                    container.style.justifyContent = 'center'; // Меняем на центрирование
+                    container.style.width = '70%'; // Возвращаем начальную ширину
+                }
             } else {
-                container.style.justifyContent = 'space-between'; // Возвращаем начальное значение justify-content
-                container.style.width = '70%'; // Возвращаем начальную ширину
+                if (hasVisibleMembers) {
+                    container.style.justifyContent = 'space-between'; // Возвращаем начальное значение justify-content
+                    container.style.width = '70%'; // Возвращаем начальную ширину
+                } else {
+                    container.style.justifyContent = 'space-between'; // Возвращаем начальное значение justify-content
+                    container.style.width = '70%'; // Возвращаем начальную ширину
+                }
             }
         });
-    });
+    }
+
+    searchInput.addEventListener('input', updateContainerStyles);
+    window.addEventListener('resize', updateContainerStyles);
+
+    // Initial check
+    updateContainerStyles();
 });
 
 

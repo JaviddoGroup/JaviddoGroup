@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 2560px) {
     .our-branch-maps {
-        margin-top: 45px !important;
+        margin-top: 45px;
         padding: 10px;
         border-radius: 15px;
         width: 60%;
@@ -13,13 +13,27 @@
         display: flex;
         justify-content: center;
         background-color: #8080801a;
-        overflow: hidden;
         cursor: grab;
+        position: relative;
+        overflow: hidden;
+    }
 
+    .our-branch-maps svg {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .our-branch-maps svg g path {
+        cursor: pointer;
+        transition: fill 0.5s;
+    }
+
+    .our-branch-maps svg g path:hover {
+        fill: #FC6E27;
     }
 
     #country-info {
-        position: sticky;
+        position: absolute;
         top: 10px;
         left: 10px;
         background-color: rgba(255, 255, 255, 0.8);
@@ -28,22 +42,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         opacity: 0;
         pointer-events: none;
-        transition: opacity 100s ease;
-    }
-
-    .our-branch-maps svg {
-        width: 100%;
-    }
-
-    .our-branch-maps svg g path {
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    .our-branch-maps svg g path:hover {
-        fill: #FC6E27;
-        transition: 0.5s;
-        width: 110%;
+        transition: opacity 0.3s ease;
     }
 }
 
@@ -71,7 +70,51 @@
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .our-branch-maps {
+        margin-top: 45px !important;
+        padding: 0;
+        border-radius: 15px;
+        width: 100%;
+        height: 45vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-color: #8080801a;
+        overflow: hidden;
+        cursor: grab;
+
+    }
+
+    #country-info {
+        position: sticky;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 100s ease;
+    }
+
+    .our-branch-maps svg {
+        width: 100%;
+        scale: 1.5;
+    }
+
+    .our-branch-maps svg g path {
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .our-branch-maps svg g path:hover {
+        fill: #FC6E27;
+        transition: 0.5s;
+        width: 110%;
+    }
+}
 
 @media screen and (max-width: 500px) {}
 

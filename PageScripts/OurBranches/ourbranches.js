@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var container = document.querySelector('.our-branch-maps');
     var svg = container.querySelector('svg');
-    var countryNames = document.querySelector('.branchs-infos')
+
     // Переменные для приближения
     var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла
     var minScale = 1; // Минимальный масштаб
@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var translateY = 0;
 
     // Список стран и соответствующих названий
-
+    var countryNames = {
+        path1: 'Country 1',
+        path2: 'Country 2',
+        // Добавьте другие страны с их соответствующими ID путей и названиями
+    };
 
     // Функция для отображения названия страны с анимацией
     function showCountryName(countryId) {
@@ -25,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (countryInfoElement) {
             countryInfoElement.textContent = countryName;
             countryInfoElement.style.opacity = '1';
-            countryInfoElement.style.transition = 'opacity 1s ease';
         }
     }
 
@@ -34,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var countryInfoElement = document.getElementById('country-info');
         if (countryInfoElement) {
             countryInfoElement.style.opacity = '0';
-            countryInfoElement.style.transition = 'opacity 15s ease';
             setTimeout(function () {
                 countryInfoElement.textContent = '';
             }, 300); // Ждем окончания анимации перед очисткой содержимого
@@ -93,6 +95,23 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('mouseup', function (event) {
         isDragging = false;
         container.style.cursor = 'grab';
+    });
+
+    // Обработчик жестов Hammer.js
+    var hammer = new Hammer(container);
+
+    // Перетаскивание на сенсорных экранах
+    hammer.on('pan', function (event) {
+        translateX += event.deltaX;
+        translateY += event.deltaY;
+        updateTransform();
+    });
+
+    // Масштабирование на сенсорных экранах
+    hammer.get('pinch').set({ enable: true });
+    hammer.on('pinch', function (event) {
+        currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
+        updateTransform();
     });
 
     // Функция для обновления свойства transform у SVG

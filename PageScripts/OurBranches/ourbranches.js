@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Переменные для приближения
     var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла
     var minScale = 1; // Минимальный масштаб
-    var maxScale = 10; // Максимальный масштаб
+    var maxScale = 15; // Максимальный масштаб
     var currentScale = 1; // Текущий масштаб
 
     // Переменные для перетаскивания
@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Перетаскивание на сенсорных экранах
         hammer.on('panmove', function (event) {
-            translateX += event.deltaX * 0.05; // Уменьшение чувствительности перетаскивания
-            translateY += event.deltaY * 0.05; // Уменьшение чувствительности перетаскивания
+            translateX += event.deltaX * 0.001; // Уменьшение чувствительности перетаскивания
+            translateY += event.deltaY * 0.001; // Уменьшение чувствительности перетаскивания
             updateTransform();
         });
 
@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Функция для обновления свойства transform у SVG
     function updateTransform() {
+        svg.style.transition = 'transform 0.0s ease';
         svg.style.transform = 'translate(' + translateX + 'px, ' + translateY + 'px) scale(' + currentScale + ')';
     }
 

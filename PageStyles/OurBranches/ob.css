@@ -1,0 +1,80 @@
+@media screen and (max-width: 600060px) {}
+
+
+@media screen and (min-width: 2560px) {}
+
+@media screen and (max-width: 2560px) {
+    .our-branch-maps {
+        margin-top: 45px !important;
+        padding: 10px;
+        border-radius: 15px;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-color: #8080801a;
+        overflow: hidden;
+        cursor: grab;
+
+    }
+
+    #country-info {
+        position: sticky;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 100s ease;
+    }
+
+    .our-branch-maps svg {
+        width: 100%;
+    }
+
+    .our-branch-maps svg g path {
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .our-branch-maps svg g path:hover {
+        fill: #FC6E27;
+        transition: 0.5s;
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

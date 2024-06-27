@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Перетаскивание на сенсорных экранах
         hammer.on('panmove', function (event) {
-            translateX += event.deltaX * 0.001; // Уменьшение чувствительности перетаскивания
-            translateY += event.deltaY * 0.001; // Уменьшение чувствительности перетаскивания
+            translateX += event.deltaX * 0.5; // Уменьшение чувствительности перетаскивания
+            translateY += event.deltaY * 0.5; // Уменьшение чувствительности перетаскивания
             updateTransform();
         });
 

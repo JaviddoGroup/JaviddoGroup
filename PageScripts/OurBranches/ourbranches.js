@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Перетаскивание на мобильных устройствах
         mc.on('panmove', function (event) {
-            translateX += event.deltaX * 0.01;
-            translateY += event.deltaY * 0.01;
+            translateX += event.deltaX;
+            translateY += event.deltaY;
             updateTransform();
         });
 

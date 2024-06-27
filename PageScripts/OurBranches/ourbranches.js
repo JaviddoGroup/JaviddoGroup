@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var svg = container.querySelector('svg');
 
     // Переменные для приближения
-    var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла
+    var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла и масштабирования на телефоне
     var minScale = 1; // Минимальный масштаб
     var maxScale = 15; // Максимальный масштаб
     var currentScale = 1; // Текущий масштаб
@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Перетаскивание на мобильных устройствах
         mc.on('panmove', function (event) {
-            translateX += event.deltaX * 0.03;
-            translateY += event.deltaY * 0.03;
+            translateX += event.deltaX * 0.01;
+            translateY += event.deltaY * 0.01;
             updateTransform();
         });
 
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var pinch = new Hammer.Pinch();
         mc.add(pinch);
         mc.on('pinchmove', function (event) {
-            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale * 0.03));
+            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
             updateTransform();
         });
     }

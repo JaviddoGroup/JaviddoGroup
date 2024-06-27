@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 var deltaY = event.clientY - startDragY;
                 translateX += deltaX;
                 translateY += deltaY;
+                updateTransform();
                 startDragX = event.clientX;
                 startDragY = event.clientY;
-                updateTransform();
             }
         });
 
@@ -101,20 +101,25 @@ document.addEventListener('DOMContentLoaded', function () {
             container.style.cursor = 'grab';
         });
     } else {
-        // Обработчик жестов Hammer.js для мобильных устройств
-        var hammer = new Hammer(container);
+        // Инициализация Hammer.js для мобильных устройств
+        var mc = new Hammer.Manager(container, {
+            recognizers: [
+                [Hammer.Pan, { threshold: 0 }]
+            ]
+        });
 
-        // Перетаскивание на сенсорных экранах
-        hammer.on('panmove', function (event) {
-            translateX += event.deltaX * 0.02; // Уменьшение чувствительности перетаскивания
-            translateY += event.deltaY * 0.02; // Уменьшение чувствительности перетаскивания
+        // Перетаскивание на мобильных устройствах
+        mc.on('panmove', function (event) {
+            translateX += event.deltaX * 0.03;
+            translateY += event.deltaY * 0.03;
             updateTransform();
         });
 
-        // Масштабирование на сенсорных экранах
-        hammer.get('pinch').set({ enable: true });
-        hammer.on('pinchmove', function (event) {
-            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
+        // Масштабирование на мобильных устройствах
+        var pinch = new Hammer.Pinch();
+        mc.add(pinch);
+        mc.on('pinchmove', function (event) {
+            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale * 0.03));
             updateTransform();
         });
     }

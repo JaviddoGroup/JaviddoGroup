@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Переменные для приближения
     var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла
     var minScale = 1; // Минимальный масштаб
-    var maxScale = 3; // Максимальный масштаб
+    var maxScale = 10; // Максимальный масштаб
     var currentScale = 1; // Текущий масштаб
 
     // Переменные для перетаскивания
@@ -56,63 +56,68 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Обработчик события скролла для масштабирования SVG
-    container.addEventListener('wheel', function (event) {
-        event.preventDefault();
+    // Проверяем, является ли устройство мобильным
+    var isMobile = 'ontouchstart' in window || navigator.maxTouchPoints;
 
-        var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
-        var zoomOut = delta < 0;
+    if (!isMobile) {
+        // Обработчик события скролла для масштабирования SVG на ПК
+        container.addEventListener('wheel', function (event) {
+            event.preventDefault();
 
-        if (zoomOut) {
-            currentScale = Math.max(minScale, currentScale / scaleFactor);
-        } else {
-            currentScale = Math.min(maxScale, currentScale * scaleFactor);
-        }
+            var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
+            var zoomOut = delta < 0;
 
-        updateTransform();
-    });
+            if (zoomOut) {
+                currentScale = Math.max(minScale, currentScale / scaleFactor);
+            } else {
+                currentScale = Math.min(maxScale, currentScale * scaleFactor);
+            }
 
-    // Обработчики событий мыши для перетаскивания SVG
-    container.addEventListener('mousedown', function (event) {
-        isDragging = true;
-        startDragX = event.clientX;
-        startDragY = event.clientY;
-        container.style.cursor = 'grabbing';
-    });
+            updateTransform();
+        });
 
-    document.addEventListener('mousemove', function (event) {
-        if (isDragging) {
-            var deltaX = event.clientX - startDragX;
-            var deltaY = event.clientY - startDragY;
-            translateX += deltaX;
-            translateY += deltaY;
+        // Обработчики событий мыши для перетаскивания SVG на ПК
+        container.addEventListener('mousedown', function (event) {
+            isDragging = true;
             startDragX = event.clientX;
             startDragY = event.clientY;
+            container.style.cursor = 'grabbing';
+        });
+
+        document.addEventListener('mousemove', function (event) {
+            if (isDragging) {
+                var deltaX = event.clientX - startDragX;
+                var deltaY = event.clientY - startDragY;
+                translateX += deltaX;
+                translateY += deltaY;
+                startDragX = event.clientX;
+                startDragY = event.clientY;
+                updateTransform();
+            }
+        });
+
+        document.addEventListener('mouseup', function (event) {
+            isDragging = false;
+            container.style.cursor = 'grab';
+        });
+    } else {
+        // Обработчик жестов Hammer.js для мобильных устройств
+        var hammer = new Hammer(container);
+
+        // Перетаскивание на сенсорных экранах
+        hammer.on('panmove', function (event) {
+            translateX += event.deltaX * 0.05; // Уменьшение чувствительности перетаскивания
+            translateY += event.deltaY * 0.05; // Уменьшение чувствительности перетаскивания
             updateTransform();
-        }
-    });
+        });
 
-    document.addEventListener('mouseup', function (event) {
-        isDragging = false;
-        container.style.cursor = 'grab';
-    });
-
-    // Обработчик жестов Hammer.js
-    var hammer = new Hammer(container);
-
-    // Перетаскивание на сенсорных экранах
-    hammer.on('pan', function (event) {
-        translateX += event.deltaX;
-        translateY += event.deltaY;
-        updateTransform();
-    });
-
-    // Масштабирование на сенсорных экранах
-    hammer.get('pinch').set({ enable: true });
-    hammer.on('pinch', function (event) {
-        currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
-        updateTransform();
-    });
+        // Масштабирование на сенсорных экранах
+        hammer.get('pinch').set({ enable: true });
+        hammer.on('pinchmove', function (event) {
+            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
+            updateTransform();
+        });
+    }
 
     // Функция для обновления свойства transform у SVG
     function updateTransform() {

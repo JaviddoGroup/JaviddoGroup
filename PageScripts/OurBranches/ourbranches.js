@@ -1,133 +1,63 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var container = document.querySelector('.our-branch-maps');
-    var svg = container.querySelector('svg');
+document.addEventListener('DOMContentLoaded', () => {
+    // Инициализация карты Leaflet
+    const map = L.map('map').setView([55.751244, 37.618423], 10); // Центр карты (Москва)
 
-    // Переменные для приближения
-    var scaleFactor = 1.1; // Коэффициент масштабирования при каждом шаге скролла и масштабирования на телефоне
-    var minScale = 1; // Минимальный масштаб
-    var maxScale = 15; // Максимальный масштаб
-    var currentScale = 1; // Текущий масштаб
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
 
-    // Переменные для перетаскивания
-    var isDragging = false;
-    var startDragX = 0;
-    var startDragY = 0;
-    var translateX = 0;
-    var translateY = 0;
+    const branches = document.querySelectorAll('.branch');
+    const branchName = document.getElementById('branch-name');
+    const branchDetails = document.getElementById('branch-details');
+    const branchImg = document.getElementById('branch-img');
 
-    // Список стран и соответствующих названий
-    var countryNames = {
-        path1: 'Country 1',
-        path2: 'Country 2',
-        // Добавьте другие страны с их соответствующими ID путей и названиями
-    };
+    const markers = {};
 
-    // Функция для отображения названия страны с анимацией
-    function showCountryName(countryId) {
-        var countryName = countryNames[countryId];
-        var countryInfoElement = document.getElementById('country-info');
-        if (countryInfoElement) {
-            countryInfoElement.textContent = countryName;
-            countryInfoElement.style.opacity = '1';
-        }
-    }
+    branches.forEach(branch => {
+        const branchId = branch.getAttribute('data-id');
+        const name = branch.querySelector('h3').textContent;
+        const details = branch.querySelector('.details').textContent;
+        const coords = branch.querySelector('.coords').textContent.split(',').map(Number);
+        const imgSrc = branch.querySelector('.img').getAttribute('src');
 
-    // Функция для скрытия названия страны с анимацией
-    function hideCountryName() {
-        var countryInfoElement = document.getElementById('country-info');
-        if (countryInfoElement) {
-            countryInfoElement.style.opacity = '0';
-            setTimeout(function () {
-                countryInfoElement.textContent = '';
-            }, 300); // Ждем окончания анимации перед очисткой содержимого
-        }
-    }
+        const marker = L.marker(coords).addTo(map)
+            .bindPopup(name);
+        markers[branchId] = marker;
 
-    // Обработчик события наведения на элемент SVG
-    svg.querySelectorAll('path').forEach(function (path) {
-        var countryId = path.id; // ID пути как идентификатор страны
-
-        path.addEventListener('mouseenter', function () {
-            showCountryName(countryId);
+        branch.addEventListener('click', () => {
+            showBranchDetails(branchId, name, details, coords, imgSrc);
         });
 
-        path.addEventListener('mouseleave', function () {
-            hideCountryName();
+        branch.addEventListener('mouseover', () => {
+            highlightBranchOnMap(branchId);
+        });
+
+        branch.addEventListener('mouseout', () => {
+            resetMapHighlight();
         });
     });
 
-    // Проверяем, является ли устройство мобильным
-    var isMobile = 'ontouchstart' in window || navigator.maxTouchPoints;
-
-    if (!isMobile) {
-        // Обработчик события скролла для масштабирования SVG на ПК
-        container.addEventListener('wheel', function (event) {
-            event.preventDefault();
-
-            var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
-            var zoomOut = delta < 0;
-
-            if (zoomOut) {
-                currentScale = Math.max(minScale, currentScale / scaleFactor);
-            } else {
-                currentScale = Math.min(maxScale, currentScale * scaleFactor);
-            }
-
-            updateTransform();
-        });
-
-        // Обработчики событий мыши для перетаскивания SVG на ПК
-        container.addEventListener('mousedown', function (event) {
-            isDragging = true;
-            startDragX = event.clientX;
-            startDragY = event.clientY;
-            container.style.cursor = 'grabbing';
-        });
-
-        document.addEventListener('mousemove', function (event) {
-            if (isDragging) {
-                var deltaX = event.clientX - startDragX;
-                var deltaY = event.clientY - startDragY;
-                translateX += deltaX;
-                translateY += deltaY;
-                updateTransform();
-                startDragX = event.clientX;
-                startDragY = event.clientY;
-            }
-        });
-
-        document.addEventListener('mouseup', function (event) {
-            isDragging = false;
-            container.style.cursor = 'grab';
-        });
-    } else {
-        // Инициализация Hammer.js для мобильных устройств
-        var mc = new Hammer.Manager(container, {
-            recognizers: [
-                [Hammer.Pan, { threshold: 0 }]
-            ]
-        });
-
-        // Перетаскивание на мобильных устройствах
-        mc.on('panmove', function (event) {
-            translateX += event.deltaX;
-            translateY += event.deltaY;
-            updateTransform();
-        });
-
-        // Масштабирование на мобильных устройствах
-        var pinch = new Hammer.Pinch();
-        mc.add(pinch);
-        mc.on('pinchmove', function (event) {
-            currentScale = Math.min(maxScale, Math.max(minScale, currentScale * event.scale));
-            updateTransform();
-        });
+    function showBranchDetails(branchId, name, details, coords, imgSrc) {
+        branchName.textContent = name;
+        branchDetails.textContent = details;
+        branchImg.src = imgSrc;
+        branchImg.style.display = 'block';
+        zoomToBranch(coords);
     }
 
-    // Функция для обновления свойства transform у SVG
-    function updateTransform() {
-        svg.style.transition = 'transform 0.0s ease';
-        svg.style.transform = 'translate(' + translateX + 'px, ' + translateY + 'px) scale(' + currentScale + ')';
+    function highlightBranchOnMap(branchId) {
+        if (markers[branchId]) {
+            markers[branchId].openPopup();
+        }
     }
 
+    function resetMapHighlight() {
+        for (const marker of Object.values(markers)) {
+            marker.closePopup();
+        }
+    }
+
+    function zoomToBranch(coords) {
+        map.setView(coords, 15);
+    }
 });

@@ -4,45 +4,71 @@
 @media screen and (min-width: 2560px) {}
 
 @media screen and (max-width: 2560px) {
-    .our-branch-maps {
-        margin-top: 45px;
-        padding: 10px;
-        border-radius: 15px;
-        width: 60%;
-        margin: auto;
+    .container {
         display: flex;
-        justify-content: center;
-        background-color: #8080801a;
-        cursor: grab;
-        position: relative;
-        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .our-branch-maps svg {
+    .map-container {
         width: 100%;
-        transition: transform 0.3s ease;
+        height: 500px;
+        position: relative;
     }
 
-    .our-branch-maps svg g path {
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 20px;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
         cursor: pointer;
-        transition: fill 0.5s;
+        padding: 10px 0;
+        border-bottom: 2px solid #ccc;
     }
 
-    .our-branch-maps svg g path:hover {
-        fill: #FC6E27;
-    }
-
-    #country-info {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: red;
-        padding: 5px 10px;
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
+        transition: background 0.3s;
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #ddd;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
     }
 }
 
@@ -70,51 +96,7 @@
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {
-    .our-branch-maps {
-        margin-top: 45px !important;
-        padding: 0;
-        border-radius: 15px;
-        width: 100%;
-        height: 45vh;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        background-color: #8080801a;
-        overflow: hidden;
-        cursor: grab;
-
-    }
-
-    #country-info {
-        position: sticky;
-        top: 10px;
-        left: 10px;
-        background-color: red;
-        padding: 5px 10px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 100s ease;
-    }
-
-    .our-branch-maps svg {
-        width: 100%;
-        scale: 1.5;
-    }
-
-    .our-branch-maps svg g path {
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    .our-branch-maps svg g path:hover {
-        fill: #FC6E27;
-        transition: 0.5s;
-        width: 110%;
-    }
-}
+@media screen and (max-width: 600px) {}
 
 @media screen and (max-width: 500px) {}
 

@@ -1,9 +1,7 @@
 @media screen and (max-width: 600060px) {}
 
 
-@media screen and (min-width: 2560px) {}
-
-@media screen and (max-width: 2560px) {
+@media screen and (min-width: 2560px) {
 
 
     .container {
@@ -15,8 +13,8 @@
     .map-container {
         width: 100%;
         overflow-x: hidden;
-
-        height: 500px;
+        margin-top: 25px;
+        height: 40vh;
         position: relative;
     }
 
@@ -31,8 +29,8 @@
         width: 100%;
         overflow-x: hidden;
 
-        max-width: 800px;
-        margin-top: 20px;
+        max-width: 1000px;
+        margin-top: 0;
     }
 
     .branches-slider {
@@ -41,7 +39,253 @@
         /* Скрыть скролл */
         white-space: nowrap;
         cursor: pointer;
-        padding: 10px 0;
+        padding: 25px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        user-select: none;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    #branch-details a {
+        text-decoration: none;
+        color: #FC6E27;
+        font-size: 1.0em;
+        padding: 15px 0;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 2560px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        margin-top: 25px;
+        height: 40vh;
+        position: relative;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 1000px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 25px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        user-select: none;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    #branch-details a {
+        text-decoration: none;
+        color: #FC6E27;
+        font-size: 1.0em;
+        padding: 15px 0;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 2160px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
         border-bottom: 2px solid #ccc;
         -webkit-overflow-scrolling: touch;
         /* Обеспечить плавную прокрутку на мобильных устройствах */
@@ -69,6 +313,11 @@
         background: #FC6E27;
         transform: translateY(-3px);
         color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
     }
 
     .contact-info {
@@ -113,34 +362,1842 @@
 
 }
 
-@media screen and (max-width: 2160px) {}
+@media screen and (max-width: 2000px) {
 
-@media screen and (max-width: 2000px) {}
 
-@media screen and (max-width: 1800px) {}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media screen and (max-width: 1700px) {}
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
 
-@media screen and (max-width: 1600px) {}
+    #map {
+        width: 100%;
+        overflow-x: hidden;
 
-@media screen and (max-width: 1500px) {}
+        height: 100%;
+    }
 
-@media screen and (max-width: 1400px) {}
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
 
-@media screen and (max-width: 1380px) {}
+        max-width: 800px;
+        margin-top: 0;
+    }
 
-@media screen and (max-width: 1300px) {}
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
 
-@media screen and (max-width: 1200px) {}
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-@media screen and (max-width: 1100px) {}
+    .branch p {
+        display: none;
+    }
 
-@media screen and (max-width: 800px) {}
+    .branch img {
+        display: none;
+    }
 
-@media screen and (max-width: 600px) {}
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
 
-@media screen and (max-width: 500px) {}
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
 
-@media screen and (max-width: 400px) {}
+    .contact-info {
+        margin-top: 10px;
+    }
 
-@media screen and (max-width: 360px) {}
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1900px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1800px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1380px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 35vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 100%;
+        overflow-x: hidden;
+        height: 40vh;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #map {
+        width: 100%;
+        overflow-x: hidden;
+
+        height: 100%;
+    }
+
+    .branches-container {
+        width: 100%;
+        overflow-x: hidden;
+
+        max-width: 800px;
+        margin-top: 0;
+    }
+
+    .branches-slider {
+        display: flex;
+        overflow-x: hidden;
+        /* Скрыть скролл */
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
+    }
+
+    .branch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .branch p {
+        display: none;
+    }
+
+    .branch img {
+        display: none;
+    }
+
+    .branch:hover {
+        background: #FC6E27;
+        transform: translateY(-3px);
+        color: white;
+    }
+
+    .branch-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
+    }
+
+    .branch-info {
+        margin-top: 20px;
+    }
+
+    #branch-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    #branch-details {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
+
+}

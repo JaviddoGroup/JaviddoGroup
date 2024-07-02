@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Инициализация карты Leaflet
-    const map = L.map('map').setView([55.751244, 37.618423], 10); // Центр карты (Москва)
+    const map = L.map('map').setView([29.3537105, 120.113031], 10); // Центр карты (Москва)
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -19,49 +18,87 @@ document.addEventListener('DOMContentLoaded', () => {
         const details = branch.querySelector('.details').textContent;
         const coords = branch.querySelector('.coords').textContent.split(',').map(Number);
         const imgSrc = branch.querySelector('.img').getAttribute('src');
+        const email = branch.querySelector('.email a').textContent;
+        const phone = branch.querySelector('.phone a').textContent;
 
         const marker = L.marker(coords).addTo(map)
             .bindPopup(name)
             .on('click', () => {
-                showBranchDetails(name, details, imgSrc, coords);
+                showBranchDetails(name, details, imgSrc, coords, email, phone);
             });
 
         markers[branchId] = marker;
 
         branch.addEventListener('click', () => {
-            showBranchDetails(name, details, imgSrc, coords);
-        });
-
-        branch.addEventListener('mouseover', () => {
-            highlightBranchOnMap(branchId);
-        });
-
-        branch.addEventListener('mouseout', () => {
-            resetMapHighlight();
+            showBranchDetails(name, details, imgSrc, coords, email, phone);
         });
     });
 
-    function showBranchDetails(name, details, imgSrc, coords) {
+    function showBranchDetails(name, details, imgSrc, coords, email, phone) {
         branchName.textContent = name;
-        branchDetails.textContent = details;
+        branchDetails.innerHTML = `<strong>Email:</strong> <a href="mailto:${email}">${email}</a><br><strong>Phone:</strong> <a href="tel:${phone}">${phone}</a><br>${details}`;
         branchImg.src = imgSrc;
         branchImg.style.display = 'block';
         zoomToBranch(coords);
     }
 
-    function highlightBranchOnMap(branchId) {
-        if (markers[branchId]) {
-            markers[branchId].openPopup();
-        }
-    }
-
-    function resetMapHighlight() {
-        for (const marker of Object.values(markers)) {
-            marker.closePopup();
-        }
-    }
-
     function zoomToBranch(coords) {
         map.setView(coords, 15);
     }
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.branches-slider');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Для поддержки мыши
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; // Скорость прокрутки
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Для поддержки сенсорных устройств
+    slider.addEventListener('touchstart', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.touches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('touchend', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        const x = e.touches[0].pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; // Скорость прокрутки
+        slider.scrollLeft = scrollLeft - walk;
+    });
 });

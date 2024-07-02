@@ -4,6 +4,8 @@
 @media screen and (min-width: 2560px) {}
 
 @media screen and (max-width: 2560px) {
+
+
     .container {
         display: flex;
         flex-direction: column;
@@ -12,28 +14,37 @@
 
     .map-container {
         width: 100%;
+        overflow-x: hidden;
+
         height: 500px;
         position: relative;
     }
 
     #map {
         width: 100%;
+        overflow-x: hidden;
+
         height: 100%;
     }
 
     .branches-container {
         width: 100%;
+        overflow-x: hidden;
+
         max-width: 800px;
         margin-top: 20px;
     }
 
     .branches-slider {
         display: flex;
-        overflow-x: auto;
+        overflow-x: hidden;
+        /* Скрыть скролл */
         white-space: nowrap;
         cursor: pointer;
         padding: 10px 0;
         border-bottom: 2px solid #ccc;
+        -webkit-overflow-scrolling: touch;
+        /* Обеспечить плавную прокрутку на мобильных устройствах */
     }
 
     .branch {
@@ -42,7 +53,8 @@
         margin: 0 10px;
         background: #f0f0f0;
         border-radius: 5px;
-        transition: background 0.3s;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .branch p {
@@ -55,6 +67,29 @@
 
     .branch:hover {
         background: #ddd;
+        transform: translateY(-3px);
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+
+    .email,
+    .phone {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .email a,
+    .phone a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .email a:hover,
+    .phone a:hover {
+        color: #007bff;
     }
 
     .branch-info {
@@ -70,6 +105,8 @@
         font-size: 16px;
         color: #555;
     }
+
+
 }
 
 @media screen and (max-width: 2160px) {}

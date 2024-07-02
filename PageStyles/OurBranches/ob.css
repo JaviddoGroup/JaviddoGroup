@@ -66,8 +66,9 @@
     }
 
     .branch:hover {
-        background: #ddd;
+        background: #FC6E27;
         transform: translateY(-3px);
+        color: white;
     }
 
     .contact-info {
@@ -106,6 +107,9 @@
         color: #555;
     }
 
+    .leaflet-control-container .leaflet-right {
+        display: none !important;
+    }
 
 }
 

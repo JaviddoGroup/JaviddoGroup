@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; // Скорость прокрутки
+        const walk = (x - startX) * 1; // Скорость прокрутки
         slider.scrollLeft = scrollLeft - walk;
     });
 
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.addEventListener('touchmove', (e) => {
         if (!isDown) return;
         const x = e.touches[0].pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; // Скорость прокрутки
+        const walk = (x - startX) * 1; // Скорость прокрутки
         slider.scrollLeft = scrollLeft - walk;
     });
 });

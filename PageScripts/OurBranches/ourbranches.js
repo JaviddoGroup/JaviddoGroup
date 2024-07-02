@@ -21,11 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const imgSrc = branch.querySelector('.img').getAttribute('src');
 
         const marker = L.marker(coords).addTo(map)
-            .bindPopup(name);
+            .bindPopup(name)
+            .on('click', () => {
+                showBranchDetails(name, details, imgSrc, coords);
+            });
+
         markers[branchId] = marker;
 
         branch.addEventListener('click', () => {
-            showBranchDetails(branchId, name, details, coords, imgSrc);
+            showBranchDetails(name, details, imgSrc, coords);
         });
 
         branch.addEventListener('mouseover', () => {
@@ -37,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    function showBranchDetails(branchId, name, details, coords, imgSrc) {
+    function showBranchDetails(name, details, imgSrc, coords) {
         branchName.textContent = name;
         branchDetails.textContent = details;
         branchImg.src = imgSrc;

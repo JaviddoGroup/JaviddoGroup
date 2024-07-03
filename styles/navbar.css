@@ -31,7 +31,7 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
 
-        z-index: 20 !important;
+        z-index: 1100 !important;
     }
 
     .main-banner-background-image {

@@ -1,0 +1,1636 @@
+@media screen and (max-width: 6060px) {}
+
+@media screen and (min-width: 2560px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 2560px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 2160px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 2000px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1900px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1800px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1380px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+        max-width: 65%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 45px auto;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #777;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+    }
+
+    .card:hover .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card .job-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .job-info .info {
+        display: inline-block;
+        background-color: #FC6E27;
+        color: white;
+        margin: 5px 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .job-info .info:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}

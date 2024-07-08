@@ -27,6 +27,17 @@
         color: #333;
     }
 
+    .reason {
+        cursor: pointer;
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+    }
+
     .intro p {
         text-align: center;
     }

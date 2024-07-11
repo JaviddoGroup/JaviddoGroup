@@ -1,0 +1,247 @@
+@media screen and (max-width: 25060px) {}
+
+
+@media screen and (min-width: 2560px) {}
+
+@media screen and (max-width: 2560px) {
+    header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 45px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        width: 91%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .search-container button {
+        height: 40px;
+        padding: 1px;
+        background-size: auto 100%;
+        width: 5%;
+
+    }
+
+    #search {
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .bookmark-icon {
+        background: url('../../storage/blogs/icons/save.svg') no-repeat center;
+        width: 24px;
+        height: 24px;
+        border: none;
+        cursor: pointer;
+        background-size: 100% 100%;
+    }
+
+    .bookmark-icon.active {
+        background: url('../../storage/blogs/icons/saved.svg') no-repeat center;
+        background-size: 100% 100%;
+
+    }
+
+    .filtered {
+        display: none;
+    }
+
+    #blogs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .blog {
+        width: 20%;
+        border: 1px solid #fff;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .blog img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .blog h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        position: relative;
+        top: 0;
+    }
+
+    .blog-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blog-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        cursor: default;
+    }
+
+    .popup-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 80%;
+        width: 50%;
+        height: auto;
+        aspect-ratio: 16/13;
+        max-height: 80%;
+        overflow-y: auto;
+        overflow: hidden;
+    }
+
+    .pop-up-upper-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .pop-up-upper-content a img {
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .pop-up-upper-content a img:hover {
+        color: inherit;
+    }
+
+    .popup-content h2 {
+        top: -0%;
+
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .popup-content iframe {
+        display: flex;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin: auto;
+    }
+
+    .close {
+        text-align: center;
+        position: relative;
+        top: -30px;
+        left: 99.0%;
+        cursor: pointer;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pagination-arrow {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .page-number {
+        margin: 0 10px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .popup-meta {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popup-meta span {
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe {
+        text-transform: uppercase;
+        width: 20%;
+        border-radius: 15px;
+        border: none;
+        background-color: #ff0000;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        cursor: pointer;
+        height: auto;
+        aspect-ratio: 16 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

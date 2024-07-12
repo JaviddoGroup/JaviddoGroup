@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateLangNow(longText, shortText) {
         document.querySelector('.now-long').textContent = longText;
         document.querySelector('.now-sort').textContent = shortText;
-        if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('selectedLang', JSON.stringify({ longText: longText, shortText: shortText }));
-        }
+        localStorage.setItem('selectedLang', JSON.stringify({ longText: longText, shortText: shortText }));
     }
 
     // Функция для загрузки перевода из JSON и применения его на странице
@@ -54,48 +52,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция для обновления отображения текущего языка
     function updateCurrentLanguageDisplay(language, translations) {
-        if (typeof localStorage !== 'undefined') {
-            var savedLang = JSON.parse(localStorage.getItem('selectedLang'));
-            if (savedLang) {
-                var longTextKey = savedLang.longText.toLowerCase();
-                var shortTextKey = savedLang.shortText.toLowerCase();
+        var savedLang = JSON.parse(localStorage.getItem('selectedLang'));
+        if (savedLang) {
+            var longTextKey = savedLang.longText.toLowerCase();
+            var shortTextKey = savedLang.shortText.toLowerCase();
 
-                var longText = translations[longTextKey] || savedLang.longText;
-                var shortText = translations[shortTextKey] || savedLang.shortText;
+            var longText = translations[longTextKey] || savedLang.longText;
+            var shortText = translations[shortTextKey] || savedLang.shortText;
 
-                document.querySelector('.now-long').textContent = longText;
-                document.querySelector('.now-sort').textContent = shortText;
+            document.querySelector('.now-long').textContent = longText;
+            document.querySelector('.now-sort').textContent = shortText;
 
-                // Обновление языковых опций в выпадающем списке
-                langOptions.forEach(function (langOption) {
-                    var langLong = langOption.querySelector('.name-lang-long');
-                    var langKey = langLong.getAttribute('data-lang');
-                    if (translations[langKey]) {
-                        langLong.textContent = translations[langKey];
-                    }
-                });
-            }
+            // Обновление языковых опций в выпадающем списке
+            langOptions.forEach(function (langOption) {
+                var langLong = langOption.querySelector('.name-lang-long');
+                var langKey = langLong.getAttribute('data-lang');
+                if (translations[langKey]) {
+                    langLong.textContent = translations[langKey];
+                }
+            });
         }
     }
 
     // Загрузка сохраненного состояния при загрузке страницы
-    if (typeof localStorage !== 'undefined') {
-        var savedLang = localStorage.getItem('selectedLang');
-        if (savedLang) {
-            var langData = JSON.parse(savedLang);
-            updateLangNow(langData.longText, langData.shortText);
-            loadTranslation(langData.shortText.toLowerCase(), function (translations) {
-                updateCurrentLanguageDisplay(langData.shortText.toLowerCase(), translations);
-            });
-        } else {
-            // Загрузка дефолтного языка (английского)
-            updateLangNow('English', 'US');
-            loadTranslation('en', function (translations) {
-                updateCurrentLanguageDisplay('en', translations);
-            });
-        }
+    var savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+        var langData = JSON.parse(savedLang);
+        updateLangNow(langData.longText, langData.shortText);
+        loadTranslation(langData.shortText.toLowerCase(), function (translations) {
+            updateCurrentLanguageDisplay(langData.shortText.toLowerCase(), translations);
+        });
     } else {
-        console.warn('localStorage is not supported.');
+        // Загрузка дефолтного языка (английского)
+        updateLangNow('English', 'US');
+        loadTranslation('en', function (translations) {
+            updateCurrentLanguageDisplay('en', translations);
+        });
     }
 
     langNow.addEventListener('click', function () {
@@ -135,3 +127,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

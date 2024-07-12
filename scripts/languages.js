@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     langNow.addEventListener('click', function () {
         console.log("Language button clicked!");
         alert('Language button clicked!');
+        Android.showToast('Language button clicked!');
         selectionLang.classList.toggle('opened-lang-selected');
         langIcon.classList.toggle('rotated');
     });
@@ -103,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var shortText = langOption.querySelector('.name-lang-short').textContent.toUpperCase();
             console.log("Language option selected:", longText, shortText);
             alert("Language option selected: " + longText + " " + shortText);
+            Android.showToast("Language option selected: " + longText + " " + shortText);
             loadTranslation(shortText.toLowerCase(), function (translations) {
                 var longTextKey = langOption.querySelector('.name-lang-long').getAttribute('data-lang');
                 var translatedLongText = translations[longTextKey] || longText;

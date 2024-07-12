@@ -127,3 +127,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.lang-now').addEventListener('click', function () {
+    alert('Language button clicked!');
+});

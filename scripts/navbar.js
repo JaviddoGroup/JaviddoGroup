@@ -211,3 +211,44 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000); // Сброс через 2 секунды
     }, 5300); // Задержка перед началом анимации
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollTop = 0;
+    var navbar = document.querySelector(".layout-nav");
+
+    window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Скроллинг вниз
+            navbar.classList.add("hidden");
+        } else {
+            // Скроллинг вверх
+            navbar.classList.remove("hidden");
+        }
+
+        lastScrollTop = scrollTop;
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollTop = 0;
+    var navbarMobile = document.querySelector(".nav-bar-mobile");
+
+    window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Скроллинг вниз
+            navbarMobile.classList.add("hidden");
+        } else {
+            // Скроллинг вверх
+            navbarMobile.classList.remove("hidden");
+        }
+
+        lastScrollTop = scrollTop;
+    });
+});

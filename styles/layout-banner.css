@@ -3,7 +3,7 @@
 @media screen and (min-width: 2560px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 6.6%;
     }
 
     .banner img {
@@ -101,7 +101,7 @@
 @media screen and (max-width: 2560px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 6.1%;
     }
 
     .banner img {
@@ -199,7 +199,7 @@
 @media screen and (max-width: 2160px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7.15%;
     }
 
     .banner img {
@@ -297,7 +297,7 @@
 @media screen and (max-width: 2000px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 6.3%;
     }
 
     .banner img {
@@ -392,11 +392,108 @@
     }
 }
 
+@media screen and (max-width: 1900px) {
+    .layout-banner {
+        position: relative;
+        margin-top: 6.6%;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 48 / 19;
+    }
+
+    .first-last {
+        width: 20%;
+        max-width: 100%;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .objects {
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 48 / 19;
+        overflow: hidden;
+    }
+
+    .white {
+        background-color: white;
+        height: auto;
+        aspect-ratio: 48 / 19;
+        position: relative;
+        will-change: transform;
+        /* Улучшение производительности */
+    }
+
+    @keyframes slideInLayoutBanner {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(100%);
+        }
+    }
+
+    @-webkit-keyframes slideInLayoutBanner {
+        0% {
+            -webkit-transform: translateY(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(100%);
+        }
+    }
+
+    .objects .white {
+        animation: slideInLayoutBanner 1s ease forwards;
+        -webkit-animation: slideInLayoutBanner 1s ease forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    .objects .first-up {
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+    }
+
+    .objects .second-up {
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+    }
+
+    .objects .third-up {
+        animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+    }
+
+    .objects .fourth-up {
+        animation-delay: 0.6s;
+        -webkit-animation-delay: 0.6s;
+    }
+
+    .objects .five-up {
+        animation-delay: 0.8s;
+        -webkit-animation-delay: 0.8s;
+    }
+
+    .objects .six-up {
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+    }
+}
 
 @media screen and (max-width: 1800px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 6.7%;
     }
 
     .banner img {
@@ -494,7 +591,7 @@
 @media screen and (max-width: 1700px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7%;
     }
 
     .banner img {
@@ -592,7 +689,7 @@
 @media screen and (max-width: 1600px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7.2%;
     }
 
     .banner img {
@@ -691,7 +788,7 @@
 @media screen and (max-width: 1500px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7.7%;
     }
 
     .banner img {
@@ -790,7 +887,7 @@
 @media screen and (max-width: 1400px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 8.1%;
     }
 
     .banner img {
@@ -987,7 +1084,7 @@
 @media screen and (max-width: 1300px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7%;
     }
 
     .banner img {
@@ -1085,7 +1182,7 @@
 @media screen and (max-width: 1200px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 7.5%;
     }
 
     .banner img {
@@ -1183,7 +1280,7 @@
 @media screen and (max-width: 1100px) {
     .layout-banner {
         position: relative;
-        margin-top: 6%;
+        margin-top: 8.2%;
     }
 
     .banner img {
@@ -1283,7 +1380,7 @@
 @media screen and (max-width: 800px) {
     .layout-banner {
         position: relative;
-        margin-top: 0%;
+        margin-top: 15%;
     }
 
     .banner img {
@@ -1382,7 +1479,7 @@
 @media screen and (max-width: 600px) {
     .layout-banner {
         position: relative;
-        margin-top: 0%;
+        margin-top: 20.5%;
     }
 
     .banner img {
@@ -1481,7 +1578,7 @@
 @media screen and (max-width: 500px) {
     .layout-banner {
         position: relative;
-        margin-top: 0%;
+        margin-top: 21%;
     }
 
     .banner img {
@@ -1579,7 +1676,7 @@
 @media screen and (max-width: 400px) {
     .layout-banner {
         position: relative;
-        margin-top: 0%;
+        margin-top: 21.5%;
     }
 
     .banner img {
@@ -1677,7 +1774,7 @@
 @media screen and (max-width: 360px) {
     .layout-banner {
         position: relative;
-        margin-top: 0%;
+        margin-top: 22.3%;
     }
 
     .banner img {

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var closeBtn = document.querySelector('.selected-lang-close-ic');
     var langIcon = document.querySelector('.lang-icon');
     var langOptions = document.querySelectorAll('.lang');
+    var body = document.body;
 
     // Функция для обновления содержимого .lang-now и сохранения в localStorage
     function updateLangNow(longText, shortText) {
@@ -93,11 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
     langNow.addEventListener('click', function () {
         selectionLang.classList.toggle('opened-lang-selected');
         langIcon.classList.toggle('rotated');
+        body.classList.toggle('no-scroll', selectionLang.classList.contains('opened-lang-selected'));
     });
 
     closeBtn.addEventListener('click', function () {
         selectionLang.classList.remove('opened-lang-selected');
         langIcon.classList.remove('rotated');
+        body.classList.remove('no-scroll');
     });
 
     // Обработчики событий для каждого языка
@@ -116,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             selectionLang.classList.remove('opened-lang-selected');
             langIcon.classList.remove('rotated');
+            body.classList.remove('no-scroll');
         });
     });
 
@@ -124,23 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!selectionLang.contains(event.target) && !langNow.contains(event.target)) {
             selectionLang.classList.remove('opened-lang-selected');
             langIcon.classList.remove('rotated');
+            body.classList.remove('no-scroll');
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

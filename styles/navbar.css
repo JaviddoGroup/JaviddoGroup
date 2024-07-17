@@ -24,7 +24,7 @@
     }
 
     .layout-nav {
-        z-index: 15 !important;
+        z-index: 110 !important;
     }
 
     .mobile-main-menu-nav,
@@ -51,6 +51,10 @@
         padding: 0 !important;
     }
 
+    .selection-lang {
+        position: relative;
+        z-index: 20;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -83,7 +87,6 @@
 
     }
 
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -95,7 +98,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -104,12 +107,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 80px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -154,7 +159,9 @@
     }
 
     .opened-lang-selected {
-        max-height: 500px;
+        max-height: 96vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -782,7 +789,6 @@
 
     }
 
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -794,7 +800,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -803,12 +809,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 80px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -854,6 +862,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -1450,8 +1460,6 @@
 }
 
 @media screen and (max-width: 2160px) {
-
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -1463,7 +1471,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -1472,12 +1480,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 80px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -1523,6 +1533,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -2099,7 +2111,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -2127,12 +2139,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -2186,6 +2200,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -2736,7 +2752,6 @@
 @media screen and (max-width: 1800px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -2748,7 +2763,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -2756,12 +2771,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -2814,6 +2831,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -3363,7 +3382,6 @@
 @media screen and (max-width: 1700px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -3375,7 +3393,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -3383,12 +3401,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -3441,6 +3461,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -3989,7 +4011,6 @@
 @media screen and (max-width: 1600px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -4001,7 +4022,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -4009,12 +4030,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -4067,6 +4090,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -4616,7 +4641,6 @@
 @media screen and (max-width: 1500px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -4628,7 +4652,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -4636,12 +4660,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -4694,6 +4720,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -5243,7 +5271,6 @@
 @media screen and (max-width: 1400px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -5255,7 +5282,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -5263,12 +5290,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -5321,6 +5350,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -5868,7 +5899,6 @@
 @media screen and (max-width: 1380px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -5880,7 +5910,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -5888,12 +5918,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -5946,6 +5978,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -6501,7 +6535,6 @@
 @media screen and (max-width: 1300px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -6513,7 +6546,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -6521,12 +6554,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -6579,6 +6614,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -7134,7 +7171,6 @@
 @media screen and (max-width: 1200px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -7146,7 +7182,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -7154,12 +7190,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -7213,6 +7251,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -7764,7 +7804,6 @@
 @media screen and (max-width: 1100px) {
 
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -7776,7 +7815,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -7784,12 +7823,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 48.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -7843,6 +7884,8 @@
 
     .opened-lang-selected {
         max-height: 500px;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -8404,6 +8447,11 @@
         display: none;
     }
 
+    .no-scroll {
+        height: 100vh;
+        overflow: hidden;
+    }
+
 
     /* Стили для навбара на телефоне снизу */
 
@@ -8411,7 +8459,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8%;
+        margin-top: 0%;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -8540,6 +8588,7 @@
     }
 
     html.no-scroll {
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -8591,7 +8640,6 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -8603,7 +8651,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -8611,12 +8659,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 26.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -8671,8 +8721,10 @@
     }
 
     .opened-lang-selected {
-        max-height: 95vh;
+        max-height: 100vh;
         height: 100vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -9228,7 +9280,6 @@
         position: fixed;
         transition: top 1s;
         background-color: #fff;
-        z-index: 20;
         top: 0;
         width: 100%;
         display: flex;
@@ -9239,7 +9290,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -9369,6 +9420,8 @@
 
     html.no-scroll {
         overflow: hidden;
+        height: 100vh;
+
     }
 
     .back-and-close-button {
@@ -9416,7 +9469,6 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -9428,7 +9480,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -9436,12 +9488,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 12.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -9496,8 +9550,10 @@
     }
 
     .opened-lang-selected {
-        max-height: 95vh;
+        max-height: 100vh;
         height: 100vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -10038,7 +10094,6 @@
         position: fixed;
         transition: top 1s;
         background-color: #fff;
-        z-index: 20;
         top: 0;
         width: 100%;
         display: flex;
@@ -10049,7 +10104,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10179,6 +10234,8 @@
 
     html.no-scroll {
         overflow: hidden;
+        height: 100vh;
+
     }
 
     .back-and-close-button {
@@ -10226,7 +10283,6 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -10238,7 +10294,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10246,12 +10302,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 12.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -10305,8 +10363,10 @@
     }
 
     .opened-lang-selected {
-        max-height: 96vh;
+        max-height: 100vh;
         height: 100vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -10847,7 +10907,6 @@
         position: fixed;
         transition: top 1s;
         background-color: #fff;
-        z-index: 20;
         top: 0;
         width: 100%;
         display: flex;
@@ -10858,7 +10917,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10988,6 +11047,8 @@
 
     html.no-scroll {
         overflow: hidden;
+        height: 100vh;
+
     }
 
     .back-and-close-button {
@@ -11035,7 +11096,6 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -11047,7 +11107,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11055,12 +11115,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 12.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -11114,8 +11176,10 @@
     }
 
     .opened-lang-selected {
-        max-height: 95vh;
+        max-height: 100vh;
         height: 100vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 
@@ -11656,7 +11720,6 @@
         position: fixed;
         transition: top 1s;
         background-color: #fff;
-        z-index: 20;
         top: 0;
         width: 100%;
         display: flex;
@@ -11667,7 +11730,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11796,6 +11859,7 @@
     }
 
     html.no-scroll {
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -11844,7 +11908,6 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
-    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -11856,7 +11919,7 @@
 
     .layout-nav.hidden {
         top: -100%;
-        transition: top 2s;
+        transition: top 1s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11864,12 +11927,14 @@
 
     .selected-lang {
         width: 100%;
-        height: 40px;
+        height: auto;
+        aspect-ratio: 12.65 / 1;
         background-color: black;
         display: flex;
         color: white;
         justify-content: end;
         align-items: center;
+        overflow: hidden;
     }
 
     .lang-point {
@@ -11923,8 +11988,10 @@
     }
 
     .opened-lang-selected {
-        max-height: 95vh;
+        max-height: 100vh;
         height: 100vh;
+        position: relative;
+        z-index: 20;
         /* Высота, которая достаточно для полного раскрытия */
     }
 

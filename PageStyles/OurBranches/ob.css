@@ -1,4 +1,9 @@
-@media screen and (max-width: 600060px) {}
+@media screen and (max-width: 600060px) {
+    #map {
+        z-index: 40;
+        position: relative;
+    }
+}
 
 
 @media screen and (min-width: 2560px) {

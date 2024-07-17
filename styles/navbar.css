@@ -83,17 +83,19 @@
 
     }
 
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -780,17 +782,19 @@
 
     }
 
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -1446,17 +1450,20 @@
 }
 
 @media screen and (max-width: 2160px) {
+
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -2087,11 +2094,12 @@
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -2728,17 +2736,19 @@
 @media screen and (max-width: 1800px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -3353,17 +3363,19 @@
 @media screen and (max-width: 1700px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -3977,17 +3989,19 @@
 @media screen and (max-width: 1600px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -4602,17 +4616,19 @@
 @media screen and (max-width: 1500px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -5227,17 +5243,19 @@
 @media screen and (max-width: 1400px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -5850,17 +5868,19 @@
 @media screen and (max-width: 1380px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -6481,17 +6501,19 @@
 @media screen and (max-width: 1300px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -7112,17 +7134,19 @@
 @media screen and (max-width: 1200px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -7740,17 +7764,19 @@
 @media screen and (max-width: 1100px) {
 
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -8565,17 +8591,19 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -9198,7 +9226,7 @@
 
     .nav-bar-mobile {
         position: fixed;
-        transition: top 0.5s;
+        transition: top 1s;
         background-color: #fff;
         z-index: 20;
         top: 0;
@@ -9211,6 +9239,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -9387,17 +9416,19 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10005,7 +10036,7 @@
 @media screen and (max-width: 500px) {
     .nav-bar-mobile {
         position: fixed;
-        transition: top 0.5s;
+        transition: top 1s;
         background-color: #fff;
         z-index: 20;
         top: 0;
@@ -10018,6 +10049,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10194,17 +10226,19 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -10811,7 +10845,7 @@
 @media screen and (max-width: 400px) {
     .nav-bar-mobile {
         position: fixed;
-        transition: top 0.5s;
+        transition: top 1s;
         background-color: #fff;
         z-index: 20;
         top: 0;
@@ -10824,6 +10858,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11000,17 +11035,19 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11617,7 +11654,7 @@
 @media screen and (max-width: 360px) {
     .nav-bar-mobile {
         position: fixed;
-        transition: top 0.5s;
+        transition: top 1s;
         background-color: #fff;
         z-index: 20;
         top: 0;
@@ -11630,6 +11667,7 @@
 
     .nav-bar-mobile.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 
@@ -11806,17 +11844,19 @@
 
     /* Стили для навбара на телефоне сверху */
     /* Стили для навигационного меню Выше */
+    /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
         top: 0;
         width: 100%;
         background-color: #fff;
         /* цвет фона навбара */
-        transition: top 0.5s;
+        transition: top 1s;
     }
 
     .layout-nav.hidden {
         top: -100%;
+        transition: top 2s;
         /* значение можно настроить под высоту вашего навбара */
     }
 

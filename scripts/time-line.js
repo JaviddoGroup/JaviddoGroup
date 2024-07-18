@@ -3,10 +3,7 @@ var swiper = new Swiper('#swiper1', {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: false,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
+    autoplay: false, // Остановка автопрокрутки при инициализации
     speed: 20000,
     effect: 'slide',
     grabCursor: true,
@@ -50,10 +47,7 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
-    autoplay: {
-        delay: 100,
-        disableOnInteraction: false,
-    },
+    autoplay: false, // Остановка автопрокрутки при инициализации
     speed: 1000, // Устанавливаем скорость перехода в 1 секунду
     effect: 'slide',
     grabCursor: true,
@@ -63,7 +57,32 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
 });
 
 var timeLineImg = document.querySelector('.time-line-img');
-var isPlaying = true; // Переменная для отслеживания состояния воспроизведения
+var isPlaying = false; // Переменная для отслеживания состояния воспроизведения
+
+// Функция для проверки видимости элемента
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Функция для обработки скролла
+function onScroll() {
+    var timeLine = document.querySelector('.time-line');
+    var timeLineMobile = document.querySelector('.time-line-mobile');
+
+    if (!isPlaying && (isElementInViewport(timeLine) || isElementInViewport(timeLineMobile))) {
+        startSwipers();
+        window.removeEventListener('scroll', onScroll); // Удаляем обработчик скролла после запуска автоплея
+    }
+}
+
+// Добавляем обработчик события скролла
+window.addEventListener('scroll', onScroll);
 
 timeLineImg.addEventListener('click', function () {
     if (isPlaying) {
@@ -100,4 +119,5 @@ function startSwipers() {
     swiper.autoplay.start(); // Возобновление автопрокрутки десктопного слайдера
     swiper_mobile.autoplay.start(); // Возобновление автопрокрутки мобильного слайдера
     timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
+    isPlaying = true; // Установка состояния на "играет"
 }

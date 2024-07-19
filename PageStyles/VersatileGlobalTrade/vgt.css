@@ -7,8 +7,19 @@
         display: block;
     }
 
+    .content .button {
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 3%;
+        cursor: pointer;
+        transition: 1s;
+    }
 
-
+    .content .button:hover {
+        background-color: white;
+        color: black;
+        transition: 1s;
+    }
 }
 
 @media screen and (min-width: 2560px) {

@@ -44,7 +44,7 @@
 
 
     #swiper2 {
-        height: 500px;
+        height: max-content;
         margin-top: 50px;
     }
 
@@ -130,7 +130,7 @@
 
 
     #swiper2 {
-        height: 500px;
+        height: max-content;
         margin-top: 50px;
     }
 
@@ -234,7 +234,7 @@
 
 
     #swiper2 {
-        height: 500px;
+        height: max-content;
         margin-top: 50px;
     }
 

@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         preloader.style.display = 'none';
         document.documentElement.classList.add('html-active-scroll');
-    }, 50); // Adjust this timeout based on your animation duration
+    }, 5000); // Adjust this timeout based on your animation duration
 });

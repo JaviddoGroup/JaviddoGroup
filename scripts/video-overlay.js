@@ -1,37 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the preloader element
-    var preloader = document.querySelector('.preload-animation');
-    // Get the line element
-    var lineElement = document.querySelector('.center-preload-line');
-    // Get the images
-    var topImages = document.querySelectorAll('.top-preload-text img');
-    var bottomImages = document.querySelectorAll('.bottom-preload-text img');
-    var leftLogo = document.querySelector('.left-preload-logo img');
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    const line = document.querySelector('.line');
+    const topImage = document.querySelector('.top-image');
+    const bottomImage = document.querySelector('.bottom-image');
+    const leftImage = document.querySelector('.left-image');
 
-    // Animate the left logo
-    leftLogo.style.animation = 'slideIn 1.5s forwards';
-    leftLogo.style.animationDelay = '0.5s';
+    // Анимация линии
+    line.style.animation = 'drawLine 2s forwards';
 
-    // Animate the line
-    setTimeout(function () {
-        lineElement.style.width = '100%';
-    }, 1000);
+    // Анимации изображений после завершения линии
+    setTimeout(() => {
+        topImage.style.animation = 'appearFromBottom 2s forwards';
+        bottomImage.style.animation = 'appearFromTop 2s forwards';
+        leftImage.style.animation = 'appearFromRight 2s forwards';
+    }, 2000);
 
-    // Animate the top images
-    topImages.forEach(function (img, index) {
-        img.style.animation = 'slideIn 1.5s forwards';
-        img.style.animationDelay = (index * 0.5) + 's';
-    });
+    // Убираем прелоадер через 6 секунд
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 1s';
+    }, 4000);
 
-    // Animate the bottom images
-    bottomImages.forEach(function (img, index) {
-        img.style.animation = 'slideIn 1.5s forwards';
-        img.style.animationDelay = (index * 0.5) + 's';
-    });
-
-    // Remove the preloader and enable scrolling after the animation
-    setTimeout(function () {
+    // Убираем прелоадер из DOM и разблокируем прокрутку через 7 секунд
+    setTimeout(() => {
+        preloader.style.transition = 'opacity 1s';
         preloader.style.display = 'none';
-        document.documentElement.classList.add('html-active-scroll');
-    }, 5000); // Adjust this timeout based on your animation duration
+        document.documentElement.style.overflow = 'auto'; // Разблокировка прокрутки
+    }, 4000);
 });

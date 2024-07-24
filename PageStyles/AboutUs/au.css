@@ -1,4 +1,9 @@
-@media screen and (max-width: 6060px) {}
+@media screen and (max-width: 600060px) {
+    .counters-section {
+
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 2560px) {
     .about-us-section {

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const map = L.map('map').setView([29.3537105, 120.113031], 10); // Центр карты (Москва)
+    const map = L.map('map').setView([29.3277438, 120.1020622], 17); // Центр карты (Москва)
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function zoomToBranch(coords) {
-        map.setView(coords, 15);
+        map.setView(coords, 17);
     }
 });
 
@@ -102,3 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slider.scrollLeft = scrollLeft - walk;
     });
 });
+
+
+
+

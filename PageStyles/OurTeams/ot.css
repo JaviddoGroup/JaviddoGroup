@@ -1937,7 +1937,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 85%;
+        width: 85% !important;
         margin: auto;
         margin-bottom: 40px;
         justify-content: space-between;
@@ -2192,7 +2192,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 85%;
+        width: 85% !important;
         margin: auto;
         margin-bottom: 40px;
         justify-content: space-between;
@@ -2447,7 +2447,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 85%;
+        width: 85% !important;
         margin: auto;
         margin-bottom: 40px;
         justify-content: space-between;
@@ -2702,7 +2702,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 85%;
+        width: 85% !important;
         margin: auto;
         margin-bottom: 40px;
         justify-content: space-between;
@@ -2957,7 +2957,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 95%;
+        width: 95% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: space-between;
@@ -3212,7 +3212,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: space-between;
@@ -3467,7 +3467,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: space-between;
@@ -3724,7 +3724,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: center;
@@ -3981,7 +3981,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: center;
@@ -4238,7 +4238,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: center;
@@ -4495,7 +4495,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 45px;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
         margin-bottom: 10px;
         justify-content: center;

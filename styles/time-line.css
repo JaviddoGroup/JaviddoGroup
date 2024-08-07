@@ -6,6 +6,25 @@
     .time-line-mobile {
         display: none;
     }
+
+    .slide-pic-down {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .slide-smal a {
+        width: 100%;
+    }
+
+    .third {
+        justify-content: space-between;
+    }
+
+    .slide-big a {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -73,9 +92,11 @@
     }
 
     .slide-big-info .tags-hesteg {
-        margin-top: 60%;
+        margin-top: 5%;
 
     }
+
+
 }
 
 @media screen and (max-width: 2560px) {
@@ -143,7 +164,7 @@
     }
 
     .slide-big-info .tags-hesteg {
-        margin-top: 60%;
+        margin-top: 5%;
 
     }
 }

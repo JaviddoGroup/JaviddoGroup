@@ -3,6 +3,10 @@
         background-color: white;
     }
 
+    .solution {
+        cursor: pointer;
+    }
+
     .nav-bar-mobile {
         display: none;
     }

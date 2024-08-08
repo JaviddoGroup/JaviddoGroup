@@ -13,6 +13,16 @@
         bottom: 0;
     }
 
+    .slide-big {
+        width: 950px !important;
+        height: 425px;
+    }
+
+    .slide-smal {
+        width: 420px !important;
+        height: 425px;
+    }
+
     .slide-smal a {
         width: 100%;
     }

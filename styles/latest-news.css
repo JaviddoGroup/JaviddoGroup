@@ -196,15 +196,15 @@
         width: 100%;
     }
 
+    .empty-news-slyder {
+        display: none;
+    }
+
     .news-slider {
         display: block;
         width: 300px;
     }
 
-    .empty-news-slyder {
-        display: block;
-        width: 150px;
-    }
 
     .news-slider a {
         height: 500px;

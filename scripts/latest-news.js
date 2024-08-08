@@ -5,7 +5,7 @@ var swiper2 = new Swiper('#swiper2', {
     spaceBetween: 45,
     loop: false,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     centeredSlides: false, // Отключаем центрирование слайдов

@@ -1,4 +1,4 @@
-// Инициализация Swiper для десктопной версии
+// Инициализация Swiper для десктопной версии с автопрокруткой на паузе
 var swiper = new Swiper('#swiper1', {
     slidesPerView: 3,
     spaceBetween: 20,
@@ -13,6 +13,7 @@ var swiper = new Swiper('#swiper1', {
     on: {
         init: function () {
             updateSlideSizes(this); // Обновление размеров при инициализации
+            this.update(); // Принудительное обновление Swiper при инициализации
         },
         slideChange: function () {
             updateSlideSizes(this); // Обновление размеров при смене слайда
@@ -20,23 +21,18 @@ var swiper = new Swiper('#swiper1', {
     },
 });
 
+// Функция для обновления размеров слайдов
 function updateSlideSizes(swiperInstance) {
-    // Получаем все слайды
     var slides = swiperInstance.slides;
-
-    // Проходим по каждому слайду
     slides.forEach(function (slideEl, index) {
-        // Определяем размеры слайда в зависимости от его индекса
         var slideWidth, slideHeight;
-        if ((index + 1) % 3 === 0) { // Если индекс слайда + 1 делится на 3 без остатка
+        if ((index + 1) % 3 === 0) {
             slideWidth = 950;
             slideHeight = 425;
         } else {
             slideWidth = 420;
             slideHeight = 425;
         }
-
-        // Устанавливаем размеры слайда
         slideEl.style.width = slideWidth + 'px';
         slideEl.style.height = slideHeight + 'px';
     });
@@ -53,11 +49,14 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
     grabCursor: true,
     centeredSlides: false,
     slidesOffsetBefore: 0,
-    followFinger: true // Добавляем параметр для плавного свайпа при перемещении пальца
+    followFinger: true // Плавный свайп при перемещении пальца
 });
 
-var timeLineImg = document.querySelector('.time-line-img');
-var isPlaying = false; // Переменная для отслеживания состояния воспроизведения
+// Принудительное обновление и рендеринг Swiper после загрузки страницы
+window.addEventListener('load', function () {
+    swiper.update(); // Обновление Swiper для десктопной версии
+    swiper_mobile.update(); // Обновление Swiper для мобильной версии
+});
 
 // Функция для проверки видимости элемента
 function isElementInViewport(el) {
@@ -70,19 +69,31 @@ function isElementInViewport(el) {
     );
 }
 
-// Функция для обработки скролла
+// Функция для запуска автопрокрутки при скролле
+function startSwiperAutoplay() {
+    swiper.autoplay.start(); // Запуск автопрокрутки десктопного слайдера
+    swiper_mobile.autoplay.start(); // Запуск автопрокрутки мобильного слайдера
+    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
+    isPlaying = true;
+}
+
+// Функция для обработки скролла и обновления Swiper
 function onScroll() {
     var timeLine = document.querySelector('.time-line');
     var timeLineMobile = document.querySelector('.time-line-mobile');
 
-    if (!isPlaying && (isElementInViewport(timeLine) || isElementInViewport(timeLineMobile))) {
-        startSwipers();
-        window.removeEventListener('scroll', onScroll); // Удаляем обработчик скролла после запуска автоплея
+    if (isElementInViewport(timeLine) || isElementInViewport(timeLineMobile)) {
+        startSwiperAutoplay();
+        window.removeEventListener('scroll', onScroll); // Удаляем обработчик скролла
     }
 }
 
 // Добавляем обработчик события скролла
 window.addEventListener('scroll', onScroll);
+
+// Дополнительные функции управления
+var timeLineImg = document.querySelector('.time-line-img');
+var isPlaying = false;
 
 timeLineImg.addEventListener('click', function () {
     if (isPlaying) {
@@ -90,34 +101,34 @@ timeLineImg.addEventListener('click', function () {
     } else {
         startSwipers();
     }
-    isPlaying = !isPlaying; // Изменение состояния воспроизведения
+    isPlaying = !isPlaying;
 });
 
 swiper.el.addEventListener('mouseenter', function () {
     if (isPlaying) {
         stopSwipers();
-        isPlaying = false; // Установка состояния на "остановлено"
+        isPlaying = false;
     }
 });
 
 swiper.el.addEventListener('mouseleave', function () {
     if (!isPlaying) {
         startSwipers();
-        isPlaying = true; // Установка состояния на "играет"
+        isPlaying = true;
     }
 });
 
 function stopSwipers() {
-    swiper.autoplay.stop(); // Остановка автопрокрутки десктопного слайдера
-    swiper.setTranslate(swiper.getTranslate()); // Остановка текущей анимации десктопного слайдера
-    swiper_mobile.autoplay.stop(); // Остановка автопрокрутки мобильного слайдера
-    swiper_mobile.setTranslate(swiper_mobile.getTranslate()); // Остановка текущей анимации мобильного слайдера
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
+    swiper.autoplay.stop();
+    swiper.setTranslate(swiper.getTranslate());
+    swiper_mobile.autoplay.stop();
+    swiper_mobile.setTranslate(swiper_mobile.getTranslate());
+    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/play-button.svg';
 }
 
 function startSwipers() {
-    swiper.autoplay.start(); // Возобновление автопрокрутки десктопного слайдера
-    swiper_mobile.autoplay.start(); // Возобновление автопрокрутки мобильного слайдера
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
-    isPlaying = true; // Установка состояния на "играет"
+    swiper.autoplay.start();
+    swiper_mobile.autoplay.start();
+    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg';
+    isPlaying = true;
 }

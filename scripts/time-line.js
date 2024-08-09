@@ -109,15 +109,20 @@ swiper.el.addEventListener('mouseleave', function () {
 
 function stopSwipers() {
     swiper.autoplay.stop(); // Остановка автопрокрутки десктопного слайдера
-    swiper.setTranslate(swiper.getTranslate()); // Остановка текущей анимации десктопного слайдера
     swiper_mobile.autoplay.stop(); // Остановка автопрокрутки мобильного слайдера
-    swiper_mobile.setTranslate(swiper_mobile.getTranslate()); // Остановка текущей анимации мобильного слайдера
-    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
+
+    // Устанавливаем слайдеры в текущую позицию и останавливаем анимацию
+    swiper.setTranslate(swiper.getTranslate());
+    swiper_mobile.setTranslate(swiper_mobile.getTranslate());
+
+    // Обновляем иконку
+    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/play-button.svg';
 }
 
 function startSwipers() {
     swiper.autoplay.start(); // Возобновление автопрокрутки десктопного слайдера
     swiper_mobile.autoplay.start(); // Возобновление автопрокрутки мобильного слайдера
-    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
-    isPlaying = true; // Установка состояния на "играет"
+
+    // Обновляем иконку
+    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/pause-button.svg';
 }

@@ -1,4 +1,5 @@
 @media screen and (max-width: 600600px) {
+
     .banners {
         display: block;
     }
@@ -102,6 +103,15 @@
         background-repeat: no-repeat;
         background-size: 1100px 740px;
         margin-top: 45px;
+
+
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 1100px 740px;
 
 
     }
@@ -285,6 +295,15 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 1100px 740px;
+
+
+    }
+
     .opened-object {
         display: none;
         width: 15vw;
@@ -460,6 +479,15 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 835px 560px;
+
+
+    }
+
     .opened-object {
         display: none;
         width: 15vw;
@@ -631,6 +659,13 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 840px 565px;
+    }
+
     .opened-object {
         display: none;
         width: 15vw;
@@ -798,6 +833,15 @@
         background-repeat: no-repeat;
         background-size: 750px 503px;
         margin-top: 45px;
+
+
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 750px 503px;
 
 
     }
@@ -973,6 +1017,13 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 750px 503px;
+    }
+
     .opened-object {
         display: none;
         width: 15vw;
@@ -1135,6 +1186,15 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Hellper.png");
+        background-repeat: no-repeat;
+        background-size: 750px 503px;
+
+
+    }
+
     .fourth-down {
         width: 10%;
         background-image: url("../storage/home-page/main-banner/Zeppard.png");
@@ -1143,6 +1203,13 @@
         margin-top: 45px;
 
 
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 750px 503px;
     }
 
     .opened-object {
@@ -1314,6 +1381,13 @@
         margin-top: 45px;
 
 
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 600px 402px;
     }
 
     .opened-object {
@@ -1488,6 +1562,13 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 595px 395px;
+    }
+
     .opened-object {
         display: none;
         width: 15vw;
@@ -1658,6 +1739,13 @@
         margin-top: 45px;
 
 
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 595px 395px;
     }
 
     .opened-object {
@@ -1832,6 +1920,13 @@
 
     }
 
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 595px 395px;
+    }
+
     .opened-object {
         display: none;
         width: 25vw;
@@ -2002,6 +2097,13 @@
         margin-top: 45px;
 
 
+    }
+
+    .five-up {
+        width: 10%;
+        background-image: url("../storage/home-page/main-banner/Zeppard.png");
+        background-repeat: no-repeat;
+        background-size: 595px 395px;
     }
 
     .opened-object {

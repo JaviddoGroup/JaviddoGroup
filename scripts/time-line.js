@@ -58,14 +58,7 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
 
 var timeLineImg = document.querySelector('.time-line-img');
 var isPlaying = false; // Переменная для отслеживания состояния воспроизведения
-timeLineImg.addEventListener('click', function () {
-    if (isPlaying) {
-        stopSwipers();
-    } else {
-        startSwipers();
-    }
-    isPlaying = !isPlaying; // Изменение состояния воспроизведения
-});
+
 // Функция для проверки видимости элемента
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
@@ -119,12 +112,12 @@ function stopSwipers() {
     swiper.setTranslate(swiper.getTranslate()); // Остановка текущей анимации десктопного слайдера
     swiper_mobile.autoplay.stop(); // Остановка автопрокрутки мобильного слайдера
     swiper_mobile.setTranslate(swiper_mobile.getTranslate()); // Остановка текущей анимации мобильного слайдера
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
+    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/play-button.svg'; // Изменение иконки на play-button.svg
 }
 
 function startSwipers() {
     swiper.autoplay.start(); // Возобновление автопрокрутки десктопного слайдера
     swiper_mobile.autoplay.start(); // Возобновление автопрокрутки мобильного слайдера
-    timeLineImg.querySelector('img').src = './media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
+    timeLineImg.querySelector('img').src = '../media/time-line/tl-icon/pause-button.svg'; // Изменение иконки на pause-button.svg
     isPlaying = true; // Установка состояния на "играет"
 }

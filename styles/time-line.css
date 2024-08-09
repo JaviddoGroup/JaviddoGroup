@@ -216,6 +216,7 @@
         border-radius: 15px;
         display: flex;
         overflow: hidden;
+        height: 300px;
     }
 
     .time-line-slider-mobile a {
@@ -235,6 +236,8 @@
 
     .slide-pic-down-mobile {
         width: 100%;
+        position: absolute;
+        bottom: 0%;
     }
 }
 

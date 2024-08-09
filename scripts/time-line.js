@@ -46,7 +46,7 @@ function updateSlideSizes(swiperInstance) {
 var swiper_mobile = new Swiper('#time-line-mobile', {
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
+    loop: false,
     autoplay: false, // Остановка автопрокрутки при инициализации
     speed: 1000, // Устанавливаем скорость перехода в 1 секунду
     effect: 'slide',

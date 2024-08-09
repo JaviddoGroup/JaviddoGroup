@@ -58,7 +58,14 @@ var swiper_mobile = new Swiper('#time-line-mobile', {
 
 var timeLineImg = document.querySelector('.time-line-img');
 var isPlaying = false; // Переменная для отслеживания состояния воспроизведения
-
+timeLineImg.addEventListener('click', function () {
+    if (isPlaying) {
+        stopSwipers();
+    } else {
+        startSwipers();
+    }
+    isPlaying = !isPlaying; // Изменение состояния воспроизведения
+});
 // Функция для проверки видимости элемента
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();

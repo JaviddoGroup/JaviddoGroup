@@ -258,6 +258,7 @@
         border-radius: 15px;
         display: flex;
         overflow: hidden;
+        height: 250px;
     }
 
     .time-line-slider-mobile a {
@@ -297,6 +298,7 @@
         border-radius: 15px;
         display: flex;
         overflow: hidden;
+        height: 230px;
     }
 
     .time-line-slider-mobile a {
@@ -336,6 +338,7 @@
         border-radius: 15px;
         display: flex;
         overflow: hidden;
+        height: 210px;
     }
 
     .time-line-slider-mobile a {

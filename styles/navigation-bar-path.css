@@ -3,6 +3,8 @@
         display: flex;
         align-items: center;
         vertical-align: middle;
+        padding-left: 15px;
+
     }
 
     .navigation-bar-path img {
@@ -35,6 +37,8 @@
         display: flex;
         align-items: center;
         vertical-align: middle;
+        padding-left: 15px;
+
     }
 
     .navigation-bar-path img {
@@ -433,6 +437,8 @@
         display: flex;
         align-items: center;
         vertical-align: middle;
+        padding-left: 15px;
+        flex-wrap: wrap;
     }
 
     .navigation-bar-path img {
@@ -457,7 +463,6 @@
 
     .navigation-bar-path a:last-child {
         color: #000;
-        margin: 0;
     }
 }
 

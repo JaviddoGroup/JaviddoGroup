@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // По умолчанию делаем центральный элемент активным
-    banners[2].classList.add('active-banner');
+    banners[1].classList.add('active-banner');
 });
 
 

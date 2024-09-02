@@ -5,11 +5,11 @@
     }
 
     .leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive:last-of-type {
-        display: none;
+        /* display: none; */
     }
 
     .leaflet-marker-shadow:last-of-type {
-        display: none;
+        /* display: none; */
 
     }
 }

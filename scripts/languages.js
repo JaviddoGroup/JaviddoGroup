@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } else {
         // Загрузка дефолтного языка (английского)
-        updateLangNow('English', 'US');
+        updateLangNow('English', 'EN');
         loadTranslation('en', function (translations) {
             updateCurrentLanguageDisplay('en', translations);
         });

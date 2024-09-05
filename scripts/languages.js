@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция для загрузки перевода из JSON и применения его на странице
     function loadTranslation(language, callback) {
-        fetch(`https://javiddogroup.github.io/JaviddoGroup/languages/${language}.json`)
+        fetch(`https://javiddo.com/languages/${language}.json`)
             .then(response => response.json())
             .then(data => {
                 document.querySelectorAll('[data-lang]').forEach(element => {

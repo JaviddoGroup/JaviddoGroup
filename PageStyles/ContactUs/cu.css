@@ -1,4 +1,12 @@
-@media screen and (max-width: 6060px) {}
+@media screen and (max-width: 60060px) {
+    .dropdown-item:hover:first-child {
+        border-radius: 2px 2px 0 0;
+    }
+
+    .dropdown-item:hover:last-child {
+        border-radius: 0 0 2px 2px;
+    }
+}
 
 @media screen and (min-width: 2560px) {
     .center-contact-info {

@@ -1,3 +1,10 @@
+@media screen and (max-width: 20000560px) {
+    .news-slider a {
+        position: relative;
+        z-index: 20;
+    }
+}
+
 @media screen and (min-width: 2560px) {
 
     .our-latest-news-headline h2 {

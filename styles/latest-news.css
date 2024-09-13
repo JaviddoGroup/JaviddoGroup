@@ -3,6 +3,26 @@
         position: relative;
         z-index: 20;
     }
+
+    .news-slider a::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        /* Увеличиваем ширину и высоту на 200%, чтобы маска полностью покрывала элемент */
+        height: 200%;
+        background-image: url('../media/latest-news/news-ico/twist-mask.svg');
+        background-repeat: no-repeat;
+        background-size: 165px 150px;
+        transition: top 0.3s, left 0.3s;
+        /* Анимируем свойства top и left */
+    }
+
+    .news-slider a:hover::before {
+        top: -4.9%;
+        left: -5.6%;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -61,7 +81,7 @@
         cursor: pointer;
     }
 
-    .news-slider::before {
+    .news-slider a::before {
         content: "";
         position: absolute;
         top: -100%;
@@ -76,7 +96,7 @@
         /* Анимируем свойства top и left */
     }
 
-    .news-slider:hover::before {
+    .news-slider a:hover::before {
         top: -4.9%;
         left: -5.6%;
     }
@@ -147,7 +167,7 @@
         cursor: pointer;
     }
 
-    .news-slider::before {
+    .news-slider a::before {
         content: "";
         position: absolute;
         top: -100%;
@@ -162,7 +182,7 @@
         /* Анимируем свойства top и left */
     }
 
-    .news-slider:hover::before {
+    .news-slider a:hover::before {
         top: -4.9%;
         left: -5.6%;
     }
@@ -251,7 +271,7 @@
         cursor: pointer;
     }
 
-    .news-slider::before {
+    .news-slider a::before {
         content: "";
         position: absolute;
         background-image: url('./');
@@ -261,7 +281,7 @@
         /* Анимируем свойства top и left */
     }
 
-    .news-slider:hover::before {
+    .news-slider a:hover::before {
         top: -4.9%;
         left: -5.6%;
     }

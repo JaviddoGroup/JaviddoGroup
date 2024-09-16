@@ -119,7 +119,7 @@
         width: 29.55vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -236,7 +236,7 @@
         width: 29.55vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -354,13 +354,14 @@
         width: 29.5vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
         height: auto;
         aspect-ratio: 200 / 120;
         background-color: white;
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 
     }
 }
@@ -469,16 +470,17 @@
 
     .items .item:active,
     .items .item:focus {
-        width: 28vw;
+        width: 29.55vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
         height: auto;
-        aspect-ratio: 200 / 127;
+        aspect-ratio: 200 / 120;
         background-color: white;
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 
     }
 }
@@ -590,7 +592,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -708,7 +710,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -826,7 +828,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -944,7 +946,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1062,7 +1064,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1180,7 +1182,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1298,7 +1300,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1416,7 +1418,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1534,7 +1536,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1652,7 +1654,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1770,7 +1772,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1888,7 +1890,7 @@
         width: 35vw;
         filter: inherit;
         z-index: 100;
-        transform: translateZ(calc(var(--index)* 10));
+        transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
         margin: 0 .45vw;
         background-size: contain;
         background-repeat: no-repeat;

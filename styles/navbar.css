@@ -104,11 +104,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     /* Стили для смены языка ниже---------------------------------- */
 
@@ -806,11 +802,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     /* Стили для смены языка ниже---------------------------------- */
 
@@ -1477,11 +1469,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     /* Стили для смены языка ниже---------------------------------- */
 
@@ -2117,11 +2105,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     .langs-section {
         width: 71%;
@@ -2769,11 +2753,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -3399,11 +3379,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -4028,11 +4004,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -4658,11 +4630,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -5288,11 +5256,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -5916,11 +5880,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -6552,11 +6512,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -7188,11 +7144,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -7821,11 +7773,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -8657,11 +8605,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -9296,11 +9240,7 @@
         border-bottom: 1px solid #d6d6d6;
     }
 
-    .nav-bar-mobile.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     .nav-center-mob {
         display: flex;
@@ -9486,11 +9426,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -10110,11 +10046,7 @@
         border-bottom: 1px solid #d6d6d6;
     }
 
-    .nav-bar-mobile.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     .nav-center-mob {
         display: flex;
@@ -10300,11 +10232,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -10923,11 +10851,7 @@
         border-bottom: 1px solid #d6d6d6;
     }
 
-    .nav-bar-mobile.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     .nav-center-mob {
         display: flex;
@@ -11113,11 +11037,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 
@@ -11736,11 +11656,7 @@
         border-bottom: 1px solid #d6d6d6;
     }
 
-    .nav-bar-mobile.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
     .nav-center-mob {
         display: flex;
@@ -11925,11 +11841,7 @@
         transition: top 1s;
     }
 
-    .layout-nav.hidden {
-        top: -100%;
-        transition: top 1s;
-        /* значение можно настроить под высоту вашего навбара */
-    }
+
 
 
 

@@ -21,13 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('#swiper3', {
-        speed: 3500,
+        speed: 1000,
         parallax: true,
-        autoplay: {
-            delay: 5000,
-        },
+        autoplay: false, // Отключаем автозапуск слайдера при загрузке
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -48,11 +47,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Initialize the background images
+    // Инициализируем фоновое изображение для каждого слайда
     var slides = document.querySelectorAll('.swiper-slide');
     slides.forEach(slide => {
         var background = slide.getAttribute('data-background');
         slide.style.backgroundImage = `url(${background})`;
     });
+
+    // Задержка перед началом движения слайдера
+    setTimeout(function () {
+        swiper.params.autoplay = {
+            delay: 1000, // Интервал между сменой слайдов
+        };
+        swiper.autoplay.start(); // Запускаем автоплей после задержки
+    }, 4000); // Задержка 4 секунды перед стартом
 });
 

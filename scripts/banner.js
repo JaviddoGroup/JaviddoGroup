@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('#swiper3', {
-        speed: 1000,
+        speed: 3500,
         parallax: true,
         autoplay: {
             delay: 5000,

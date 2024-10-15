@@ -70,31 +70,43 @@
     .objects .first-up {
         animation-delay: 0s;
         -webkit-animation-delay: 0s;
+        width: 16.6%;
+
     }
 
     .objects .second-up {
         animation-delay: 0.2s;
         -webkit-animation-delay: 0.2s;
+        width: 16.6%;
+
     }
 
     .objects .third-up {
         animation-delay: 0.4s;
         -webkit-animation-delay: 0.4s;
+        width: 16.6%;
+
     }
 
     .objects .fourth-up {
         animation-delay: 0.6s;
         -webkit-animation-delay: 0.6s;
+        width: 16.6%;
+
     }
 
     .objects .five-up {
         animation-delay: 0.8s;
         -webkit-animation-delay: 0.8s;
+        width: 16.6%;
+
     }
 
     .objects .six-up {
         animation-delay: 1s;
         -webkit-animation-delay: 1s;
+        width: 16.6%;
+
     }
 }
 
@@ -165,34 +177,48 @@
         -webkit-animation-fill-mode: forwards;
     }
 
+
+
     .objects .first-up {
         animation-delay: 0s;
         -webkit-animation-delay: 0s;
+        width: 16.6%;
+
     }
 
     .objects .second-up {
         animation-delay: 0.2s;
         -webkit-animation-delay: 0.2s;
+        width: 16.6%;
+
     }
 
     .objects .third-up {
         animation-delay: 0.4s;
         -webkit-animation-delay: 0.4s;
+        width: 16.6%;
+
     }
 
     .objects .fourth-up {
         animation-delay: 0.6s;
         -webkit-animation-delay: 0.6s;
+        width: 16.6%;
+
     }
 
     .objects .five-up {
         animation-delay: 0.8s;
         -webkit-animation-delay: 0.8s;
+        width: 16.6%;
+
     }
 
     .objects .six-up {
         animation-delay: 1s;
         -webkit-animation-delay: 1s;
+        width: 16.6%;
+
     }
 }
 

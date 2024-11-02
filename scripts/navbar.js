@@ -243,3 +243,26 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScrollTop = scrollTop;
     });
 });
+
+
+
+
+
+
+
+// -------------------------------------------------------
+let lastScrollY = window.scrollY;
+const layoutNav = document.querySelector('.layout-nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        // Прокрутка вниз
+        layoutNav.classList.add('scrolling-down');
+        layoutNav.classList.remove('scrolling-up');
+    } else {
+        // Прокрутка вверх
+        layoutNav.classList.add('scrolling-up');
+        layoutNav.classList.remove('scrolling-down');
+    }
+    lastScrollY = window.scrollY;
+});

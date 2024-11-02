@@ -1,4 +1,75 @@
 @media screen and (max-width: 600060px) {
+
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 4vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 4vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
     body {
         background-color: white;
     }
@@ -66,6 +137,77 @@
 }
 
 @media screen and (min-width: 2560px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.5vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
+
     .contact-us-link {
         display: flex;
         justify-content: center;
@@ -380,7 +522,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 45vh;
         padding-top: 40px;
     }
 
@@ -506,7 +648,7 @@
 
 
     .left-menus {
-        height: 50vh;
+        height: 40vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -717,7 +859,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -764,6 +906,77 @@
 
 
 @media screen and (max-width: 2560px) {
+
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.5vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
     .contact-us-link {
         display: flex;
         justify-content: center;
@@ -1078,7 +1291,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 45vh;
         padding-top: 40px;
     }
 
@@ -1203,7 +1416,7 @@
     }
 
     .left-menus {
-        height: 50vh;
+        height: 40vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -1414,7 +1627,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -1460,6 +1673,76 @@
 }
 
 @media screen and (max-width: 2160px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.5vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -1737,7 +2020,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 50vh;
         padding-top: 40px;
     }
 
@@ -1836,7 +2119,7 @@
     }
 
     .left-menus {
-        height: 50vh;
+        height: 45vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -2046,7 +2329,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -2094,7 +2377,83 @@
 }
 
 @media screen and (max-width: 2000px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+        height: 7.8vh;
+    }
+
+    .navigation-bar {
+        top: 4.5vh;
+        height: 7.8vh;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 4.5vh;
+        height: 7.8vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -2303,7 +2662,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 1%;
-        height: 80px;
+        /* height: 80px; */
         border-bottom: 2px solid #d6d6d6;
         background: white;
     }
@@ -2387,7 +2746,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 45vh;
         padding-top: 40px;
     }
 
@@ -2484,6 +2843,7 @@
     }
 
     .left-menus {
+        height: 40vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -2695,7 +3055,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -2742,6 +3102,130 @@
 }
 
 @media screen and (max-width: 1800px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 10;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.5vh;
+        /* Высота .lang-select */
+    }
+
+    .left-menus {
+        height: 30vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------- */
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 2.8vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 2.8vh;
+        /* Высота .lang-select */
+    }
+
+
+
 
     /* Стили для навигационного меню Выше */
     .layout-nav {
@@ -3017,7 +3501,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 35vh;
         padding-top: 40px;
     }
 
@@ -3323,7 +3807,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 4.5%;
     }
 
     .close-navbar-menu span {
@@ -3368,7 +3852,62 @@
 }
 
 @media screen and (max-width: 1700px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.2vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.2vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -3643,7 +4182,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 40vh;
         padding-top: 40px;
     }
 
@@ -3740,6 +4279,7 @@
     }
 
     .left-menus {
+        height: 36vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -3949,7 +4489,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 20%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -3993,6 +4533,63 @@
 }
 
 @media screen and (max-width: 1600px) {
+
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.5vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
 
     /* Стили для навигационного меню Выше */
     .layout-nav {
@@ -4267,7 +4864,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 50vh;
         padding-top: 40px;
     }
 
@@ -4364,7 +4961,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 45vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -4574,7 +5171,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 15%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -4619,7 +5216,62 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.2vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.2vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -4893,7 +5545,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 50vh;
         padding-top: 40px;
     }
 
@@ -4990,7 +5642,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 45vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -5200,7 +5852,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -5245,6 +5897,62 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
+
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 2.85vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 2.85vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
 
     /* Стили для навигационного меню Выше */
     .layout-nav {
@@ -5519,7 +6227,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 45vh;
         padding-top: 40px;
     }
 
@@ -5616,7 +6324,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 40vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -5826,7 +6534,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -5869,7 +6577,62 @@
 }
 
 @media screen and (max-width: 1380px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 3.7vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 3.7vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -6147,7 +6910,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 50vh;
         padding-top: 40px;
     }
 
@@ -6244,7 +7007,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 45vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -6454,7 +7217,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -6501,7 +7264,62 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 2.5vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 2.5vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -6779,7 +7597,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 40vh;
         padding-top: 40px;
     }
 
@@ -6876,7 +7694,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 35vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -7086,7 +7904,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -7133,7 +7951,62 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 2.8vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 2.8vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -7412,7 +8285,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 45vh;
         padding-top: 40px;
     }
 
@@ -7509,7 +8382,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 40vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -7719,7 +8592,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -7762,7 +8635,62 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .layout-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1000;
+    }
 
+    .lang-select {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: transform 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        z-index: 1;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        top: 2.7vh;
+        width: 100%;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Плавный переход */
+        width: 98%;
+
+    }
+
+    /* При скролле вниз .lang-select уходит за экран */
+    .scrolling-down .lang-select {
+        transform: translateY(-100%);
+    }
+
+    /* navigation-bar поднимается вверх при прокрутке вниз */
+    .scrolling-down .navigation-bar {
+        top: 0;
+    }
+
+    /* При скролле вверх .lang-select возвращается на экран */
+    .scrolling-up .lang-select {
+        transform: translateY(0);
+    }
+
+    /* navigation-bar возвращается ниже .lang-select при скролле вверх */
+    .scrolling-up .navigation-bar {
+        top: 2.7vh;
+        /* Высота .lang-select */
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
     /* Стили для навигационного меню Выше */
     .layout-nav {
         position: fixed;
@@ -8041,7 +8969,7 @@
 
     /* Стиль для активного меню */
     .menu-active {
-        height: 70vh;
+        height: 50vh;
         padding-top: 40px;
     }
 
@@ -8138,7 +9066,7 @@
     }
 
     .left-menus {
-        height: 55vh;
+        height: 45vh;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -8348,7 +9276,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 13%;
+        top: 2.5%;
     }
 
     .close-navbar-menu span {
@@ -8391,7 +9319,124 @@
     }
 }
 
+
 @media screen and (max-width: 800px) {
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active,
+    .scrolling-down .mobile-sub-menu.active,
+    .scrolling-down .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .scrolling-up .mobile-sub-menu.active,
+    .scrolling-up .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 10vh;
+    }
+
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 10vh;
+    }
+
+    .nav-bar-mobile {
+        padding-top: 10vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 10vh;
+    }
+
+    .mobile-main-menu-nav {
+        left: 0;
+        /* margin-top: 6vh; */
+    }
+
+
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .mobile-main-menu-nav {
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 10vh;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 10vh;
+
+    }
+
+    .mobile-main-menu-nav .active {
+        padding-top: 10vh;
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 10vh;
+    }
+
+    .nav-bar-mobile {
+        /* z-index: 10; */
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
+
+
+
     * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         /* Safari, Chrome, Opera */
@@ -8403,15 +9448,14 @@
         display: none;
     }
 
-    .no-scroll {
-        height: 100vh;
-        overflow: hidden;
-    }
-
 
     /* Стили для навбара на телефоне снизу */
 
     .nav-bar-mobile {
+        position: fixed;
+        transition: top 1s;
+        background-color: #fff;
+        top: 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -8419,11 +9463,13 @@
         border-bottom: 1px solid #d6d6d6;
     }
 
+
+
     .nav-center-mob {
         display: flex;
         justify-content: space-between;
         padding: 0 5%;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .mobile-logo {
@@ -8455,7 +9501,8 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0;
+        padding: 5vh 0 0 0;
+
         left: 100%;
         top: 0;
         width: 100%;
@@ -8544,8 +9591,9 @@
     }
 
     html.no-scroll {
-        height: 100vh;
         overflow: hidden;
+        height: 100vh;
+
     }
 
     .back-and-close-button {
@@ -8559,10 +9607,12 @@
 
 
     .back-button-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         margin-left: 20px;
+        white-space: nowrap;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .back-button-mobile h2 {
@@ -8612,7 +9662,7 @@
     .selected-lang {
         width: 100%;
         height: auto;
-        aspect-ratio: 26.65 / 1;
+        aspect-ratio: 12.65 / 1;
         background-color: black;
         display: flex;
         color: white;
@@ -9213,6 +10263,121 @@
 }
 
 @media screen and (max-width: 600px) {
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active,
+    .scrolling-down .mobile-sub-menu.active,
+    .scrolling-down .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .scrolling-up .mobile-sub-menu.active,
+    .scrolling-up .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 5vh;
+    }
+
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 5vh;
+    }
+
+    .nav-bar-mobile {
+        padding-top: 5vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 5vh;
+    }
+
+    .mobile-main-menu-nav {
+        left: 0;
+        /* margin-top: 6vh; */
+    }
+
+
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .mobile-main-menu-nav {
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 5vh;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 5vh;
+
+    }
+
+    .mobile-main-menu-nav .active {
+        padding-top: 5vh;
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 5vh;
+    }
+
+    .nav-bar-mobile {
+        /* z-index: 5; */
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
+
+
 
     * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -9236,7 +10401,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8%;
+        margin-top: 0%;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -9246,7 +10411,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 5%;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .mobile-logo {
@@ -9278,7 +10443,8 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0;
+        padding: 5vh 0 0 0;
+
         left: 100%;
         top: 0;
         width: 100%;
@@ -10034,6 +11200,121 @@
 }
 
 @media screen and (max-width: 500px) {
+
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active,
+    .scrolling-down .mobile-sub-menu.active,
+    .scrolling-down .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .scrolling-up .mobile-sub-menu.active,
+    .scrolling-up .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.8vh;
+    }
+
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.8vh;
+    }
+
+    .nav-bar-mobile {
+        padding-top: 3.8vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 3.8vh;
+    }
+
+    .mobile-main-menu-nav {
+        left: 0;
+        /* margin-top: 6vh; */
+    }
+
+
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .mobile-main-menu-nav {
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+
+    }
+
+    .mobile-main-menu-nav .active {
+        padding-top: 3.8vh;
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+    }
+
+    .nav-bar-mobile {
+        /* z-index: 5; */
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
     .nav-bar-mobile {
         position: fixed;
         transition: top 1s;
@@ -10042,7 +11323,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8%;
+        margin-top: 0%;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -10084,7 +11365,8 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0;
+        padding: 5vh 0 0 0;
+
         left: 100%;
         top: 0;
         width: 100%;
@@ -10839,6 +12121,187 @@
 }
 
 @media screen and (max-width: 400px) {
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active,
+    .scrolling-down .mobile-sub-menu.active,
+    .scrolling-down .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .scrolling-up .mobile-sub-menu.active,
+    .scrolling-up .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.8vh;
+    }
+
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.8vh;
+    }
+
+    .nav-bar-mobile {
+        padding-top: 3.8vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 3.8vh;
+    }
+
+    .mobile-main-menu-nav {
+        left: 0;
+        /* margin-top: 6vh; */
+    }
+
+
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .mobile-main-menu-nav {
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+
+    }
+
+    .mobile-main-menu-nav .active {
+        padding-top: 3.8vh;
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 3.8vh;
+    }
+
+    .nav-bar-mobile {
+        /* z-index: 5; */
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 3.7vh;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+
+
+    .nav-bar-mobile {
+        padding-top: 3.7vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 3.7vh;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 0;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 3.7vh;
+
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 3.7vh;
+    }
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
     .nav-bar-mobile {
         position: fixed;
         transition: top 1s;
@@ -10847,7 +12310,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8%;
+        margin-top: 0%;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -10889,7 +12352,8 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0;
+        padding: 5vh 0 0 0;
+
         left: 100%;
         top: 0;
         width: 100%;
@@ -11644,6 +13108,120 @@
 }
 
 @media screen and (max-width: 360px) {
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* Safari, Chrome, Opera */
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+    }
+
+
+    .scrolling-up .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        top: 0;
+        transition: top 0s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active,
+    .scrolling-down .mobile-sub-menu.active,
+    .scrolling-down .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+    .scrolling-up .mobile-main-menu-nav.active,
+    .scrolling-up .mobile-sub-menu.active,
+    .scrolling-up .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.7vh;
+    }
+
+
+    .mobile-main-menu-nav.active,
+    .mobile-sub-menu.active,
+    .mobile-last-sub-menu.active {
+        left: 0;
+        padding-top: 3.7vh;
+    }
+
+    .nav-bar-mobile {
+        padding-top: 3.7vh;
+    }
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .scrolling-up .nav-bar-mobile {
+        padding-top: 3.7vh;
+    }
+
+    .mobile-main-menu-nav {
+        left: 0;
+        /* margin-top: 6vh; */
+    }
+
+
+
+    .scrolling-down .nav-bar-mobile {
+        padding-top: 0;
+    }
+
+    .mobile-main-menu-nav {
+        padding-top: 0;
+    }
+
+    .scrolling-down .mobile-main-menu-nav.active {
+        left: 0;
+        padding-top: 0;
+    }
+
+
+    .scrolling-up .mobile-sub-menu .active {
+        padding-top: 3.7vh;
+
+    }
+
+    .scrolling-down .mobile-sub-menu .active {
+        padding-top: 3.7vh;
+
+    }
+
+    .mobile-main-menu-nav .active {
+        padding-top: 3.7vh;
+    }
+
+    .mobile-sub-menu .active {
+        padding-top: 3.7vh;
+    }
+
+    .nav-bar-mobile {
+        /* z-index: 5; */
+    }
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------ */
     .nav-bar-mobile {
         position: fixed;
         transition: top 1s;
@@ -11652,7 +13230,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 8%;
+        margin-top: 0%;
         border-bottom: 1px solid #d6d6d6;
     }
 
@@ -11694,7 +13272,7 @@
     .mobile-sub-menu,
     .mobile-last-sub-menu {
         position: fixed;
-        padding: 0;
+        padding: 4vh 0 0 0;
         left: 100%;
         top: 0;
         width: 100%;

@@ -266,3 +266,29 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
 });
+
+
+
+
+
+
+
+
+
+// // --------------------------------------------
+// // Выбираем все элементы с классом left-sub-menu
+// document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
+//     // При наведении мыши
+//     menuItem.addEventListener('mouseover', function () {
+//         const imageSrc = this.getAttribute('data-image'); // Получаем путь к изображению из data-image
+//         const imageElement = document.getElementById('right-image');
+//         imageElement.src = imageSrc; // Устанавливаем src для изображения
+//         imageElement.style.display = 'block'; // Показываем изображение
+//     });
+
+//     // Когда мышь уходит с элемента
+//     menuItem.addEventListener('mouseout', function () {
+//         const imageElement = document.getElementById('right-image');
+//         imageElement.style.display = 'none'; // Скрываем изображение
+//     });
+// });

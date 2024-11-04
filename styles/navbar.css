@@ -1,4 +1,17 @@
 @media screen and (max-width: 600060px) {
+    /* .right-image-container {
+        position: absolute;
+        right: -250px;
+        top: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .right-image-container img {
+        width: 100%;
+        height: auto;
+        display: none;
+    } */
 
     .layout-nav {
         position: fixed;

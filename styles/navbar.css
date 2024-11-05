@@ -1,18 +1,25 @@
 @media screen and (max-width: 600060px) {
-    /* .right-image-container {
+    .menu-image {
         position: absolute;
-        right: -250px;
-        top: 0;
-        width: 200px;
+        display: none;
+        left: 80vh;
+        top: 3vh;
+        /* width: 45%; */
         height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
     }
 
-    .right-image-container img {
-        width: 100%;
-        height: auto;
-        display: none;
-    } */
+    .menu-image img {
 
+        width: 45vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -150,6 +157,27 @@
 }
 
 @media screen and (min-width: 2560px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 70vh;
+        top: 3vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 45vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -919,6 +947,27 @@
 
 
 @media screen and (max-width: 2560px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 69.5vh;
+        top: 7vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 45vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
 
     .layout-nav {
         position: fixed;
@@ -1686,6 +1735,27 @@
 }
 
 @media screen and (max-width: 2160px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 70vh;
+        top: 9vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 45vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -2390,6 +2460,27 @@
 }
 
 @media screen and (max-width: 2000px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 75vh;
+        top: 4.2vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 46.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -3115,6 +3206,27 @@
 }
 
 @media screen and (max-width: 1800px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 51.5vh;
+        top: 6.5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 45vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -3865,6 +3977,27 @@
 }
 
 @media screen and (max-width: 1700px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 64vh;
+        top: 8vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 43.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -4546,6 +4679,27 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 75vh;
+        top: 9.5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 41.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
 
     .layout-nav {
         position: fixed;
@@ -5229,6 +5383,27 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 60vh;
+        top: 9.5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 55.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -5910,6 +6085,27 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 50vh;
+        top: 8.5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 55.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -6590,6 +6786,27 @@
 }
 
 @media screen and (max-width: 1380px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 65vh;
+        top: 5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 56.5vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -7277,6 +7494,27 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 46vh;
+        top: 8vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 56vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -7964,6 +8202,27 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 46vh;
+        top: 9.5vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 63vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -8648,6 +8907,27 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .menu-image {
+        position: absolute;
+        display: none;
+        left: 46vh;
+        top: 11vh;
+        /* width: 45%; */
+        height: auto;
+        margin-left: 10px;
+        width: fit-content !important;
+    }
+
+    .menu-image img {
+
+        width: 62vw;
+    }
+
+    .left-sub-menu-active .menu-image {
+        display: block !important;
+    }
+
+    /* ---------------------------------------------------------------------- */
     .layout-nav {
         position: fixed;
         top: 0;
@@ -9334,6 +9614,7 @@
 
 
 @media screen and (max-width: 800px) {
+
     * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         /* Safari, Chrome, Opera */

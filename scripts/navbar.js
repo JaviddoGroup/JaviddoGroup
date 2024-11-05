@@ -276,19 +276,77 @@ window.addEventListener('scroll', () => {
 
 
 // // --------------------------------------------
-// // Выбираем все элементы с классом left-sub-menu
-// document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
-//     // При наведении мыши
-//     menuItem.addEventListener('mouseover', function () {
-//         const imageSrc = this.getAttribute('data-image'); // Получаем путь к изображению из data-image
-//         const imageElement = document.getElementById('right-image');
-//         imageElement.src = imageSrc; // Устанавливаем src для изображения
-//         imageElement.style.display = 'block'; // Показываем изображение
-//     });
 
-//     // Когда мышь уходит с элемента
-//     menuItem.addEventListener('mouseout', function () {
-//         const imageElement = document.getElementById('right-image');
-//         imageElement.style.display = 'none'; // Скрываем изображение
-//     });
-// });
+
+document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
+    menuItem.addEventListener('mouseover', function () {
+        const img = this.querySelector('.menu-image');
+        if (img) {
+            img.style.display = 'block'; // Показываем изображение при наведении
+        }
+    });
+
+    menuItem.addEventListener('mouseout', function () {
+        const img = this.querySelector('.menu-image');
+        if (img) {
+            img.style.display = 'none'; // Скрываем изображение при уходе
+        }
+    });
+});
+
+// Устанавливаем класс для первых элементов при загрузке страницы
+document.querySelectorAll('.left-menus').forEach((menu) => {
+    const firstSubMenu = menu.querySelector('.left-sub-menu');
+    if (firstSubMenu) {
+        firstSubMenu.classList.add('left-sub-menu-active');
+    }
+});
+
+// Перемещаем класс при наведении
+document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
+    menuItem.addEventListener('mouseover', function () {
+        // Убираем класс 'left-sub-menu-active' у всех элементов в текущем меню
+        const parentMenu = this.closest('.left-menus');
+        parentMenu.querySelectorAll('.left-sub-menu').forEach((item) => {
+            item.classList.remove('left-sub-menu-active');
+        });
+
+        // Добавляем класс 'left-sub-menu-active' к текущему элементу
+        this.classList.add('left-sub-menu-active');
+    });
+});
+
+
+let lastScrollTop = 0;
+let scrollTimeout = null;
+const scrollDelay = 700; // Время (мс), после которого считается, что скролл был "длительным"
+
+// Функция для удаления классов
+function removeActiveClasses() {
+    document.querySelectorAll('.menu-active').forEach((element) => {
+        element.classList.remove('menu-active');
+    });
+    document.querySelectorAll('.active-menu-name').forEach((element) => {
+        element.classList.remove('active-menu-name');
+    });
+}
+
+// Обработчик события скролла
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Проверка, скроллится ли пользователь вниз
+    if (scrollTop > lastScrollTop) {
+        // Очистка предыдущего таймера
+        clearTimeout(scrollTimeout);
+
+        // Устанавливаем новый таймер на удаление классов
+        scrollTimeout = setTimeout(removeActiveClasses, scrollDelay);
+    }
+
+    // Обновляем последнее положение скролла
+    lastScrollTop = scrollTop;
+});
+
+
+

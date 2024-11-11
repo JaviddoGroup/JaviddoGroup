@@ -8,6 +8,7 @@
         height: auto;
         margin-left: 10px;
         width: fit-content !important;
+        transition: 1s;
     }
 
     .menu-image img {
@@ -16,7 +17,12 @@
     }
 
     .left-sub-menu-active .menu-image {
+        transition: 1s;
         display: block !important;
+    }
+
+    .left-sub-menu {
+        /* margin: 1.6% 0; */
     }
 
     /* ---------------------------------------------------------------------- */
@@ -2873,7 +2879,7 @@
         font-size: 16px;
         text-decoration: none;
         color: black;
-        height: 50px;
+        height: 45px;
     }
 
     .left-sub-headline-menu {
@@ -2898,7 +2904,7 @@
 
     .left-sub-menu {
         width: 100%;
-        height: 40px;
+        height: 45px;
         display: flex;
         align-items: center;
         padding: 0;

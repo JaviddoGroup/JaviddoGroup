@@ -283,6 +283,7 @@ document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
         const img = this.querySelector('.menu-image');
         if (img) {
             img.style.display = 'block'; // Показываем изображение при наведении
+
         }
     });
 
@@ -320,6 +321,7 @@ document.querySelectorAll('.left-sub-menu').forEach((menuItem) => {
 let lastScrollTop = 0;
 let scrollTimeout = null;
 const scrollDelay = 700; // Время (мс), после которого считается, что скролл был "длительным"
+const scrollLang = 0; // Время (мс), после которого считается, что скролл был "длительным"
 
 // Функция для удаления классов
 function removeActiveClasses() {
@@ -328,6 +330,14 @@ function removeActiveClasses() {
     });
     document.querySelectorAll('.active-menu-name').forEach((element) => {
         element.classList.remove('active-menu-name');
+    });
+}
+function CloseLangMenu() {
+    document.querySelectorAll('.opened-lang-selected').forEach((element) => {
+        element.classList.remove('opened-lang-selected');
+    });
+    document.querySelectorAll('.rotated').forEach((element) => {
+        element.classList.remove('rotated');
     });
 }
 
@@ -342,6 +352,7 @@ window.addEventListener('scroll', () => {
 
         // Устанавливаем новый таймер на удаление классов
         scrollTimeout = setTimeout(removeActiveClasses, scrollDelay);
+        scrollTimeout = setTimeout(CloseLangMenu, scrollLang);
     }
 
     // Обновляем последнее положение скролла

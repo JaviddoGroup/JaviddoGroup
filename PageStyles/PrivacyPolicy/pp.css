@@ -1,0 +1,104 @@
+@media screen and (max-width: 60000060px) {
+
+    /* Общие стили для страницы */
+    .privacy-policy-page {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+        color: #333;
+    }
+
+    /* Контейнер для политики конфиденциальности */
+    .privacy-policy-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Заголовок страницы */
+    .privacy-policy-title {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #fc6e27;
+        text-align: center;
+    }
+
+    /* Общие стили для разделов и подзаголовков */
+    .privacy-policy-section {
+        font-size: 1.8em;
+        margin-top: 30px;
+        color: #444;
+        border-bottom: 2px solid #fc6e27;
+        padding-bottom: 10px;
+    }
+
+    .privacy-policy-subsection {
+        font-size: 1.4em;
+        margin-top: 20px;
+        color: #555;
+    }
+
+    /* Стили для списков */
+    .privacy-policy-list {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+
+    .privacy-policy-list li {
+        margin: 10px 0;
+    }
+
+    /* Стили для контактного раздела */
+    .privacy-policy-contact {
+        font-size: 1.2em;
+        margin-top: 20px;
+        background-color: #FFA27450;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        border-left: 5px solid #fc6e20;
+    }
+
+}
+
+
+@media screen and (min-width: 2560px) {}
+
+@media screen and (max-width: 2560px) {}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1750px) {}
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

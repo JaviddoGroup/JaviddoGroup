@@ -1,0 +1,130 @@
+@media screen and (max-width: 60000060px) {
+    .faq-container {
+        max-width: 800px;
+        background-color: #ffffff;
+        padding: 30px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-left: 5px solid #fc6e27;
+    }
+
+    /* Заголовок страницы */
+    .faq-title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #fc6e27;
+    }
+
+    /* Стиль для каждого FAQ Item */
+    .faq-item {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s;
+        border-left: 5px solid transparent;
+    }
+
+    .faq-item:hover {
+        transform: translateY(-5px);
+        border-left: 5px solid #fc6e27;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    /* Вопросы */
+    .faq-question {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    /* .faq-question::before {
+        content: "Q:";
+        position: absolute;
+        left: 0;
+        color: #fc6e27;
+        font-weight: bold;
+    } */
+
+    /* Ответы */
+    .faq-answer {
+        font-size: 1.2em;
+        color: #333;
+        background-color: #f4f4f9;
+        padding: 15px;
+        border-radius: 6px;
+        margin-left: 30px;
+        border-left: 5px solid #fc6e27;
+        transition: 0.2s;
+    }
+
+    .faq-item:hover .faq-answer {
+        transition: 0.2s;
+        border-left: 0 solid #fc6e27;
+    }
+
+}
+
+
+@media screen and (min-width: 2560px) {}
+
+@media screen and (max-width: 2560px) {}
+
+@media screen and (max-width: 2160px) {}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1750px) {}
+
+@media screen and (max-width: 1700px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1380px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 800px) {
+    .faq-container {
+        padding: 20px;
+    }
+
+    .faq-title {
+        font-size: 2em;
+    }
+
+    .faq-question {
+        font-size: 1.4em;
+    }
+
+    .faq-answer {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

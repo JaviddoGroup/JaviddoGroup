@@ -1,4 +1,11 @@
 @media screen and (max-width: 600600px) {
+    .open-button {
+        width: fit-content;
+    }
+
+    .active-banner .open-button {
+        display: none;
+    }
 
     .banners {
         display: block;

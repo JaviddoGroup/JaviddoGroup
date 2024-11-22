@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../../styles/scroll-up.css">
     <link rel="stylesheet" href="../../styles/layout-banner.css">
     <link rel="stylesheet" href="../../styles/navigation-bar-path.css">
+    <link rel="stylesheet" href="../../styles/press-releases.css">
     <!-- <link rel="stylesheet" href="../../PageStyles/MidTermPolicy/mtp.css"> -->
 </head>
 
@@ -519,12 +520,69 @@
     </div>
 
 
+    <div class="container">
+        <!-- PDF Viewer -->
+        <iframe id="pdf-iframe" src="" frameborder="0"></iframe>
 
+        <!-- Button Container -->
+        <div class="button-container">
+            <button id="download-pdf">Download PDF</button>
+        </div>
+    </div>
 
+    <!-- JavaScript -->
+    <script>
+        // Пути к PDF-файлам для каждого языка
+        const pdfPaths = {
+            en: "../../Storage/press-releases/TwoNewBrands.pdf",
+            cn: "../../Storage/press-releases/Partnership.pdf",
+            ru: "../../Storage/press-releases/Markets.pdf",
+        };
 
+        // Функция получения текущего языка
+        const getCurrentLanguage = () => {
+            const langElement = document.querySelector(".now-sort");
+            return langElement ? langElement.textContent.trim().toLowerCase() : "en";
+        };
 
+        // Функция загрузки PDF в iframe
+        const loadPDF = () => {
+            const currentLanguage = getCurrentLanguage();
+            const pdfUrl = pdfPaths[currentLanguage] || pdfPaths.en;
 
+            // Устанавливаем src для iframe
+            const iframe = document.getElementById("pdf-iframe");
+            iframe.src = pdfUrl;
+        };
 
+        // Скачивание PDF
+        document.getElementById("download-pdf").addEventListener("click", () => {
+            const currentLanguage = getCurrentLanguage();
+            const pdfUrl = pdfPaths[currentLanguage] || pdfPaths.en;
+
+            const link = document.createElement("a");
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop(); // Используем имя файла из пути
+            link.click();
+        });
+
+        // Инициализация наблюдателя за изменением языка
+        const langElement = document.querySelector(".now-sort");
+
+        const observer = new MutationObserver(() => {
+            loadPDF();
+        });
+
+        // Настройка наблюдателя
+        observer.observe(langElement, {
+            characterData: true,
+            childList: true,
+            subtree: true,
+        });
+
+        // Загрузка PDF при инициализации
+        loadPDF();
+    </script>
 
     <!-- <section id="intro-section">
         <div class="intro-content">
@@ -570,8 +628,8 @@
 
 
 
-    <img src="../../layout/under-construct.jpg" alt=""
-        style="display: flex; justify-content: center; margin: auto; margin-top: 25px; width: 100%;">
+    <!-- <img src="../../layout/under-construct.jpg" alt=""
+        style="display: flex; justify-content: center; margin: auto; margin-top: 25px; width: 100%;"> -->
 
 
 

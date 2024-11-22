@@ -9,6 +9,7 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         margin: auto;
+        margin-top: 80px;
     }
 
     .container iframe {
@@ -33,7 +34,7 @@
 
     .button-container button {
         padding: 10px 15px;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(252, 110, 39, 1) 100%);
+        background-color: #fc6e27;
         color: #fff;
         text-decoration: none;
         border: none;
@@ -46,13 +47,16 @@
     }
 
     .button-container button:hover {
-        background: linear-gradient(90deg, rgba(252, 110, 39, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background-color: #000;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        transition: 1s;
+        transition: all 1s ease;
+
     }
 
     .button-container button:active {
         transform: scale(0.95);
+        transition: all 1s ease;
+
     }
 }
 

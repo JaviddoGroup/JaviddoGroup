@@ -1,4 +1,6 @@
 @media screen and (max-width: 600060px) {
+
+
     .menu-image {
         position: absolute;
         display: none;
@@ -163,6 +165,22 @@
 }
 
 @media screen and (min-width: 2560px) {
+    /* .all-sections-and-containers {
+        width: 100%;
+        max-width: 2560px;
+        margin: auto;
+        overflow: hidden;
+
+    }
+
+    .all-sections-and-containers .layout-nav {
+        left: 0;
+    }
+
+    .all-sections-and-containers .main-banner-background-image {
+        left: 0;
+    } */
+
     .menu-image {
         position: absolute;
         display: none;

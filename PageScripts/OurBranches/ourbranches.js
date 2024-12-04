@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showBranchDetails(name, details, imgSrc, coords, email, phone) {
         branchName.textContent = name;
-        branchDetails.innerHTML = `<strong>Email:</strong> <a href="mailto:${email}">${email}</a><br><strong>Phone:</strong> <a href="tel:${phone}">${phone}</a><br>${details}`;
+        branchDetails.innerHTML = `<strong data-lang="our-branches-mail">Email:</strong> <a href="mailto:${email}">${email}</a><br><strong data-lang="our-branches-phone">Phone:</strong> <a href="tel:${phone}">${phone}</a><br>${details}`;
         branchImg.src = imgSrc;
         branchImg.style.display = 'block';
         zoomToBranch(coords);

@@ -194,10 +194,10 @@
     "founder-message-welcome-name-title": "诚挚问候，",
     "founder-message-welcome-name-surname": "贾瓦德·侯赛因诺夫",
     "founder-message-welcome-name-position": "Javiddo集团创始人",
-    "branch-main-headline": "",
-    "branch-main-description": "",
-    "branch-main-title-1": "",
-    "branch-main-description-1": "",
+    "branch-main-headline": "选择分公司",
+    "branch-main-description": "分公司信息将在此显示。",
+    "branch-main-title-1": "总部",
+    "branch-main-description-1": "Javiddo集团总部位于全球贸易中心——义乌，负责重大财务、市场营销和电子商务决策。在这个核心位置，客户可以亲自洽谈业务并查看产品。",
     "branch-main-title-2": "",
     "branch-main-description-2": "",
     "branch-main-title-3": "",
@@ -719,5 +719,7 @@
     "accessibility-policy-page-section7": "7. 例外情况",
     "accessibility-policy-page-content7": "尽管我们努力确保所有网站内容的无障碍性，但某些第三方创建的内容和功能可能未完全符合我们的无障碍标准。我们将继续与合作伙伴合作，尽可能改善这些元素的无障碍性。",
     "accessibility-policy-page-section8": "8. 结论",
-    "accessibility-policy-page-conclusion": "Javiddo Group 致力于创建一个可供所有用户访问和包容的数字环境。我们将持续优化网站，以满足所有用户的需求。感谢您对我们无障碍工作的支持。"
+    "accessibility-policy-page-conclusion": "Javiddo Group 致力于创建一个可供所有用户访问和包容的数字环境。我们将持续优化网站，以满足所有用户的需求。感谢您对我们无障碍工作的支持。",
+    "our-branches-mail": "电子邮件:",
+    "our-branches-phone": "电话:"
 }

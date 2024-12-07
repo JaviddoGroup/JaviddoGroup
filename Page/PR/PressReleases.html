@@ -520,7 +520,29 @@
     </div>
 
 
+
+
+
+
+
+
     <div class="container">
+        <!-- Блок выбора документа -->
+        <div class="document-selector">
+            <div class="document-item" data-doc="main">
+                <img src="../../storage/press-releases/ArabWorldTurkey.png" alt="Main Document" />
+                <span data-lang="press-releases-pages-arab-world-turkey" class="pdf-file-names">JAVIDDO GROUP EXPANDS
+                    INTO THE CIS, ARAB WORLD,
+                    TURKEY, AND ASIAN MARKETS</span>
+            </div>
+            <div class="document-item" data-doc="additional">
+                <img src="../../storage/press-releases/Partnership.png" alt="Additional Info" />
+                <span data-lang="press-releases-pages-strategic-partnership" class="pdf-file-names">JAVIDDO GROUP
+                    ANNOUNCES STRATEGIC
+                    PARTNERSHIP</span>
+            </div>
+        </div>
+
         <!-- PDF Viewer -->
         <iframe id="pdf-iframe" src="" frameborder="0"></iframe>
 
@@ -530,14 +552,24 @@
         </div>
     </div>
 
+
     <!-- JavaScript -->
     <script>
-        // Пути к PDF-файлам для каждого языка
+        // Пути к PDF-файлам для каждого документа и языка
         const pdfPaths = {
-            en: "../../storage/press-releases/TwoNewBrands.pdf",
-            cn: "../../storage/press-releases/Partnership.pdf",
-            ru: "../../storage/press-releases/Markets.pdf",
+            main: {
+                en: "../../storage/press-releases/ArabWorldTurkey/ArabWorldEn.pdf",
+                cn: "../../storage/press-releases/ArabWorldTurkey/ArabWorldCn.pdf",
+                ru: "../../storage/press-releases/ArabWorldTurkey/ArabWorldRu.pdf",
+            },
+            additional: {
+                en: "../../storage/press-releases/Partnership/PartnershipEn.pdf",
+                cn: "../../storage/press-releases/Partnership/PartnershipCn.pdf",
+                ru: "../../storage/press-releases/Partnership/PartnershipRu.pdf",
+            },
         };
+
+        let currentDocument = null; // Текущий выбранный документ
 
         // Функция получения текущего языка
         const getCurrentLanguage = () => {
@@ -545,24 +577,61 @@
             return langElement ? langElement.textContent.trim().toLowerCase() : "en";
         };
 
-        // Функция загрузки PDF в iframe
+        // Функция загрузки PDF в iframe с анимацией
         const loadPDF = () => {
-            const currentLanguage = getCurrentLanguage();
-            const pdfUrl = pdfPaths[currentLanguage] || pdfPaths.en;
+            if (!currentDocument) return; // Если документ не выбран, ничего не делать
 
-            // Устанавливаем src для iframe
+            const currentLanguage = getCurrentLanguage();
+            const pdfUrl = pdfPaths[currentDocument][currentLanguage] || pdfPaths[currentDocument]["en"];
+
             const iframe = document.getElementById("pdf-iframe");
-            iframe.src = pdfUrl;
+
+            // Скрываем iframe перед загрузкой
+            iframe.classList.remove("visible");
+
+            setTimeout(() => {
+                iframe.src = pdfUrl;
+
+                // Показываем iframe с анимацией
+                iframe.classList.add("visible");
+            }, 300); // Даем время для плавного скрытия
         };
+
+        // Обработчик клика на элемент выбора документа
+        const documentItems = document.querySelectorAll(".document-item");
+        const container = document.querySelector(".container"); // Получаем контейнер
+
+        documentItems.forEach((item) => {
+            item.addEventListener("click", () => {
+                // Установка текущего документа
+                currentDocument = item.getAttribute("data-doc");
+
+                // Удаляем активное состояние у всех элементов
+                documentItems.forEach((el) => el.classList.remove("active"));
+
+                // Добавляем активное состояние для текущего элемента
+                item.classList.add("active");
+
+                // Добавляем класс container-pr-active к контейнеру
+                if (!container.classList.contains("container-pr-active")) {
+                    container.classList.add("container-pr-active");
+                }
+
+                // Загружаем PDF
+                loadPDF();
+            });
+        });
 
         // Скачивание PDF
         document.getElementById("download-pdf").addEventListener("click", () => {
+            if (!currentDocument) return; // Если документ не выбран, ничего не делать
+
             const currentLanguage = getCurrentLanguage();
-            const pdfUrl = pdfPaths[currentLanguage] || pdfPaths.en;
+            const pdfUrl = pdfPaths[currentDocument][currentLanguage] || pdfPaths[currentDocument]["en"];
 
             const link = document.createElement("a");
             link.href = pdfUrl;
-            link.download = pdfUrl.split('/').pop(); // Используем имя файла из пути
+            link.download = pdfUrl.split("/").pop(); // Используем имя файла из пути
             link.click();
         });
 
@@ -570,19 +639,22 @@
         const langElement = document.querySelector(".now-sort");
 
         const observer = new MutationObserver(() => {
-            loadPDF();
+            loadPDF(); // Автоматически обновляем PDF при смене языка
         });
 
-        // Настройка наблюдателя
-        observer.observe(langElement, {
-            characterData: true,
-            childList: true,
-            subtree: true,
-        });
-
-        // Загрузка PDF при инициализации
-        loadPDF();
+        if (langElement) {
+            observer.observe(langElement, {
+                characterData: true,
+                childList: true,
+                subtree: true,
+            });
+        }
     </script>
+
+
+
+
+
 
     <!-- <section id="intro-section">
         <div class="intro-content">

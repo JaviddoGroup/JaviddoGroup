@@ -553,6 +553,37 @@
     </div>
 
 
+    <div class="pr-page-mobile-container">
+        <!-- Секция выбора -->
+        <div class="pr-page-mobile-selector">
+            <div class="pr-page-mobile-item" data-doc="main">
+                <img src="../../storage/press-releases/ArabWorldTurkey.png" alt="Main Document" />
+                <span>JAVIDDO GROUP EXPANDS INTO THE CIS, ARAB WORLD, TURKEY, AND ASIAN MARKETS</span>
+            </div>
+            <div class="pr-page-mobile-item" data-doc="additional">
+                <img src="../../storage/press-releases/Partnership.png" alt="Additional Info" />
+                <span>JAVIDDO GROUP ANNOUNCES STRATEGIC PARTNERSHIP</span>
+            </div>
+        </div>
+
+        <!-- Просмотр изображения -->
+        <div id="pr-page-mobile-image-viewer" class="pr-page-mobile-image-viewer"></div>
+
+        <!-- Модальное окно -->
+        <div id="pr-page-mobile-popup" class="pr-page-mobile-popup">
+            <div class="pr-page-mobile-popup-content">
+                <img id="pr-page-mobile-popup-image" src="" alt="Document Preview" />
+                <button id="pr-page-mobile-popup-download" class="pr-page-mobile-download-btn">Download PDF</button>
+            </div>
+            <button id="pr-page-mobile-popup-close" class="pr-page-mobile-popup-close">×</button>
+        </div>
+    </div>
+
+
+
+
+
+
     <!-- JavaScript -->
     <script>
         // Пути к PDF-файлам для каждого документа и языка
@@ -649,6 +680,130 @@
                 subtree: true,
             });
         }
+
+
+
+
+
+
+
+
+        (function () {
+            const pdfPaths = {
+                main: {
+                    en: "../../storage/press-releases/ArabWorldTurkey/ArabWorldEn.pdf",
+                    cn: "../../storage/press-releases/ArabWorldTurkey/ArabWorldCn.pdf",
+                    ru: "../../storage/press-releases/ArabWorldTurkey/ArabWorldRu.pdf",
+                },
+                additional: {
+                    en: "../../storage/press-releases/Partnership/PartnershipEn.pdf",
+                    cn: "../../storage/press-releases/Partnership/PartnershipCn.pdf",
+                    ru: "../../storage/press-releases/Partnership/PartnershipRu.pdf",
+                },
+            };
+
+            const imagePaths = {
+                main: {
+                    en: "../../storage/press-releases/ArabWorldTurkey/ArabWorldEn.png",
+                    cn: "../../storage/press-releases/ArabWorldTurkey/ArabWorldCn.png",
+                    ru: "../../storage/press-releases/ArabWorldTurkey/ArabWorldRu.png",
+                },
+                additional: {
+                    en: "../../storage/press-releases/Partnership/PartnershipEn.png",
+                    cn: "../../storage/press-releases/Partnership/PartnershipCn.png",
+                    ru: "../../storage/press-releases/Partnership/PartnershipRu.png",
+                },
+            };
+
+            let currentDocument = null;
+
+            const getCurrentLanguage = () => {
+                const langElement = document.querySelector(".now-sort");
+                return langElement ? langElement.textContent.trim().toLowerCase() : "en";
+            };
+
+            const documentItems = document.querySelectorAll(".pr-page-mobile-item");
+            const imageViewer = document.getElementById("pr-page-mobile-image-viewer");
+            const popup = document.getElementById("pr-page-mobile-popup");
+            const popupImage = document.getElementById("pr-page-mobile-popup-image");
+            const popupClose = document.getElementById("pr-page-mobile-popup-close");
+            const popupDownload = document.getElementById("pr-page-mobile-popup-download");
+
+            const PressReleasesMobileShowImage = () => {
+                if (!currentDocument) return;
+
+                const currentLanguage = getCurrentLanguage();
+                const imageUrl = imagePaths[currentDocument][currentLanguage] || imagePaths[currentDocument]["en"];
+
+                imageViewer.innerHTML = `<img src="${imageUrl}" alt="Document Image" class="visible" />`;
+
+                const img = imageViewer.querySelector("img");
+                img.addEventListener("click", () => {
+                    popupImage.src = imageUrl;
+                    popup.style.display = "flex";
+                    document.body.style.overflow = "hidden"; // Запрещаем прокрутку фона
+
+                    popupDownload.onclick = () => {
+                        const pdfUrl = pdfPaths[currentDocument][currentLanguage] || pdfPaths[currentDocument]["en"];
+                        const link = document.createElement("a");
+                        link.href = pdfUrl;
+                        link.download = pdfUrl.split("/").pop();
+                        link.click();
+                    };
+                });
+            };
+
+            const PressReleasesMobileUpdateImageOnLanguageChange = () => {
+                if (currentDocument) {
+                    PressReleasesMobileShowImage();
+                }
+            };
+
+            documentItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    currentDocument = item.getAttribute("data-doc");
+
+                    documentItems.forEach((el) => el.classList.remove("active"));
+                    item.classList.add("active");
+
+                    PressReleasesMobileShowImage();
+                });
+            });
+
+            popupClose.addEventListener("click", () => {
+                popup.style.display = "none";
+                document.body.style.overflow = ""; // Разрешаем прокрутку фона
+            });
+
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                    document.body.style.overflow = ""; // Разрешаем прокрутку фона
+                }
+            });
+
+            // Отслеживание изменений языка через MutationObserver
+            const langElement = document.querySelector(".now-sort");
+            if (langElement) {
+                const observer = new MutationObserver(() => {
+                    PressReleasesMobileUpdateImageOnLanguageChange();
+                });
+
+                observer.observe(langElement, {
+                    characterData: true,
+                    childList: true,
+                    subtree: true,
+                });
+            }
+
+            // Инициализация
+            window.addEventListener("load", () => {
+                if (currentDocument) {
+                    PressReleasesMobileShowImage();
+                }
+            });
+        })();
+
     </script>
 
 

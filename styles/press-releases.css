@@ -2032,7 +2032,7 @@
     .pr-page-mobile-image-viewer img {
         display: none;
         width: 100%;
-        max-height: 100px;
+        max-height: 500px;
         object-fit: contain;
         margin-top: 20px;
         border-radius: 10px;
@@ -2084,7 +2084,7 @@
         display: inline-block;
         margin-top: 20px;
         padding: 10px 20px;
-        background-color: #007bff;
+        background-color: #fc6e27;
         color: white;
         border: none;
         border-radius: 5px;
@@ -2093,7 +2093,7 @@
     }
 
     .pr-page-mobile-download-btn:hover {
-        background-color: #0056b3;
+        background-color: #fc6e27;
     }
 
 

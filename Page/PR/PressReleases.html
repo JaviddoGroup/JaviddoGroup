@@ -763,8 +763,8 @@
                 item.addEventListener("click", () => {
                     currentDocument = item.getAttribute("data-doc");
 
-                    documentItems.forEach((el) => el.classList.remove("active"));
-                    item.classList.add("active");
+                    documentItems.forEach((el) => el.classList.remove("active-mobile"));
+                    item.classList.add("active-mobile");
 
                     PressReleasesMobileShowImage();
                 });
